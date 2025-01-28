@@ -1,6 +1,6 @@
 package fr.eni.lesobjetssontnosamis.bll;
 
-import fr.eni.trocencheresjavaqueens.bo.ArticleVendu;
+import fr.eni.lesobjetssontnosamis.bo.ArticleVendu;
 
 import java.util.List;
 

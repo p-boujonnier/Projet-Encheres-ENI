@@ -1,7 +1,8 @@
 package fr.eni.lesobjetssontnosamis.controller;
 
-import fr.eni.trocencheresjavaqueens.bll.UtilisateurService;
-import fr.eni.trocencheresjavaqueens.bo.Utilisateur;
+
+import fr.eni.lesobjetssontnosamis.bll.UtilisateurService;
+import fr.eni.lesobjetssontnosamis.bo.Utilisateur;
 
 public class UtilisateurController {
 
