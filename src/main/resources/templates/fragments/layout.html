@@ -1,20 +1,24 @@
 <!DOCTYPE html>
-<html  xmlns:th="http://www.thymeleaf.org" lang="fr" data-th-fragment="layout(title,main)" >
+<html xmlns:th="http://www.thymeleaf.org" lang="fr" data-th-fragment="layout(title,main)">
 
 <head>
     <meta charset="UTF-8">
     <title data-th-replace="${title}"></title>
-    <link rel="stylesheet" data-th-href="@{/css/chat.css}">
+    <link rel="stylesheet" data-th-href="@{/CSS/style.css}">
 </head>
+
 <body>
 <header>
-    <h1>Les Objets sont nos Amis</h1>
+    <h1>La maison des chats </h1>
+
     <nav>
         <ul>
-            <li><a href="/static">Accueil</a></li>
+            <li><a href="/">Home</a></li>
         </ul>
     </nav>
 </header>
-<main data-th-replace="${main}"> </main>
+
+<main data-th-replace="${main}"></main>
+
 </body>
 </html>
