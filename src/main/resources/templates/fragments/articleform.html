@@ -1,0 +1,51 @@
+<form data-th-fragment="articleform()">
+    <p>Test</p>
+    <h1 data-th-text="${ArticleVendu.nomArticle}"></h1>
+    <!--récupérer le nom de l'article / je ne sais plus ArticleVendu ce que ça doit être-->
+    <!--     -->
+    <ul>
+        <li>
+            <label for="inputName"> Nom : </label>
+            <input type="text" id="inputName" disabled data-th-value="${ArticleVendu.name}"/>
+        </li>
+
+        <li>
+            <label for="inputDescription"> Description : </label>
+            <input type="text" id="inputDescription" disabled data-th-value="${ArticleVendu.description}"/>
+        </li>
+        <li>
+            <label for="inputCategorie"> Catégorie : </label>
+            <input type="text" id="inputCategorie" disabled data-th-value="${ArticleVendu.categorie}"/>
+        </li>
+
+        <li>
+            <label for="inputPhotoArticle"> Photo de l'article : </label>
+            <input type="button" id="inputPhotoArticle" disabled/>
+            <!-- voir comment mettre boutton "on upload une img" -->
+        </li>
+
+        <li>
+            <label for="inputMiseAPrix"> Mise à prix : </label>
+            <input type="text" id="inputMiseAPrix" disabled data-th-value="${ArticleVendu.miseAPrix}"/>
+            <!--  voir comment faire prix et flèches + limite basse à l'enchère actuel  -->
+        </li>
+
+        <li>
+            <label for="inputDateDebutEnchere"> Début de l'enchère : </label>
+            <input type="datetime-local" id="inputDateDebutEnchere" disabled
+                   data-th-value="${ArticleVendu.dateDebutEncheres}"/>
+        </li>
+
+        <li>
+            <label for="inputDateFinEncheres"> Fin de l'enchère : </label>
+            <input type="datetime-local" id="inputDateFinEncheres" disabled
+                   data-th-value="${ArticleVendu.dateFinEncheres}"/>
+        </li>
+    </ul>
+    <!-- form dans un form? ok? voir maquette comment insérer Retrait-->
+
+    <button>Enregistrer</button>
+    <button>Annuler</button>
+
+</form>
+
