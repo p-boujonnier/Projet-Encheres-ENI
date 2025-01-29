@@ -19,26 +19,27 @@
         </li>
 
         <li>
-            <label for="inputPhotoArticle"> Photo de l'article : </label>
-            <input type="button" id="inputPhotoArticle" disabled/>
-            <!-- voir comment mettre boutton "on upload une img" -->
+            <form th:action="@{/upload}" method="post" enctype="multipart/form-data">
+                <label for="inputPhotoArticle"> Choisir une photo : </label>
+                <input type="file" id="inputPhotoArticle" name="inputPhotoArticle" accept="image/jpeg, image/png" disabled/>
+                <button type="submit">Upload</button>
+            </form>
         </li>
 
         <li>
             <label for="inputMiseAPrix"> Mise à prix : </label>
-            <input type="text" id="inputMiseAPrix" disabled data-th-value="${ArticleVendu.miseAPrix}"/>
-            <!--  voir comment faire prix et flèches + limite basse à l'enchère actuel  -->
+            <input type="number" id="inputMiseAPrix" min="1" max="150" step="1" disabled data-th-value="${ArticleVendu.miseAPrix}"/>
         </li>
 
         <li>
             <label for="inputDateDebutEnchere"> Début de l'enchère : </label>
-            <input type="datetime-local" id="inputDateDebutEnchere" disabled
+            <input type="date" id="inputDateDebutEnchere" disabled
                    data-th-value="${ArticleVendu.dateDebutEncheres}"/>
         </li>
 
         <li>
             <label for="inputDateFinEncheres"> Fin de l'enchère : </label>
-            <input type="datetime-local" id="inputDateFinEncheres" disabled
+            <input type="date" id="inputDateFinEncheres" disabled
                    data-th-value="${ArticleVendu.dateFinEncheres}"/>
         </li>
     </ul>

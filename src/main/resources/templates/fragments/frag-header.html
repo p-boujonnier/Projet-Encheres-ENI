@@ -1,0 +1,16 @@
+<header xmlns:th="http://www.thymeleaf.org"
+        data-th-fragment="frag-header">
+    <section id="nav-title">
+        <h1>
+            <a href="/"><span data-th-text="#{nom-application}"></span></a>
+        </h1>
+    </section>
+    <nav>
+        <ul>
+            <th:block>
+                <li><a href="/articles" data-th-text="#{frag-header.articles}"></a></li>
+                <li><a href="/articles/creer" data-th-text="#{frag-header.articles.creer}"></a></li>
+            </th:block>
+        </ul>
+    </nav>
+</header>

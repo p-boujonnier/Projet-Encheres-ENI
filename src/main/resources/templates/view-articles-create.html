@@ -1,0 +1,60 @@
+<html data-th-replace="~{fragments/layout::layout-objets-amis(title=~{::title}, main=~{::main})}">
+
+<title>Créer un article</title>
+
+<main>
+<!-- ici le fragment articleform ?-->
+    <form data-th-object="articleVendu" method="post" action="creer" data-th-fragment="articleform(readonly)">
+        <h1 data-th-text="${articleVendu.nomArticle}"></h1>
+        <ul>
+            <li>
+                <label for="inputName"> Nom : </label>
+                <input type="text" id="inputName" disabled data-th-value="${ArticleVendu.name}"/>
+            </li>
+
+            <li>
+                <label for="inputDescription"> Description : </label>
+                <input type="text" id="inputDescription" disabled data-th-value="${ArticleVendu.description}"/>
+            </li>
+            <li>
+                <label for="inputCategorie"> Catégorie : </label>
+                <input type="text" id="inputCategorie" disabled data-th-value="${ArticleVendu.categorie}"/>
+            </li>
+
+            <li>
+                <form  method="post" action="@{/upload}" enctype="multipart/form-data">
+                    <label for="inputPhotoArticle"> Choisir une photo : </label>
+                    <input type="file" id="inputPhotoArticle" name="inputPhotoArticle" accept="image/jpeg, image/png" disabled/>
+                    <button type="submit">Upload</button>
+                </form>
+                <!-- voir comment mettre boutton "on upload une img"
+                 ça va être l'emmerdement je vous le dis direct...
+                 va falloir faire un controller et un stockage des images lel-->
+            </li>
+
+            <li>
+                <label for="inputMiseAPrix"> Mise à prix : </label>
+                <input type="number" id="inputMiseAPrix" min="1" max="150" step="1" disabled data-th-value="${ArticleVendu.miseAPrix}"/>
+            </li>
+
+            <li>
+                <label for="inputDateDebutEnchere"> Début de l'enchère : </label>
+                <input type="date" id="inputDateDebutEnchere" disabled
+                       data-th-value="${ArticleVendu.dateDebutEncheres}"/>
+            </li>
+
+            <li>
+                <label for="inputDateFinEncheres"> Fin de l'enchère : </label>
+                <input type="date" id="inputDateFinEncheres" disabled
+                       data-th-value="${ArticleVendu.dateFinEncheres}"/>
+            </li>
+        </ul>
+        <!-- form dans un form? ok? voir maquette comment insérer Retrait-->
+
+        <button>Enregistrer</button>
+        <button>Annuler</button>
+
+    </form>
+</main>
+
+</html>
