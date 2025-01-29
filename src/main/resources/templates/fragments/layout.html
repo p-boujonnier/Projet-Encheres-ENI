@@ -10,6 +10,8 @@
 <body>
 <header>
     <h1>Les Objets sont nos amis</h1>
+<!--    h2 : Indique le nom de l'utilisateur une fois connecté -->
+    <h2 data-th-if="${#authorization.expression('isAuthenticated()')}" data-th-text="${#authentication.getPrincipal().getUsername()}"></h2>
 
     <nav>
         <ul>

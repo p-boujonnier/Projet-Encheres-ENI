@@ -58,7 +58,7 @@ public class Utilisateur implements Serializable {
     private List<ArticleVendu> articlesVendus;
 
     // L'utilisateur peut avoir plusieurs articles à vendre
-    private List<ArticleVendu> articlesAchetés;
+    private List<ArticleVendu> articlesAchetes;
 
     // --------------------------------
     // CONSTRUCTEURS
