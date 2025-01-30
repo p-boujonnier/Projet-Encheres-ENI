@@ -1,0 +1,41 @@
+<html data-th-replace="~{fragments/frag-profil::frag-profil(title=~{::title}, main=~{::main})}">
+
+<title>View-Profil</title>
+
+<main>
+    <h1>bonjour</h1>
+    <table>
+            <thead>    A rattacher à Properties
+            <tr>
+                <th data-th-text="#{view_profil.th.pseudo}"></th>
+                <th data-th-text="#{view_films.th.nom}"></th>
+                <th data-th-text="#{view_films.th.prenom}"></th>
+                <th data-th-text="#{view_films.th.email}"></th>
+                <th data-th-text="#{view_films.th.telephone}"></th>
+                <th data-th-text="#{view_films.th.rue}"></th>
+                <th data-th-text="#{view_films.th.codePostal}"></th>
+                <th data-th-text="#{view_films.th.ville}"></th>
+            </tr>
+            </thead>
+
+        <tbody>
+        <tr data-th-each="u : ${Utilisateur}">
+            <td data-th-text="${u.pseudo}"></td>
+            <td data-th-text="${u.nom}"></td>
+            <td data-th-text="${u.prenom}"></td>
+            <td data-th-text="${u.email}"></td>
+            <td data-th-text="${u.telephone}"></td>
+            <td data-th-text="${u.rue}"></td>
+            <td data-th-text="${u.codePostal}"></td>
+            <td data-th-text="${u.ville}"></td>
+
+        </tr>
+        </tbody>
+    </table>
+
+    <form data-th-href="@{/profil_modifier()}" method="get">
+        <input type="submit" value="Modifier">
+    </form>
+</main>
+</html>
+

@@ -5,6 +5,9 @@ import fr.eni.lesobjetssontnosamis.bo.Utilisateur;
 import org.springframework.context.annotation.Primary;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
+import fr.eni.lesobjetssontnosamis.dao.DAOUtilisateurs;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
@@ -12,13 +15,16 @@ import java.util.List;
 @Primary
 public class UtilisateurServiceImpl implements UtilisateurService {
 
+    @Autowired
+    private DAOUtilisateurs daoUtilisateurs;
+
     @Override
     public void addUtilisateur(Utilisateur utilisateur) {
     }
 
     @Override
     public List<Utilisateur> getUtilisateurs() {
-        return List.of();
+        return daoUtilisateurs.findAll();
     }
 
     @Override

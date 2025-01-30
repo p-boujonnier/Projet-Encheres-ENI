@@ -3,18 +3,24 @@
       data-th-fragment="layout-objets-amis(titrePage, contenuPage, ressourcesSupp)">
 <head>
     <meta charset="UTF-8">
-    <!-- Définition titre -->
-    <title data-th-replace="${titrePage}" data-th-text="#{nom-application}"></title>
-
-    <!-- Ressources par défaut -->
-    <link rel="stylesheet" data-th-href="@{CSS/style.css}">
-
-    <!-- Ajout autres ressources -->
-    <th:block data-th-replace="${ressourcesSupp} ?: ~{}"></th:block>
+    <title data-th-replace="${title}"></title>
+    <link rel="stylesheet" data-th-href="@{/CSS/style.css}">
 </head>
+
 <body>
-<!-- Fragment d'entête -->
-<div data-th-replace="~{fragments/frag-header :: frag-header}"></div>
+<header>
+    <h1>Les Objets sont nos amis</h1>
+<!--    h2 : Indique le nom de l'utilisateur une fois connecté -->
+    <h2 data-th-if="${#authorization.expression('isAuthenticated()')}" data-th-text="${#authentication.getPrincipal().getUsername()}"></h2>
+
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li data-th-if="${!#authorization.expression('isAuthenticated()')}"><a data-th-href="@{/view_profil()}">S'inscrire - Se Connecter</a></li>
+            <li data-th-if="${#authorization.expression('isAuthenticated()')}"><a data-th-href="@{/logout}">Se Déconnecter</a></li>
+        </ul>
+    </nav>
+</header>
 
 <!-- Fragment du contenu de la page -->
 <main data-th-replace="${contenuPage} ?: ~{}">Contenu de la page

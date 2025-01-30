@@ -1,0 +1,63 @@
+<html data-th-replace="~{fragments/frag-profil::frag-profil(title=~{::title}, main=~{::main})}">
+
+
+    <title>Mon profil</title>
+    <main>
+<h1>Mon profil</h1>
+
+      <form action="#" method="post" data-th-object="${form}">
+        <div>
+<label>"Pseudo"</label>
+          <input type="text" id="pseudo" name="pseudo">
+        </div>
+        <div>
+        <label>"Nom"</label>
+        <input type="text" id="nom" name="nom">
+        </div>
+        <div>
+          <label>"Prénom"</label>
+          <input type="text" id="prenom" name="prenom">
+        </div>
+        <div>
+          <label>"Email"</label>
+          <input type="email" id="email" name="email">
+        </div>
+        <div>
+          <div>
+            <label>"Téléphone"</label>
+            <input type="telephone" id="telephone" name="telephone">
+          </div>
+            <div>
+          <label>"Mot de passe"</label>
+          <input type="password" id="password" name="password">
+            </div>
+          <div>
+            <label>"Rue</label>
+            <input type="rue" id="rue" name="rue">
+          </div>
+          <div>
+            <label>"Confirmation de mot de passe"</label>
+            <input type="codePostal" id="codePostal" name="codePostal">
+          </div>
+          <div>
+            <label>"Ville de mot de passe"</label>
+            <input type="ville" id="ville" name="ville">
+          </div>
+
+        </div>
+        <div>
+          <label>"Confirmation de mot de passe"</label>
+          <input type="password" id="confirmation" name="confirmation">
+        </div>
+
+
+        </div>
+
+      </form>
+
+
+
+</main>
+
+
+</html>
