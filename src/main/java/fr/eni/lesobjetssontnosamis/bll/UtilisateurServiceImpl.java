@@ -2,9 +2,14 @@ package fr.eni.lesobjetssontnosamis.bll;
 
 
 import fr.eni.lesobjetssontnosamis.bo.Utilisateur;
+import org.springframework.context.annotation.Primary;
+import org.springframework.context.annotation.Profile;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
+@Primary
 public class UtilisateurServiceImpl implements UtilisateurService {
 
     @Override
@@ -23,6 +28,10 @@ public class UtilisateurServiceImpl implements UtilisateurService {
 
     @Override
     public void updateUtilisateur(Utilisateur utilisateur) {
+    }
 
+    @Override
+    public Utilisateur findUtilisateurById(Long id) {
+        return null;
     }
 }

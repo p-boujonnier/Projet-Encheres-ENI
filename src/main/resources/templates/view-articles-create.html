@@ -7,14 +7,16 @@
 
 <head>
     <!-- Titre de la page -->
-    <title data-th-text="#{index.title}"></title>
+    <title data-th-text="#{view-articles-create.title}"></title>
     <!-- Pages de ressources supplémentaires -->
     <th:block id="ressources-css">
     </th:block>
 </head>
-<main class="center-main">
-    <section class="center-section">
-        <h1 data-th-text="#{index.h1}"></h1>
-    </section>
+<body>
+<main>
+    <form data-th-replace="~{fragments/frag-articles-form ::
+                frag-articles-form(#{view-articles-form.h1}, '/articles/creer')}">
+    </form>
 </main>
+</body>
 </html>

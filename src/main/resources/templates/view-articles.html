@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      data-th-replace="~{fragments/layout :: layout-objets-amis(
+					titrePage=~{:: title},
+					contenuPage=~{:: main},
+					ressourcesSupp=~{:: #ressources-css})}">
+
+<head>
+    <!-- Titre de la page -->
+    <title data-th-text="#{view-articles.title}"></title>
+    <!-- Pages de ressources supplémentaires -->
+    <th:block id="ressources-css">
+    </th:block>
+</head>
+
+<body>
+<main>
+    <h1 data-th-text="#{view-articles.h1}"></h1>
+    <table>
+        <!-- Entête Tableau -->
+        <thead>
+        <tr>
+            <!-- Nom entêtes définit dans messages.properties -->
+            <th data-th-text="#{view-articles.numero}"></th>
+            <th data-th-text="#{view-articles.nom-article}"></th>
+            <th data-th-text="#{view-articles.description}"></th>
+            <th data-th-text="#{view-articles.date-debut-encheres}"></th>
+            <th data-th-text="#{view-articles.date-fin-encheres}"></th>
+            <th data-th-text="#{view-articles.prix}"></th>
+        </tr>
+        </thead>
+        <!-- Corps Tableau -->
+        <tbody>
+        <tr data-th-each="article : ${articleVendus}">
+            <td data-th-text="${article.noArticle}"></td>
+            <td data-th-text="${article.nomArticle}"></td>
+            <td data-th-text="${article.description}"></td>
+            <td data-th-text="${article.dateDebutEncheres}"></td>
+            <td data-th-text="${article.dateFinEncheres}"></td>
+            <td data-th-text="${article.prixVente}"></td>
+        </tr>
+        </tbody>
+    </table>
+</main>
+</body>
+</html>

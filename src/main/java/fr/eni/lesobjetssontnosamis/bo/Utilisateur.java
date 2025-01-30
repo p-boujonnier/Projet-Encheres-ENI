@@ -10,51 +10,47 @@ import jakarta.validation.constraints.Pattern;
 import jakarta.validation.constraints.Size;
 
 public class Utilisateur implements Serializable {
-
-
     //--------------------------------
     // ATTRIBUTS
     //--------------------------------
-
     private static final long serialVersionUID = 1L;
-
     private int noUtilisateur;
 
-//    @NotBlank
-//    @Size(min = 2, max=250, message = "Pseudo non valide")
+    // @NotBlank
+    // @Size(min = 2, max=250, message = "Pseudo non valide")
     private String pseudo;
 
-//    @NotBlank
-//    @Size(min = 2, max=250, message = "Le nom doit avoir au moins 2 caractères")
+    // @NotBlank
+    // @Size(min = 2, max=250, message = "Le nom doit avoir au moins 2 caractères")
     private String nom;
 
-//    @NotBlank
-//    @Size(min = 2, max=250)
+    // @NotBlank
+    // @Size(min = 2, max=250)
     private String prenom;
 
-//    @NotBlank
-//    @Email
-//    @Pattern(regexp = "^[\\w\\-\\+]+(\\.[\\w\\-]+)*@[\\w\\-]+(\\.[\\w\\-]+)*\\.[\\w\\-]{2,4}$", message= "Email non valide")
+    // @NotBlank
+    // @Email
+    // @Pattern(regexp = "^[\\w\\-\\+]+(\\.[\\w\\-]+)*@[\\w\\-]+(\\.[\\w\\-]+)*\\.[\\w\\-]{2,4}$", message= "Email non valide")
     private String email;
 
-//    @Pattern(regexp="^([\\+]?33[-]?|[0])?[1-9][0-9]{8}$", message="Le numéro de téléphone n'est pas valide")
+    // @Pattern(regexp="^([\\+]?33[-]?|[0])?[1-9][0-9]{8}$", message="Le numéro de téléphone n'est pas valide")
     private String telephone;
     private String rue;
 
-//    @NotBlank
-//    @Pattern(regexp = "^(?:[0-8]\\d|9[0-8])\\d{3}$")
+    // @NotBlank
+    // @Pattern(regexp = "^(?:[0-8]\\d|9[0-8])\\d{3}$")
     private int codePostal;
 
-//    @NotBlank
+    // @NotBlank
     private String ville;
 
-//    @NotBlank
-//    @Pattern(regexp = "^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$", message = "Le mot de passe saisi n'est pas assez sécurisé. Il doit contenir au moins une lettre majuscule, une lettre minuscule, au moins un chiffre, au moins un caractère spécial (par exemple, #, ?, !, $, %, ^, &, *) et doit avoir une longueur minimale de 8 caractères.")
+    // @NotBlank
+    // @Pattern(regexp = "^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$", message = "Le mot de passe saisi n'est pas assez sécurisé. Il doit contenir au moins une lettre majuscule, une lettre minuscule, au moins un chiffre, au moins un caractère spécial (par exemple, #, ?, !, $, %, ^, &, *) et doit avoir une longueur minimale de 8 caractères.")
     private String motDePasse;
     private int credit = 0;
     private boolean administrateur=false;
 
-// L'utilisateur peut avoir plusieurs articles à vendre
+    // L'utilisateur peut avoir plusieurs articles à vendre
     private List<ArticleVendu> articlesVendus;
 
     // L'utilisateur peut avoir plusieurs articles à vendre

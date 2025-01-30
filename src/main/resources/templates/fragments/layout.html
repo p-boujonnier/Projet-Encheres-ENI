@@ -1,24 +1,23 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org" lang="fr" data-th-fragment="layout(title,main)">
-
+<html xmlns:th="http://www.thymeleaf.org"
+      data-th-fragment="layout-objets-amis(titrePage, contenuPage, ressourcesSupp)">
 <head>
     <meta charset="UTF-8">
-    <title data-th-replace="${title}"></title>
-    <link rel="stylesheet" data-th-href="@{/CSS/style.css}">
+    <!-- Définition titre -->
+    <title data-th-replace="${titrePage}" data-th-text="#{nom-application}"></title>
+
+    <!-- Ressources par défaut -->
+    <link rel="stylesheet" data-th-href="@{CSS/style.css}">
+
+    <!-- Ajout autres ressources -->
+    <th:block data-th-replace="${ressourcesSupp} ?: ~{}"></th:block>
 </head>
-
 <body>
-<header>
-    <h1>Les Objets sont nos amis</h1>
+<!-- Fragment d'entête -->
+<div data-th-replace="~{fragments/frag-header :: frag-header}"></div>
 
-    <nav>
-        <ul>
-            <li><a href="/">Home</a></li>
-        </ul>
-    </nav>
-</header>
-
-<main data-th-replace="${main}"></main>
-
+<!-- Fragment du contenu de la page -->
+<main data-th-replace="${contenuPage} ?: ~{}">Contenu de la page
+</main>
 </body>
 </html>
