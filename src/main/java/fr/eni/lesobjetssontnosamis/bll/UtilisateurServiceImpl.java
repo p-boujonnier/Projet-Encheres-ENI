@@ -2,10 +2,17 @@ package fr.eni.lesobjetssontnosamis.bll;
 
 
 import fr.eni.lesobjetssontnosamis.bo.Utilisateur;
+import fr.eni.lesobjetssontnosamis.dao.DAOUtilisateurs;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public class UtilisateurServiceImpl implements UtilisateurService {
+
+    @Autowired
+    private DAOUtilisateurs daoUtilisateurs;
 
     @Override
     public void addUtilisateur(Utilisateur utilisateur) {
@@ -13,7 +20,7 @@ public class UtilisateurServiceImpl implements UtilisateurService {
 
     @Override
     public List<Utilisateur> getUtilisateurs() {
-        return List.of();
+        return daoUtilisateurs.findAll();
     }
 
     @Override

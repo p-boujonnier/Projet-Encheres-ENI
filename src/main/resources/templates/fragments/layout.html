@@ -1,10 +1,17 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org" lang="fr" data-th-fragment="layout(title,main)">
+<html xmlns:th="http://www.thymeleaf.org"
+      data-th-fragment="layout-objets-amis(titrePage, contenuPage, ressourcesSupp)">
 
 <head>
     <meta charset="UTF-8">
-    <title data-th-replace="${title}"></title>
-    <link rel="stylesheet" data-th-href="@{/CSS/style.css}">
+    <!-- Définition titre -->
+    <title data-th-replace="${titrePage}" data-th-text="#{nom-application}"></title>
+
+    <!-- Ressources par défaut -->
+    <link rel="stylesheet" data-th-href="@{/style.css}">
+
+    <!-- Ajout autres ressources -->
+    <th:block data-th-replace="${ressourcesSupp} ?: ~{}"></th:block>
 </head>
 
 <body>
@@ -16,8 +23,8 @@
     <nav>
         <ul>
             <li><a href="/">Home</a></li>
-            <li><a href="/login">S'inscrire - Se Connecter</a></li>
-
+            <li data-th-if="${!#authorization.expression('isAuthenticated()')}"><a data-th-href="@{/view_profil()}">S'inscrire - Se Connecter</a></li>
+            <li data-th-if="${#authorization.expression('isAuthenticated()')}"><a data-th-href="@{/logout}">Se Déconnecter</a></li>
         </ul>
     </nav>
 </header>

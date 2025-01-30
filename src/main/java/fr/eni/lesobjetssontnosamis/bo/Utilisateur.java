@@ -12,17 +12,13 @@ import jakarta.validation.constraints.Size;
 public class Utilisateur implements Serializable {
 
 
-    //--------------------------------
-    // ATTRIBUTS
-    //--------------------------------
-
     private static final long serialVersionUID = 1L;
 
     private int noUtilisateur;
 
 //    @NotBlank
 //    @Size(min = 2, max=250, message = "Pseudo non valide")
-    private String pseudo;
+    public String pseudo;
 
 //    @NotBlank
 //    @Size(min = 2, max=250, message = "Le nom doit avoir au moins 2 caractères")

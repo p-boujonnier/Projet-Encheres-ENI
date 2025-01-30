@@ -1,9 +1,20 @@
-<html data-th-replace="~{fragments/layout::layout(title=~{::title}, main=~{::main})}">
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      data-th-replace="~{fragments/layout :: layout-objets-amis(
+					titrePage=~{:: title},
+					contenuPage=~{:: main},
+					ressourcesSupp=~{:: #ressources-css})}">
 
-<title>Les Objets sont nos Amis</title>
+<head>
+    <!-- Titre de la page -->
+    <title data-th-text="#{index.title}"></title>
+    <!-- Pages de ressources supplémentaires -->
+    <th:block id="ressources-css">
+    </th:block>
+</head>
 <main class="center-main">
     <section class="center-section">
-        <h1>Bienvenue sur le site d'enchères de l'ENI</h1>
+        <h1 data-th-text="#{index.h1}"></h1>
     </section>
 </main>
 </html>
