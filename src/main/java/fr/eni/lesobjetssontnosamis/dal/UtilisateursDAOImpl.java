@@ -1,4 +1,4 @@
-package fr.eni.lesobjetssontnosamis.dao;
+package fr.eni.lesobjetssontnosamis.dal;
 
 import fr.eni.lesobjetssontnosamis.bo.Utilisateur;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,20 +11,20 @@ import java.util.List;
 
 
 @Repository
-public class DAOUtilisateursSQL implements DAOUtilisateurs{
+public class UtilisateursDAOImpl implements UtilisateursDAO {
 
-    private final String INSERT = "INSERT INTO UTILISATEUR (email, nom, prenom) VALUES (:email, :nom, :prenom)";
-    private final String FIND_BY_EMAIL = "SELECT email, nom, prenom FROM UTILISATEUR WHERE EMAIL = :email";
-    private final String FIND_ALL = "SELECT email, nom, prenom FROM UTILISATEUR";
-    private final String UPDATE = "UPDATE UTILISATEUR SET nom = :nom, prenom = :prenom WHERE email = :email";
-    private final String compteUnique = "SELECT COUNT(email) FROM UTILISATEUR WHERE email = :email";
+    private final String INSERT = "INSERT INTO UTILISATEURS (email, nom, prenom) VALUES (:email, :nom, :prenom)";
+    private final String FIND_BY_EMAIL = "SELECT pseudo, nom, prenom, email, telephone, rue, code_postal, ville FROM UTILISATEURS WHERE email = :email";
+    private final String FIND_ALL = "SELECT email, nom, prenom FROM UTILISATEURS";
+    private final String UPDATE = "UPDATE UTILISATEURS SET nom = :nom, prenom = :prenom WHERE email = :email";
+    private final String compteUnique = "SELECT COUNT(email) FROM UTILISATEURS WHERE email = :email";
 
     @Autowired
-    private NamedParameterJdbcTemplate namedParameterJdbcTemplate;
+    private NamedParameterJdbcTemplate jdbcTemplate;
 
     @Override
     public List<Utilisateur> findAll() {
-        return namedParameterJdbcTemplate.query(FIND_ALL, new BeanPropertyRowMapper<>(Utilisateur.class));
+        return jdbcTemplate.query(FIND_ALL, new BeanPropertyRowMapper<>(Utilisateur.class));
     }
 
 
@@ -33,7 +33,7 @@ public class DAOUtilisateursSQL implements DAOUtilisateurs{
         MapSqlParameterSource namedParameters = new MapSqlParameterSource();
         namedParameters.addValue("email", emailUtilisateur);
 
-        return namedParameterJdbcTemplate.queryForObject(FIND_BY_EMAIL, namedParameters,
+        return jdbcTemplate.queryForObject(FIND_BY_EMAIL, namedParameters,
                 new BeanPropertyRowMapper<>(Utilisateur.class));
     }
 
@@ -55,7 +55,7 @@ public class DAOUtilisateursSQL implements DAOUtilisateurs{
         namedParameters.addValue("ville", utilisateur.getVille());
         namedParameters.addValue("credit", utilisateur.getCredit());
 
-        namedParameterJdbcTemplate.update(UPDATE, namedParameters);
+        jdbcTemplate.update(UPDATE, namedParameters);
     }
 
     @Override
@@ -67,7 +67,7 @@ public class DAOUtilisateursSQL implements DAOUtilisateurs{
     public Utilisateur compteUnique(String email) {
         MapSqlParameterSource namedParameters = new MapSqlParameterSource();
         namedParameters.addValue("email", email);
-        return namedParameterJdbcTemplate.queryForObject(compteUnique, namedParameters, Utilisateur.class);
+        return jdbcTemplate.queryForObject(compteUnique, namedParameters, Utilisateur.class);
     }
 
 }

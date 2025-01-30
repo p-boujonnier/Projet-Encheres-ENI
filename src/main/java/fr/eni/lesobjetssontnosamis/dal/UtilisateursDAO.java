@@ -1,10 +1,10 @@
-package fr.eni.lesobjetssontnosamis.dao;
+package fr.eni.lesobjetssontnosamis.dal;
 
 import fr.eni.lesobjetssontnosamis.bo.Utilisateur;
 
 import java.util.List;
 
-public interface DAOUtilisateurs {
+public interface UtilisateursDAO {
 
     List<Utilisateur> findAll();
 

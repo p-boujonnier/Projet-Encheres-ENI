@@ -23,7 +23,7 @@ public class ArticleVenduController {
 
 
     @GetMapping
-    public String afficherFilms(Model model) {
+    public String afficherArticles(Model model) {
         List<ArticleVendu> articleVendus = articleVenduService.getArticleVendus();
         model.addAttribute("articleVendus", articleVendus);
         return "view-articles";

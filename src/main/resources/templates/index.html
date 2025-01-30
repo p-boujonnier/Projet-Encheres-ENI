@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org"
-      data-th-replace="~{fragments/layout :: layout-objets-amis(
+      data-th-replace="~{layouts/layout :: layout-objets-amis(
 					titrePage=~{:: title},
 					contenuPage=~{:: main},
 					ressourcesSupp=~{:: #ressources-css})}">
-
 <head>
     <!-- Titre de la page -->
     <title data-th-text="#{index.title}"></title>

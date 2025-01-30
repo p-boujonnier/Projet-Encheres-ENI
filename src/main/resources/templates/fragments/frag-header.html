@@ -4,12 +4,17 @@
         <h1>
             <a href="/"><span data-th-text="#{nom-application}"></span></a>
         </h1>
+        <!--    h2 : Indique le nom de l'utilisateur une fois connecté -->
+        <h2 data-th-if="${#authorization.expression('isAuthenticated()')}" data-th-text="${#authentication.getPrincipal().getUsername()}"></h2>
     </section>
     <nav>
         <ul>
             <th:block>
                 <li><a href="/articles" data-th-text="#{frag-header.articles}"></a></li>
                 <li><a href="/articles/creer" data-th-text="#{frag-header.articles.creer}"></a></li>
+                <li><a href="/view-profil/get-profil" data-th-text="#{frag-header.utilisateur}"></a></li>
+                <li data-th-if="${!#authorization.expression('isAuthenticated()')}"><a data-th-href="@{/view_profil()}">S'inscrire - Se Connecter</a></li>
+                <li data-th-if="${#authorization.expression('isAuthenticated()')}"><a data-th-href="@{/logout}">Se Déconnecter</a></li>
             </th:block>
         </ul>
     </nav>

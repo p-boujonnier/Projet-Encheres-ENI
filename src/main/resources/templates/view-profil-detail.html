@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      data-th-replace="~{layouts/layout :: layout-objets-amis(
+					titrePage=~{:: title},
+					contenuPage=~{:: main},
+					ressourcesSupp=~{:: #ressources-css})}">
+
+<head>
+    <!-- Titre de la page -->
+    <title data-th-text="#{frag-header.utilisateur}"></title>
+    <!-- Pages de ressources supplémentaires -->
+    <th:block id="ressources-css">
+    </th:block>
+</head>
+<main>
+    <table>
+        <thead>
+        <tr>
+            <th data-th-text="#{view-profil.th.pseudo}"></th>
+            <th data-th-text="#{view-profil.th.nom}"></th>
+            <th data-th-text="#{view-profil.th.prenom}"></th>
+            <th data-th-text="#{view-profil.th.email}"></th>
+            <th data-th-text="#{view-profil.th.telephone}"></th>
+            <th data-th-text="#{view-profil.th.rue}"></th>
+            <th data-th-text="#{view-profil.th.codePostal}"></th>
+            <th data-th-text="#{view-profil.th.ville}"></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td data-th-text="${utilisateur.pseudo}"></td>
+            <td data-th-text="${utilisateur.nom}"></td>
+            <td data-th-text="${utilisateur.prenom}"></td>
+            <td data-th-text="${utilisateur.email}"></td>
+            <td data-th-text="${utilisateur.telephone}"></td>
+            <td data-th-text="${utilisateur.rue}"></td>
+            <td data-th-text="${utilisateur.codePostal}"></td>
+            <td data-th-text="${utilisateur.ville}"></td>
+        </tr>
+        </tbody>
+    </table>
+</main>
+</html>
+
