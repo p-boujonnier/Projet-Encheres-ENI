@@ -1,0 +1,104 @@
+<form xmlns:th="http://www.thymeleaf.org"
+      data-th-fragment="frag-articles-form(titreForm, action)"
+      data-th-action="@{${action}}"
+      method="post"
+      data-th-object="${article}">
+
+    <!-- Récupération du titre > view-articles-create > message.properties -->
+    <h1 data-th-text="${titreForm}"></h1>
+
+    <ul>
+        <li>
+            <!-- Champ Name -->
+            <label for="inputName" data-th-text="#{frag-articles-form.name}"> </label>
+            <input type="text"
+                   id="inputName"
+                   data-th-disabled="${#strings.isEmpty(action)}"
+                   data-th-field="*{nomArticle}"
+                   required/>
+            <th:block data-th-if="${!#strings.isEmpty(action)}">
+                <!-- S'il est vide -->
+                <div data-th-replace="~{fragments/errors/frag-error :: frag-error('nomArticle')}"></div>
+            </th:block>
+        </li>
+        <li>
+            <!-- Champ Description -->
+            <label for="inputDescription" data-th-text="#{frag-articles-form.description}"> </label>
+            <input type="text"
+                   id="inputDescription"
+                   data-th-disabled="${#strings.isEmpty(action)}"
+                   data-th-field="*{description}"
+                   required/>
+            <th:block data-th-if="${!#strings.isEmpty(action)}">
+                <!-- S'il est vide -->
+                <div data-th-replace="~{fragments/errors/frag-error :: frag-error('description')}"></div>
+            </th:block>
+        </li>
+<!--        <li>-->
+<!--            &lt;!&ndash; Champ Catégorie &ndash;&gt;-->
+<!--            <label for="inputCategorie" data-th-text="#{frag-articles-form.categorie}"> </label>-->
+<!--            <input type="text"-->
+<!--                   id="inputCategorie"-->
+<!--                   data-th-disabled="${#strings.isEmpty(action)}"-->
+<!--            &lt;!&ndash; data-th-field="*{categorie}"&ndash;&gt;-->
+<!--                   required/>-->
+<!--            <th:block data-th-if="${!#strings.isEmpty(action)}">-->
+<!--                &lt;!&ndash; S'il est vide &ndash;&gt;-->
+<!--                <div data-th-replace="~{fragments/errors/frag-error :: frag-error('categorie')}"></div>-->
+<!--            </th:block>-->
+<!--        </li>-->
+        <li>
+            <!-- Champ Photo -->
+            <label for="inputPhoto" data-th-text="#{frag-articles-form.photo}"> </label>
+            <p id="inputPhoto">Photo a gérer plus tard</p>
+        </li>
+        <li>
+            <!-- Champ Mise à Prix -->
+            <label for="inputMiseAPrix" data-th-text="#{frag-articles-form.miseaprix}"> </label>
+            <input type="number"
+                   id="inputMiseAPrix"
+                   data-th-disabled="${#strings.isEmpty(action)}"
+                   data-th-field="*{miseAPrix}"
+                   min="1"
+                   max="150"
+                   step="1"
+                   required/>
+            <th:block data-th-if="${!#strings.isEmpty(action)}">
+                <!-- S'il est vide -->
+                <div data-th-replace="~{fragments/errors/frag-error :: frag-error('miseAPrix')}"></div>
+            </th:block>
+        </li>
+        <li>
+            <!-- Champ Date Début Enchère -->
+            <label for="inputDateDebutEnchere" data-th-text="#{frag-articles-form.debutenchere}"> </label>
+            <input type="date"
+                   id="inputDateDebutEnchere"
+                   data-th-disabled="${#strings.isEmpty(action)}"
+                   data-th-field="*{dateDebutEncheres}"
+                   disabled
+                   required/>
+            <th:block data-th-if="${!#strings.isEmpty(action)}">
+                <!-- S'il est vide -->
+                <div data-th-replace="~{fragments/errors/frag-error :: frag-error('dateDebutEncheres')}"></div>
+            </th:block>
+        </li>
+        <li>
+            <!-- Champ Date Fin Enchère -->
+            <label for="inputDateFinEncheres" data-th-text="#{frag-articles-form.finenchere}"> </label>
+            <input type="date"
+                   id="inputDateFinEncheres"
+                   data-th-disabled="${#strings.isEmpty(action)}"
+                   data-th-field="*{dateFinEncheres}"
+                   disabled
+                   required/>
+            <th:block data-th-if="${!#strings.isEmpty(action)}">
+                <!-- S'il est vide -->
+                <div data-th-replace="~{fragments/errors/frag-error :: frag-error('dateFinEncheres')}"></div>
+            </th:block>
+        </li>
+    </ul>
+
+    <button>Enregistrer</button>
+    <button>Annuler</button>
+
+</form>

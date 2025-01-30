@@ -14,5 +14,5 @@ public interface ArticleVenduService {
 
     ArticleVendu findArticleVendu(int noArticle);
 
-    void creerArticleVendu(ArticleVendu articleVendu);
+    void addArticleVendu(ArticleVendu articleVendu);
 }

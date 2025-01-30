@@ -41,7 +41,7 @@ public class ArticleVenduDAOImpl implements ArticleVenduDAO {
             av.setDescription(rs.getString("description"));
             av.setDateDebutEncheres(LocalDate.parse(rs.getString("date_debut_encheres")));
             av.setDateFinEncheres(LocalDate.parse(rs.getString("date_fin_encheres")));
-            av.setMiseAPrix(rs.getInt("mise_aprix"));
+            av.setMiseAPrix(rs.getInt("prix_initial"));
             av.setPrixVente(rs.getInt("prix_vente"));
 
             // Liste des enchères pour un article
@@ -74,8 +74,6 @@ public class ArticleVenduDAOImpl implements ArticleVenduDAO {
         namedParameters.addValue("miseAPrix", articleVendu.getMiseAPrix());
         namedParameters.addValue("prixVente", articleVendu.getPrixVente());
 
-
-        // pas sûre de moi si faut ajouter le no_utilisateur et no_categorie je crois pas en vrai
         jdbcTemplate.update(INSERT, namedParameters, keyHolder);
 
         if (keyHolder != null && keyHolder.getKey() != null) {

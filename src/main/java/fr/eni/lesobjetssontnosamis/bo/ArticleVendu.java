@@ -34,8 +34,7 @@ public class ArticleVendu implements Serializable {
     //--------------------------------
     // CONSTRUCTEURS
     //--------------------------------
-    public ArticleVendu() {
-    }
+    public ArticleVendu() {}
 
     public ArticleVendu(Categorie categorie, Retrait lieuRetrait) {
         this.categorie = categorie;
@@ -56,7 +55,7 @@ public class ArticleVendu implements Serializable {
     }
 
     public ArticleVendu(Utilisateur vendeur, List<Enchere> encheres, Categorie categorie, Retrait lieuRetrait, int noArticle, String nomArticle, String description, LocalDate dateDebutEncheres, LocalDate dateFinEncheres, int miseAPrix, int prixVente, String etatVente) {
-        this(); // appel du constructeur par défaut
+        this();
 
         this.vendeur = vendeur;
         this.encheres = encheres;
@@ -71,6 +70,36 @@ public class ArticleVendu implements Serializable {
         this.prixVente = prixVente;
         this.etatVente = etatVente;
     }
+    //--------------------------------
+    // CONSTRUCTEURS TEST
+    //--------------------------------
+    public ArticleVendu(String nomArticle, String description, int miseAPrix, LocalDate dateDebutEncheres, LocalDate dateFinEncheres) {
+        this.nomArticle = nomArticle;
+        this.description = description;
+        this.miseAPrix = miseAPrix;
+        this.prixVente = miseAPrix;
+        this.dateDebutEncheres = dateDebutEncheres;
+        this.dateFinEncheres = dateFinEncheres;
+        Utilisateur utiTest = new Utilisateur();
+        utiTest.setNoUtilisateur(42);
+        utiTest.setPseudo("TestUser");
+        utiTest.setNom("TestNom");
+        utiTest.setPrenom("TestPrenom");
+        utiTest.setEmail("test@email.com");
+        utiTest.setTelephone("0601020304");
+        utiTest.setRue("123 Rue du Test");
+        utiTest.setCodePostal(75000);
+        utiTest.setVille("TestVille");
+        utiTest.setMotDePasse("TestPass123");
+        utiTest.setCredit(100);
+        utiTest.setAdministrateur(false);
+        this.vendeur = utiTest;
+        Categorie catTest = new Categorie();
+        catTest.setNoCategorie(99);
+        catTest.setLibelle("TestCatégorie");
+        this.categorie = catTest;
+    }
+
 
     //--------------------------------
     // GETTERS & SETTERS

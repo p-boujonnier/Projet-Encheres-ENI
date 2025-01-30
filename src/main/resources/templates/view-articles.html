@@ -12,13 +12,15 @@
     <th:block id="ressources-css">
     </th:block>
 </head>
+
 <body>
 <main>
     <h1 data-th-text="#{view-articles.h1}"></h1>
     <table>
-        <!-- build html table based on users -->
+        <!-- Entête Tableau -->
         <thead>
         <tr>
+            <!-- Nom entêtes définit dans messages.properties -->
             <th data-th-text="#{view-articles.numero}"></th>
             <th data-th-text="#{view-articles.nom-article}"></th>
             <th data-th-text="#{view-articles.description}"></th>
@@ -27,6 +29,7 @@
             <th data-th-text="#{view-articles.prix}"></th>
         </tr>
         </thead>
+        <!-- Corps Tableau -->
         <tbody>
         <tr data-th-each="article : ${articleVendus}">
             <td data-th-text="${article.noArticle}"></td>

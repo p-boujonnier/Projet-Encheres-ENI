@@ -30,15 +30,15 @@ public class ArticleVenduController {
     }
 
     @GetMapping("/creer")
-    public String viewCreerArticleVendu(Model model) {
+    public String creerArticleVendu(Model model) {
+        model.addAttribute("article", new ArticleVendu());
         return "view-articles-create";
     }
 
-    // Création d'un nouveau article
+    // Création d'un nouvel article
     @PostMapping("/creer")
-    @Transactional
-    public String creerArticleVendu(Model model) {
-        model.addAttribute("articleVendu", new ArticleVendu());
-                return "view-articles-create";
-            }
+    public String newArticleVendu(ArticleVendu articleVendu) {
+        articleVenduService.addArticleVendu(articleVendu);
+        return "view-articles";
+    }
 }
