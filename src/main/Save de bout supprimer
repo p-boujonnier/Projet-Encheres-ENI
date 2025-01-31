@@ -1,0 +1,2 @@
+<!--    p Indique le nom de l'utilisateur une fois que l'utilisateur à remporté l'enchères + Profil    -->
+<p data-th-if="${#authorization.expression('isAuthenticated()')}" data-th-text="${#authentication.getPrincipal().getUsername()}"></h2>

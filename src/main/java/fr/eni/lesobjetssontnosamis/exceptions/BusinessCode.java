@@ -8,7 +8,6 @@ public class BusinessCode {
     public static final String VALIDATION_DESCRIPTION_NULL = "validation.description.null";
     public static final String VALIDATION_DESCRIPTION_TOO_LONG = "validation.description.too.long";
     public static final String VALIDATION_DATE_DEBUT_NULL = "validation.date-debut.null";
-    public static final String VALIDATION_DATE_DEBUT_DEPACEE = "validation.date-debut.depacee";
     public static final String VALIDATION_DATE_FIN_NULL = "validation.date-fin.null";
     public static final String VALIDATION_DATE_FIN_AVANT_DEBUT = "validation.date-fin.avant.debut";
     public static final String VALIDATION_MISE_A_PRIX_INFERIEUR_ZERO = "validation.mise-a-prix.inferieur.zero";

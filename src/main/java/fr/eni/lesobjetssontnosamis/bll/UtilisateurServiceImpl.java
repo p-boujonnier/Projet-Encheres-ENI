@@ -12,17 +12,17 @@ import java.util.List;
 @Service
 @Primary
 public class UtilisateurServiceImpl implements UtilisateurService {
-
     @Autowired
-    private UtilisateursDAO utilisateursdao;
+    private UtilisateursDAO utilisateursDAO;
 
     @Override
     public void addUtilisateur(Utilisateur utilisateur) {
+        utilisateursDAO.create(utilisateur);
     }
 
     @Override
     public List<Utilisateur> getUtilisateurs() {
-        return utilisateursdao.findAll();
+        return utilisateursDAO.findAll();
     }
 
     @Override
@@ -41,6 +41,6 @@ public class UtilisateurServiceImpl implements UtilisateurService {
 
     @Override
     public Utilisateur findUtilisateurByEmail(String email) {
-        return utilisateursdao.read(email);
+        return utilisateursDAO.read(email);
     }
 }

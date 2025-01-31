@@ -13,11 +13,11 @@ import java.util.List;
 @Repository
 public class UtilisateursDAOImpl implements UtilisateursDAO {
 
-    private final String INSERT = "INSERT INTO UTILISATEURS (email, nom, prenom) VALUES (:email, :nom, :prenom)";
-    private final String FIND_BY_EMAIL = "SELECT pseudo, nom, prenom, email, telephone, rue, code_postal, ville FROM UTILISATEURS WHERE email = :email";
-    private final String FIND_ALL = "SELECT email, nom, prenom FROM UTILISATEURS";
-    private final String UPDATE = "UPDATE UTILISATEURS SET nom = :nom, prenom = :prenom WHERE email = :email";
-    private final String compteUnique = "SELECT COUNT(email) FROM UTILISATEURS WHERE email = :email";
+    private final String INSERT = "INSERT INTO utilisateurs (pseudo, nom, prenom, email, telephone, rue, code_postal, ville, mot_de_passe, credit, administateur) VALUES (:pseudo, :nom, :prenom, :email, :telephone, :rue, :codepostal, :ville, :motdepasse, :credit, :administateur)";
+    private final String FIND_BY_EMAIL = "SELECT pseudo, nom, prenom, email, telephone, rue, code_postal, ville FROM utilisateurs WHERE email = :email";
+    private final String FIND_ALL = "SELECT email, nom, prenom FROM utilisateurs";
+    private final String UPDATE = "UPDATE utilisateurs SET nom = :nom, prenom = :prenom WHERE email = :email";
+    private final String compteUnique = "SELECT COUNT(email) FROM utilisateurs WHERE email = :email";
 
     @Autowired
     private NamedParameterJdbcTemplate jdbcTemplate;
@@ -39,8 +39,21 @@ public class UtilisateursDAOImpl implements UtilisateursDAO {
 
     @Override
     public void create(Utilisateur utilisateur) {
-
+        MapSqlParameterSource namedParameters = new MapSqlParameterSource();
+        namedParameters.addValue("pseudo", utilisateur.getPseudo());
+        namedParameters.addValue("nom", utilisateur.getNom());
+        namedParameters.addValue("prenom", utilisateur.getPrenom());
+        namedParameters.addValue("email", utilisateur.getEmail());
+        namedParameters.addValue("telephone", utilisateur.getTelephone());
+        namedParameters.addValue("rue", utilisateur.getRue());
+        namedParameters.addValue("codepostal", utilisateur.getCodePostal());
+        namedParameters.addValue("ville", utilisateur.getVille());
+        namedParameters.addValue("motdepasse", utilisateur.getMotDePasse());
+        namedParameters.addValue("credit", utilisateur.getCredit());
+        namedParameters.addValue("admnistrateur", 0);
+        jdbcTemplate.update(INSERT, namedParameters);
     }
+
 
     @Override
     public void update(Utilisateur utilisateur) {

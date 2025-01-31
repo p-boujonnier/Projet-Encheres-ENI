@@ -34,19 +34,19 @@
                 <div data-th-replace="~{fragments/errors/frag-error :: frag-error('description')}"></div>
             </th:block>
         </li>
-<!--        <li>-->
-<!--            &lt;!&ndash; Champ Catégorie &ndash;&gt;-->
-<!--            <label for="inputCategorie" data-th-text="#{frag-articles-form.categorie}"> </label>-->
-<!--            <input type="text"-->
-<!--                   id="inputCategorie"-->
-<!--                   data-th-disabled="${#strings.isEmpty(action)}"-->
-<!--            &lt;!&ndash; data-th-field="*{categorie}"&ndash;&gt;-->
-<!--                   required/>-->
-<!--            <th:block data-th-if="${!#strings.isEmpty(action)}">-->
-<!--                &lt;!&ndash; S'il est vide &ndash;&gt;-->
-<!--                <div data-th-replace="~{fragments/errors/frag-error :: frag-error('categorie')}"></div>-->
-<!--            </th:block>-->
-<!--        </li>-->
+        <li>
+            <label for="inputCategorie" data-th-text="#{frag-articles-form.categorie}"></label>
+            <!-- Champ Catégorie -->
+            <select id="inputCategorie" data-th-field="${categoriesList}" required>
+                <option data-th-each="c : ${categoriesList}"
+                        data-th-text="${c.libelle}"
+                        data-th-value="${c.noCategorie}"></option>
+            </select>
+            <th:block data-th-if="${!#strings.isEmpty(action)}">
+                <!-- S'il est vide -->
+                <div data-th-replace="~{fragments/errors/frag-error :: frag-error('categorie')}"></div>
+            </th:block>
+        </li>
         <li>
             <!-- Champ Photo -->
             <label for="inputPhoto" data-th-text="#{frag-articles-form.photo}"> </label>
@@ -66,20 +66,6 @@
             <th:block data-th-if="${!#strings.isEmpty(action)}">
                 <!-- S'il est vide -->
                 <div data-th-replace="~{fragments/errors/frag-error :: frag-error('miseAPrix')}"></div>
-            </th:block>
-        </li>
-        <li>
-            <!-- Champ Date Début Enchère -->
-            <label for="inputDateDebutEnchere" data-th-text="#{frag-articles-form.debutenchere}"> </label>
-            <input type="date"
-                   id="inputDateDebutEnchere"
-                   data-th-disabled="${#strings.isEmpty(action)}"
-                   data-th-field="*{dateDebutEncheres}"
-                   disabled
-                   required/>
-            <th:block data-th-if="${!#strings.isEmpty(action)}">
-                <!-- S'il est vide -->
-                <div data-th-replace="~{fragments/errors/frag-error :: frag-error('dateDebutEncheres')}"></div>
             </th:block>
         </li>
         <li>

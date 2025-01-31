@@ -23,7 +23,6 @@ public class ArticleVenduServiceImpl implements ArticleVenduService {
     @Autowired
     private ArticleVenduDAO articleVenduDAO;
 
-
     @Override
     public List<ArticleVendu> getArticleVendus() {
         return articleVenduDAO.findAll();
@@ -41,7 +40,6 @@ public class ArticleVenduServiceImpl implements ArticleVenduService {
         boolean isValid = true;
         isValid &= validerNom(articleVendu, be);
         isValid &= validerDescription(articleVendu, be);
-        isValid &= validerDateDebutEncheres(articleVendu, be);
         isValid &= validerDateFintEncheres(articleVendu, be);
         isValid &= validerMiseAPrix(articleVendu, be);
 
@@ -78,16 +76,6 @@ public class ArticleVenduServiceImpl implements ArticleVenduService {
         if (av.getDescription().length() > 2500) {
             be.add(BusinessCode.VALIDATION_DESCRIPTION_TOO_LONG);
             return false;
-        }
-        return true;
-    }
-
-    private boolean validerDateDebutEncheres(ArticleVendu av, BusinessException be) {
-        if (av.getDateDebutEncheres() == null) {
-            be.add(BusinessCode.VALIDATION_DATE_DEBUT_NULL);
-        }
-        if (av.getDateDebutEncheres().isBefore(LocalDate.now())) {
-            be.add(BusinessCode.VALIDATION_DATE_DEBUT_DEPACEE);
         }
         return true;
     }

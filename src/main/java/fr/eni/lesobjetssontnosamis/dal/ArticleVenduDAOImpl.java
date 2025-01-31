@@ -39,7 +39,6 @@ public class ArticleVenduDAOImpl implements ArticleVenduDAO {
             av.setNoArticle(rs.getInt("no_article"));
             av.setNomArticle(rs.getString("nom_article"));
             av.setDescription(rs.getString("description"));
-            av.setDateDebutEncheres(LocalDate.parse(rs.getString("date_debut_encheres")));
             av.setDateFinEncheres(LocalDate.parse(rs.getString("date_fin_encheres")));
             av.setMiseAPrix(rs.getInt("prix_initial"));
             av.setPrixVente(rs.getInt("prix_vente"));

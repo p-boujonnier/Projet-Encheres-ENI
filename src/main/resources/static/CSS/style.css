@@ -1,67 +1,348 @@
-@charset "UTF-8";
-/* nav ul { */
-/*   display: flex; */
-/*   justify-content: space-between; */
-/* } */
-header li {
-    list-style: none;
-    display: inline-block;
-    padding: 0 20px;
-}
-
+/* import de la font */
+/* Roboto*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+/* Monsterrat */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+/* Lato */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+/* Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+/* Raleway */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 * {
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica;
+    box-sizing: border-box;
 }
 
-/* Header */
-header {
+
+/*---------------------------------------------*/
+/*                    BODY                     */
+/*---------------------------------------------*/
+body {
+    /* déclaration de mes couleurs en variables */
+    /* Palette choisie */
+    --PrimaryColor: #0FA3B1;
+    --SecondaryColor: #B5E2FA;
+    --AccentColor1: #F9F7F3;
+    --AccentColor2: #EDDEA4;
+    --AccentColor3: #F7A072;
+    --BackGround: whitesmoke;
+    --BackgroundWhite : #FFFFFF;
+
+    /* Font */
+    --PrimaryFront: Roboto;
+    --SecondaryFront: Monsterrat;
+    --LinkFrontH1:Roboto;
+    --H1Size : 1.2em;
+
+    background-color: var(--BackGround);
+    font-family: var(--PrimaryFront);
+    /*color: whitesmoke; */
+    /*font-family: ;*/
+
+    /* CLASSES :                                   */
+
+    /* ID :                                        */
+
+}
+
+/*---------------------------------------------*/
+/*                    TEMPLATE                 */
+/*---------------------------------------------*/
+/*  
+    *background-color (= savoir la zone à laquelle on est en 1er)
+    * affichage
+    display
+    justify-content
+    *truc à changer
+    color
+    font
+    etc
+    *gestion des marges / espacement :
+    gap 
+    padding 
+    margin
+    *gestion de la taille :
+    min-max height - width
+    height - width
+*/
+
+
+/*---------------------------------------------*/
+/*                    HEADER                   */
+/*---------------------------------------------*/
+/* CLASSES : */
+header{
     display: flex;
-    justify-content: flex-end;
+}
+
+header section{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.75em;
+    margin: 0em;
+    width: 30em;
+}
+nav {
+    display: flex;
+    width: 70em;
+}
+
+h1 {
+    font-family: var(--LinkFrontH1);
+    font-size: var(--H1Size);
+    font-weight: bold;
     align-items: center;
-    padding: 20px 50px;
-    box-shadow: 0 1px 8px #ddd;
 }
 
-#nav-title {
-    margin-right: auto;
-    font-size: 1.1em;
+header span{
+    align-items: center;
 }
 
-header li {
-    list-style: none;
-    display: inline-block;
-    padding: 0 20px;
-}
-
-header a {
-    text-decoration: none;
-    color: #555;
-    transition: all 0.3s ease 0s;
-}
-
-header a:hover {
-    color: rgb(0, 128, 192);
-}
-
-main {
-    margin-top: 15px;
-    margin-left: 15px;
-}
-
-main h1 {
-    margin: 10px;
-}
-
-.center-main {
+/* les liens */
+a{
     display: flex;
-    width: 100%;
-    height: 300px;
-    margin: auto;
+    color: var(--PrimaryColor);
+    font-weight: bold;
+    align-items: center;
 }
 
-.center-section {
-    margin: auto;
-    text-align: center;
+a:hover{
+    color: var(--PrimaryColor);
 }
+a:visited{
+    color: var(--AccentColor3);
+}
+
+
+header ul {
+    display: inline-flex;
+    cursor: pointer;
+    gap: 1em;
+}
+
+ul {
+    list-style: none;
+    align-items: center;
+}
+
+
+/* les bouttons */
+button {
+    background-color: var(--PrimaryColor);
+    border: none;
+    border-radius: 20px;
+    color: whitesmoke;
+    cursor: pointer;
+    padding: 0.75em;
+    margin: 0.5em;
+}
+button:hover {
+    background-color:var(--AccentColor3);
+    cursor: pointer;
+    scale: 1.1;
+
+}
+
+/* ID :                                        */
+/* img logo*/
+#logo-LOSNA {
+    height: 15vh;
+}
+/* lien vers liste des enchères*/
+#div-h1 {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+
+
+
+/*---------------------------------------------*/
+/*                    FOOTER                   */
+/*---------------------------------------------*/
+/* CLASSES :                                   */
+
+/* ID :                                        */
+
+
+/*---------------------------------------------*/
+/*                    FORM                     */
+/*---------------------------------------------*/
+/* CLASSES :                                   */
+form, .login-form {
+    width: 75%;
+    margin-top: 6.25rem;
+    font-style: italic;
+    font-size: large;
+    background-color: #dbdbdbc2;
+    padding: 0.5em;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form input[type="text"] {
+    width: 100%;
+    padding: 0.75em;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: rgba(162, 177, 196, 0.64);
+    font-size: large;
+    font-style: italic;
+    transition: background-color 0.3s ease;
+    font-weight: 900;
+}
+
+form input[type="text"]:focus {
+    background-color: var(--SecondaryColor);
+    border-color: var(--AccentColor1);
+}
+
+form label {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #333;
+}
+
+form button {
+    padding: 12px 20px;
+    font-size: large;
+    font-weight: bold;
+    background-color: var(--PrimaryColor);
+    border: none;
+    border-radius: 4px;
+    color: var(--BackgroundWhite);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form ul {
+    list-style: none;
+    padding: 0;
+}
+
+form li {
+    margin-bottom: 1em;
+}
+/* ID :                                        */
+
+/*---------------------------------------------*/
+/*                    TABLE                    */
+/*---------------------------------------------*/
+/* CLASSES :                                   */
+table {
+
+    width: 75%;
+    margin-top: 6.25em;
+    font-style: italic;
+    font-size: large;
+    background-color:var(--AccentColor2);
+    padding: 1.25em;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+table th,table td {
+    padding: 0.75em;
+    border-bottom: 1px solid #ddd;
+    background-color: var(--SecondaryColor);
+    padding-left: 41px;
+}
+
+table th {
+    background-color: var(--AccentColor2);
+    font-weight: bold;
+}
+
+table tr:hover {
+    background-color: var(--BackgroundWhite);
+}
+/* ID :                                        */
+
+/*---------------------------------------------*/
+/*                PAGE INDEX                   */
+/*---------------------------------------------*/
+/* CLASSES :                                   */
+
+/* ID :                                        */
+#home{
+    display: flex;
+    height: 5vh;
+    background-color: #0FA3B1;
+    align-items: center;
+    justify-content: center;
+}
+#home h1{
+    display: flex;
+}
+
+/*---------------------------------------------*/
+/*             PAGE VIEW-ARTICLES              */
+/*---------------------------------------------*/
+/* CLASSES :                                   */
+
+
+.view-articles-filtres {
+    /* => section filtres */
+    margin: 1em;
+}
+
+.liste-articles-container {
+    /* => section affichage de chaque article */
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0.75em;
+}
+
+.article-container {
+    /* => div contenant tout ce qui concerne l'article */
+    background-color: var(--BackgroundWhite);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    border-radius: 8px;
+    gap: 1em;
+    padding: 1em ;
+    margin: 1em 3em 1em 3em;
+    min-width: 274px;
+    height: 30vh;
+    width: 30vw;
+}
+
+.img-article {
+    /* => photo de l'article */
+    /*background-color: rgba(41, 36, 36, 0.733); */
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    border-radius: 12px;
+    min-width: 10vw;
+
+}
+
+.article-template {
+    /* => affichage de l'article */
+    flex: 1;
+    min-width: 10vw;
+    margin-top: 2em;
+
+}
+.show-article{
+    display: inline-block;
+
+}
+
+/* ID :                                        */
+#filtres {
+    /* => section affichage des filtres */
+    width: 25%;
+}
+
+

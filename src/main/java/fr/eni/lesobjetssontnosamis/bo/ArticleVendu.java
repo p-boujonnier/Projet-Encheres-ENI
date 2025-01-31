@@ -54,7 +54,7 @@ public class ArticleVendu implements Serializable {
         this.lieuRetrait = lieuRetrait;
     }
 
-    public ArticleVendu(Utilisateur vendeur, List<Enchere> encheres, Categorie categorie, Retrait lieuRetrait, int noArticle, String nomArticle, String description, LocalDate dateDebutEncheres, LocalDate dateFinEncheres, int miseAPrix, int prixVente, String etatVente) {
+    public ArticleVendu(Utilisateur vendeur, List<Enchere> encheres, Categorie categorie, Retrait lieuRetrait, int noArticle, String nomArticle, String description, LocalDate dateFinEncheres, int miseAPrix, int prixVente, String etatVente) {
         this();
 
         this.vendeur = vendeur;
@@ -64,40 +64,11 @@ public class ArticleVendu implements Serializable {
         this.noArticle = noArticle;
         this.nomArticle = nomArticle;
         this.description = description;
-        this.dateDebutEncheres = dateDebutEncheres;
+        this.dateDebutEncheres = LocalDate.now();
         this.dateFinEncheres = dateFinEncheres;
         this.miseAPrix = miseAPrix;
         this.prixVente = prixVente;
         this.etatVente = etatVente;
-    }
-    //--------------------------------
-    // CONSTRUCTEURS TEST
-    //--------------------------------
-    public ArticleVendu(String nomArticle, String description, int miseAPrix, LocalDate dateDebutEncheres, LocalDate dateFinEncheres) {
-        this.nomArticle = nomArticle;
-        this.description = description;
-        this.miseAPrix = miseAPrix;
-        this.prixVente = miseAPrix;
-        this.dateDebutEncheres = dateDebutEncheres;
-        this.dateFinEncheres = dateFinEncheres;
-        Utilisateur utiTest = new Utilisateur();
-        utiTest.setNoUtilisateur(42);
-        utiTest.setPseudo("TestUser");
-        utiTest.setNom("TestNom");
-        utiTest.setPrenom("TestPrenom");
-        utiTest.setEmail("test@email.com");
-        utiTest.setTelephone("0601020304");
-        utiTest.setRue("123 Rue du Test");
-        utiTest.setCodePostal(75000);
-        utiTest.setVille("TestVille");
-        utiTest.setMotDePasse("TestPass123");
-        utiTest.setCredit(100);
-        utiTest.setAdministrateur(false);
-        this.vendeur = utiTest;
-        Categorie catTest = new Categorie();
-        catTest.setNoCategorie(99);
-        catTest.setLibelle("TestCatégorie");
-        this.categorie = catTest;
     }
 
 
