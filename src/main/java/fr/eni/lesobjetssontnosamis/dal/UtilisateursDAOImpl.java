@@ -5,6 +5,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.namedparam.MapSqlParameterSource;
 import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
@@ -15,9 +17,13 @@ public class UtilisateursDAOImpl implements UtilisateursDAO {
 
     private final String INSERT = "INSERT INTO UTILISATEURS (email, nom, prenom) VALUES (:email, :nom, :prenom)";
     private final String FIND_BY_EMAIL = "SELECT pseudo, nom, prenom, email, telephone, rue, code_postal, ville FROM UTILISATEURS WHERE email = :email";
-    private final String FIND_ALL = "SELECT email, nom, prenom FROM UTILISATEURS";
+    private final String FIND_ALL = "SELECT email, nom, prenom, email, telephone, rue, code_postal, ville FROM UTILISATEURS";
     private final String UPDATE = "UPDATE UTILISATEURS SET nom = :nom, prenom = :prenom WHERE email = :email";
     private final String compteUnique = "SELECT COUNT(email) FROM UTILISATEURS WHERE email = :email";
+
+
+    @Autowired
+    public PasswordEncoder passwordEncoder;
 
     @Autowired
     private NamedParameterJdbcTemplate jdbcTemplate;
@@ -39,7 +45,7 @@ public class UtilisateursDAOImpl implements UtilisateursDAO {
 
     @Override
     public void create(Utilisateur utilisateur) {
-
+        PasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
     }
 
     @Override
