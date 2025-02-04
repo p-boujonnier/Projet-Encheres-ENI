@@ -3,6 +3,7 @@ package fr.eni.lesobjetssontnosamis.controller;
 
 import fr.eni.lesobjetssontnosamis.bll.UtilisateurService;
 import fr.eni.lesobjetssontnosamis.bo.Utilisateur;
+import jakarta.validation.Valid;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.springframework.stereotype.Controller;
@@ -18,7 +19,7 @@ import java.security.Principal;
 
 
 @Controller
-@RequestMapping("/view-profil")
+@RequestMapping("/profil")
 public class UtilisateurController {
     protected final Log logger = LogFactory.getLog(getClass());
     private final UtilisateurService utilisateurService;
@@ -28,12 +29,14 @@ public class UtilisateurController {
         this.utilisateurService = utilisateurService;
     }
 
+    // à supprimer après
     @GetMapping("/get-profil")
     public String getProfil(Model model) {
         model.addAttribute("utilisateurProvisoire", new Utilisateur());
         return "view-ask-profil-provisory";
     }
 
+    // à supprimer après
     @PostMapping("/get-profil")
     public String rechercherUtilisateur(@RequestParam("email") String email, Model model, RedirectAttributes redirectAttributes) {
         Utilisateur utilisateur = utilisateurService.findUtilisateurByEmail(email);
@@ -48,13 +51,27 @@ public class UtilisateurController {
         return "view-profil-detail";
     }
 
-    @GetMapping("/profil-modifier")
+    @GetMapping("/modifier")
     public String modifierProfil(Model model, Principal principal) {
         var utilisateur = principal.getName();
         model.addAttribute("utilisateur", utilisateurService.findByEmail(utilisateur));
-        return "view-profil-modifier";
+        return "view-profil-modify";
 
     }
 
+    @GetMapping("/creer")
+    public String creerProfil(Model model, Principal principal) {
+        model.addAttribute("utilisateur", new Utilisateur());
+        return "view-profil-create";
+    }
+
+    @PostMapping("/creer")
+    @Transactional
+    public String creerProfil(@Valid @ModelAttribute Utilisateur utilisateur, BindingResult result) {
+        utilisateurService.addUtilisateur(utilisateur);
+        //return "redirect:/login"; //à mettre une fois qu'on aura la page qui fonctionne
+        return "redirect:/encheres";
+    }
+    // creerProfil dans le Get & Post => ok le même nom (= c'est normal)
 
 }

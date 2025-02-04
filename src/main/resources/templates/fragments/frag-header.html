@@ -11,11 +11,12 @@
     <nav>
         <ul>
             <th:block>
-                <li><a href="/articles" data-th-text="#{frag-header.articles}"></a></li>
-                <li><a href="/articles/creer" data-th-text="#{frag-header.articles.creer}"></a></li>
-                <li><a href="/view-profil/get-profil" data-th-text="#{frag-header.utilisateur}"></a></li>
-                <li data-th-if="${!#authorization.expression('isAuthenticated()')}"><a data-th-href="@{/view_profil()}"><button>S'inscrire / Se connecter</button></a></li>
-                <li data-th-if="${#authorization.expression('isAuthenticated()')}"><a data-th-href="@{/logout}"><button>Se déconnecter</button></a></li>
+                <li><a href="/encheres" data-th-text="#{frag-header.articles}"></a></li>
+                <li><a href="/encheres/creer" data-th-text="#{frag-header.articles.creer}"></a></li>
+                <li><a href="/profil/get-profil" data-th-text="#{frag-header.utilisateur}"></a></li>
+                <li><a href="/profil/creer" data-th-text="#{frag-header.utilisateur.creer}"></a></li>
+<!--                <li data-th-if="${!#authorization.expression('isAuthenticated()')}"><a data-th-href="@{/view_profil()}"><button>S'inscrire / Se connecter</button></a></li>-->
+<!--                <li data-th-if="${#authorization.expression('isAuthenticated()')}"><a data-th-href="@{/logout}"><button>Se déconnecter</button></a></li>-->
             </th:block>
         </ul>
     </nav>
