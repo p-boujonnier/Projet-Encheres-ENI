@@ -50,7 +50,8 @@ public class UtilisateursDAOImpl implements UtilisateursDAO {
         namedParameters.addValue("ville", utilisateur.getVille());
         namedParameters.addValue("motdepasse", utilisateur.getMotDePasse());
         namedParameters.addValue("credit", utilisateur.getCredit());
-        namedParameters.addValue("admnistrateur", 0);
+        utilisateur.setAdministrateur(false);
+        namedParameters.addValue("admnistrateur", utilisateur.isAdministrateur());
         jdbcTemplate.update(INSERT, namedParameters);
     }
 

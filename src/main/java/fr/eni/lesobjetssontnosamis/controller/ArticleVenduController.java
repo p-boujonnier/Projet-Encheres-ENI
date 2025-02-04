@@ -47,7 +47,7 @@ public class ArticleVenduController {
     // Création d'un nouvel article
     @PostMapping("/creer")
     @Transactional
-    public String newArticleVendu(@Valid @ModelAttribute ArticleVendu articleVendu, BindingResult bindingResult) {
+    public String creerArticleVendu(@Valid @ModelAttribute ArticleVendu articleVendu, BindingResult bindingResult) {
         articleVenduService.addArticleVendu(articleVendu);
         return "redirect:/view-articles";
     }
