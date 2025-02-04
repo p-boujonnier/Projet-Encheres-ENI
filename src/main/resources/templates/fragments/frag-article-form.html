@@ -9,6 +9,19 @@
 
     <ul>
         <li>
+            <label for="inputUtilisateur" data-th-text="#{frag-articles-form.pseudo}"></label>
+            <!-- Champ Utlisateur -->
+            <select id="inputUtilisateur" data-th-field="${utilisateurList}" required>
+                <option data-th-each="u : ${utilisateurList}"
+                        data-th-text="${u.pseudo}"
+                        data-th-value="${u.noUtilisateur}"></option>
+            </select>
+            <th:block data-th-if="${!#strings.isEmpty(action)}">
+                <!-- S'il est vide -->
+                <div data-th-replace="~{fragments/errors/frag-error :: frag-error('categorie')}"></div>
+            </th:block>
+        </li>
+        <li>
             <!-- Champ Name -->
             <label for="inputName" data-th-text="#{frag-articles-form.name}"></label>
             <input type="text"
@@ -68,6 +81,20 @@
             <th:block data-th-if="${!#strings.isEmpty(action)}">
                 <!-- S'il est vide -->
                 <div data-th-replace="~{fragments/errors/frag-error :: frag-error('miseAPrix')}"></div>
+            </th:block>
+        </li>
+        <li>
+            <!-- Champ Date Début Enchère -->
+            <label for="inputDateDebutEncheres" data-th-text="#{frag-articles-form.debutenchere}"> </label>
+            <input type="date"
+                   id="inputDateDebutEncheres"
+                   data-th-disabled="${#strings.isEmpty(action)}"
+                   data-th-field="*{dateDebutEncheres}"
+                   disabled
+                   required/>
+            <th:block data-th-if="${!#strings.isEmpty(action)}">
+                <!-- S'il est vide -->
+                <div data-th-replace="~{fragments/errors/frag-error :: frag-error('dateFinEncheres')}"></div>
             </th:block>
         </li>
         <li>
