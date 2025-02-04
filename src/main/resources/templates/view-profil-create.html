@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      data-th-replace="~{layouts/layout :: layout-objets-amis(
+					titrePage=~{:: title},
+					contenuPage=~{:: main},
+					ressourcesSupp=~{:: #ressources-css})}">
+
+<head>
+    <!-- Titre de la page -->
+    <title data-th-text="#{frag-header.utilisateur}"></title>
+    <!-- Pages de ressources supplémentaires -->
+    <th:block id="ressources-css">
+    </th:block>
+</head>
+<main>
+    <form method="post" data-th-object="${utilisateur}">
+        <!-- Récupération du titre > view-articles-create > message.properties -->
+        <h1 data-th-text="#{view-profil-create.h1}"></h1>
+
+        <ul>
+            <li>
+                <!-- Champ Pseudo -->
+                <label for="inputPseudo" data-th-text="#{view-profil-create.pseudo}"></label>
+                <input type="text"
+                       id="inputPseudo"
+                       data-th-field="*{pseudo}"
+                required/>
+            </li>
+            <!--                      data-th-disabled="${#strings.isEmpty(profil/creer)}"-->
+            <li>
+                <!-- Champ Nom -->
+                <label for="inputNom" data-th-text="#{view-profil-create.nom}"></label>
+                <input type="text"
+                       id="inputNom"
+                       data-th-field="*{nom}"
+                       required/>
+            </li>
+
+            <li>
+                <!-- Champ Prénom -->
+                <label for="inputPrenom" data-th-text="#{view-profil-create.prenom}"></label>
+                <input type="text"
+                       id="inputPrenom"
+                       data-th-field="*{prenom}"
+                       required/>
+            </li>
+            <li>
+                <!-- Champ Email - email -->
+                <label for="inputEmail" data-th-text="#{view-profil-create.email}"></label>
+                <input type="email"
+                       id="inputEmail"
+                       data-th-field="*{email}"
+                       required/>
+            </li>
+            <li>
+                <!-- Champ Telephone - tel -->
+                <label for="inputTel" data-th-text="#{view-profil-create.tel}"></label>
+                <input type="tel"
+                       id="inputTel"
+                       data-th-field="*{telephone}"
+                       required/>
+            </li>
+            <li>
+                <!-- Champ Rue - text-->
+                <label for="inputRue" data-th-text="#{view-profil-create.rue}"></label>
+                <input type="text"
+                       id="inputRue"
+                       data-th-field="*{rue}"
+                       required/>
+            </li>
+            <li>
+                <!-- Champ Code Postal - number => view-profil-create.codepostal -->
+                <label for="inputCodePostal" data-th-text="#{view-profil-create.codepostal}"></label>
+                <input type="number"
+                       id="inputCodePostal"
+                       data-th-field="*{codePostal}"
+                       required/>
+            </li>
+            <li>
+                <!-- Champ Ville - text => view-profil-create.ville -->
+                <label for="inputVille" data-th-text="#{view-profil-create.ville}"></label>
+                <input type="text"
+                       id="inputVille"
+                       data-th-field="*{ville}"
+                       required/>
+            </li>
+            <li>
+                <!-- Champ Mot de Passe - password => view-profil-create.motdepasse -->
+                <label for="inputMdP" data-th-text="#{view-profil-create.motdepasse}"></label>
+                <input type="password"
+                       id="inputMdP"
+                       data-th-field="*{motDePasse}"
+                       required/>
+            </li>
+            <!-- Pour l'instant simulation mais contrôle mot de passe identiques. -->
+            <li>
+                <!-- Champ Mot de Passe Confirmation - password => view-profil-create.confirmation -->
+                <label for="inputConfirmation" data-th-text="#{view-profil-create.confirmation}"></label>
+                <input type="password"
+                       id="inputConfirmation"
+                       required/>
+            </li>
+        </ul>
+
+        <button data-th-text="#{view-profil-create.creer}"></button>
+        <button data-th-text="#{view-profil-create.annuler}"></button>
+
+    </form>
+</main>
+</html>
