@@ -28,20 +28,6 @@ public class UtilisateurDAOImpl implements UtilisateurDAO {
     @Autowired
     private NamedParameterJdbcTemplate jdbcTemplate;
 
-    @Override
-    public List<Utilisateur> findAll() {
-        return jdbcTemplate.query(FIND_ALL, new BeanPropertyRowMapper<>(Utilisateur.class));
-    }
-
-
-    @Override
-    public Utilisateur read(String emailUtilisateur) {
-        MapSqlParameterSource namedParameters = new MapSqlParameterSource();
-        namedParameters.addValue("email", emailUtilisateur);
-
-        return jdbcTemplate.queryForObject(FIND_BY_EMAIL, namedParameters,
-                new BeanPropertyRowMapper<>(Utilisateur.class));
-    }
 
     @Override
     public void create(Utilisateur utilisateur) {
@@ -68,7 +54,6 @@ public class UtilisateurDAOImpl implements UtilisateurDAO {
 
         return jdbcTemplate.queryForObject(READ_BY_EMAIL, namedParameters,
                 new BeanPropertyRowMapper<>(Utilisateur.class));
-        PasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
     }
 
     @Override

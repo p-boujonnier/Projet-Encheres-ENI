@@ -3108,3 +3108,61 @@ Caused by: java.lang.ClassNotFoundException: org.springframework.security.provis
 	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525) ~[na:na]
 	... 43 common frames omitted
 
+2025-02-04T22:31:22.944+01:00  INFO 12364 --- [LesObjetsSontNosAmis] [restartedMain] f.e.l.LesObjetsSontNosAmisApplication    : Starting LesObjetsSontNosAmisApplication using Java 17.0.13 with PID 12364 (D:\Projet-Encheres-ENI-non\build\classes\java\main started by jevariste2024 in D:\Projet-Encheres-ENI-non)
+2025-02-04T22:31:22.946+01:00  INFO 12364 --- [LesObjetsSontNosAmis] [restartedMain] f.e.l.LesObjetsSontNosAmisApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-02-04T22:31:22.979+01:00  INFO 12364 --- [LesObjetsSontNosAmis] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-02-04T22:31:22.979+01:00  INFO 12364 --- [LesObjetsSontNosAmis] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-02-04T22:31:24.096+01:00  INFO 12364 --- [LesObjetsSontNosAmis] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-02-04T22:31:24.106+01:00  INFO 12364 --- [LesObjetsSontNosAmis] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-04T22:31:24.106+01:00  INFO 12364 --- [LesObjetsSontNosAmis] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-04T22:31:24.144+01:00  INFO 12364 --- [LesObjetsSontNosAmis] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-04T22:31:24.144+01:00  INFO 12364 --- [LesObjetsSontNosAmis] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1165 ms
+2025-02-04T22:31:24.345+01:00  WARN 12364 --- [LesObjetsSontNosAmis] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'categorieServiceImpl' defined in file [D:\Projet-Encheres-ENI-non\build\classes\java\main\fr\eni\lesobjetssontnosamis\bll\CategorieServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'fr.eni.lesobjetssontnosamis.dal.CategorieDAO' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2025-02-04T22:31:24.347+01:00  INFO 12364 --- [LesObjetsSontNosAmis] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-02-04T22:31:24.373+01:00  INFO 12364 --- [LesObjetsSontNosAmis] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-02-04T22:31:24.389+01:00 ERROR 12364 --- [LesObjetsSontNosAmis] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in fr.eni.lesobjetssontnosamis.bll.CategorieServiceImpl required a bean of type 'fr.eni.lesobjetssontnosamis.dal.CategorieDAO' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'fr.eni.lesobjetssontnosamis.dal.CategorieDAO' in your configuration.
+
+2025-02-04T22:33:17.422+01:00  INFO 8928 --- [LesObjetsSontNosAmis] [restartedMain] f.e.l.LesObjetsSontNosAmisApplication    : Starting LesObjetsSontNosAmisApplication using Java 17.0.13 with PID 8928 (D:\Projet-Encheres-ENI-non\build\classes\java\main started by jevariste2024 in D:\Projet-Encheres-ENI-non)
+2025-02-04T22:33:17.424+01:00  INFO 8928 --- [LesObjetsSontNosAmis] [restartedMain] f.e.l.LesObjetsSontNosAmisApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-02-04T22:33:17.465+01:00  INFO 8928 --- [LesObjetsSontNosAmis] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-02-04T22:33:17.465+01:00  INFO 8928 --- [LesObjetsSontNosAmis] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-02-04T22:33:18.596+01:00  INFO 8928 --- [LesObjetsSontNosAmis] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-02-04T22:33:18.606+01:00  INFO 8928 --- [LesObjetsSontNosAmis] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-04T22:33:18.606+01:00  INFO 8928 --- [LesObjetsSontNosAmis] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-04T22:33:18.645+01:00  INFO 8928 --- [LesObjetsSontNosAmis] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-04T22:33:18.645+01:00  INFO 8928 --- [LesObjetsSontNosAmis] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1180 ms
+2025-02-04T22:33:18.831+01:00  WARN 8928 --- [LesObjetsSontNosAmis] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'categorieServiceImpl' defined in file [D:\Projet-Encheres-ENI-non\build\classes\java\main\fr\eni\lesobjetssontnosamis\bll\CategorieServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'fr.eni.lesobjetssontnosamis.dal.CategorieDAO' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2025-02-04T22:33:18.833+01:00  INFO 8928 --- [LesObjetsSontNosAmis] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-02-04T22:33:18.858+01:00  INFO 8928 --- [LesObjetsSontNosAmis] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-02-04T22:33:18.875+01:00 ERROR 8928 --- [LesObjetsSontNosAmis] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in fr.eni.lesobjetssontnosamis.bll.CategorieServiceImpl required a bean of type 'fr.eni.lesobjetssontnosamis.dal.CategorieDAO' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'fr.eni.lesobjetssontnosamis.dal.CategorieDAO' in your configuration.
+
