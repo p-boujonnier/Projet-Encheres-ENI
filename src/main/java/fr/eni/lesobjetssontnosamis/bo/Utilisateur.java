@@ -48,7 +48,7 @@ public class Utilisateur implements Serializable {
     // @Pattern(regexp = "^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$", message = "Le mot de passe saisi n'est pas assez sécurisé. Il doit contenir au moins une lettre majuscule, une lettre minuscule, au moins un chiffre, au moins un caractère spécial (par exemple, #, ?, !, $, %, ^, &, *) et doit avoir une longueur minimale de 8 caractères.")
     private String motDePasse;
     private int credit = 0;
-    private boolean administrateur=false;
+    private boolean administrateur = false;
 
     // L'utilisateur peut avoir plusieurs articles à vendre
     private List<ArticleVendu> articlesVendus;

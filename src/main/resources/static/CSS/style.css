@@ -1,67 +1,270 @@
-@charset "UTF-8";
-/* nav ul { */
-/*   display: flex; */
-/*   justify-content: space-between; */
-/* } */
-header li {
-    list-style: none;
-    display: inline-block;
-    padding: 0 20px;
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+/*---------------------------------------------*/
+/*               GLOBAL STYLES                 */
+/*---------------------------------------------*/
 * {
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
-/* Header */
+body {
+    background-color: var(--BackGround);
+    color: var(--PrimaryColor);
+    padding: var(--20px);
+    font-size: var(--font-size-default);
+}
+
+/*---------------------------------------------*/
+/*         DECLARATION DES VARIABLES           */
+/*---------------------------------------------*/
+:root {
+    /* Couleurs */
+    --PrimaryColor: #0FA3B1;
+    --SecondaryColor: #B5E2FA;
+    --AccentColor1: #FDFCFA;
+    --AccentColor2: #EDDEA4;
+    --AccentColor3: #F7A072;
+    --AccentColor4:#F1C7A6;
+    --WhiteMilk: #FDFFF5;
+    --Black: #333333;
+    --BackGround: var(--WhiteMilk);
+    --ColorResetButton : #D3D3D3;
+
+    /* Conversion de px en em */
+    --10px: 0.625em;
+    --12px: 0.75em;
+    --14px: 0.875em;
+    --20px: 1.25em;
+    --40px: 2.5em;
+
+    /* Font-size */
+    --font-size-default: 1em;
+    --font-size-h1: 1.5em;
+    --font-size-h2: 1.25em;
+}
+
+/*---------------------------------------------*/
+/*                    HEADER                   */
+/*---------------------------------------------*/
+/*   CLASSES   */
 header {
+    background-color: var(--PrimaryColor);
+    color: var(--AccentColor1);
+    padding: var(--12px);
+    position: relative;
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 20px 50px;
-    box-shadow: 0 1px 8px #ddd;
+    flex-direction: column;
+    justify-content: center;
 }
+/*   ID   */
 
+/*---------------------------------------------*/
+/*              NAVIGATION TITLE              */
+/*---------------------------------------------*/
+/*   CLASSES   */
+
+/*   ID   */
+/* Zone du titre de navigation (logo et texte) */
 #nav-title {
-    margin-right: auto;
-    font-size: 1.1em;
-}
-
-header li {
-    list-style: none;
-    display: inline-block;
-    padding: 0 20px;
-}
-
-header a {
-    text-decoration: none;
-    color: #555;
-    transition: all 0.3s ease 0s;
-}
-
-header a:hover {
-    color: rgb(0, 128, 192);
-}
-
-main {
-    margin-top: 15px;
-    margin-left: 15px;
-}
-
-main h1 {
-    margin: 10px;
-}
-
-.center-main {
     display: flex;
-    width: 100%;
-    height: 300px;
-    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    max-height: 10vh;
 }
 
-.center-section {
-    margin: auto;
-    text-align: center;
+#logo-LOSNA {
+    max-width: 7vw;
+    margin-right: var(--10px);
 }
+
+#nav-title a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--AccentColor1);
+    font-size: var(--font-size-h1);
+    font-weight: bold;
+}
+
+/*---------------------------------------------*/
+/*              NAVIGATION MENU               */
+/*---------------------------------------------*/
+/*   CLASSES   */
+/* Menu de navigation sous le titre */
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* Style du menu de navigation */
+nav ul{
+    list-style-type: none;
+    display: flex;
+    gap: var(--20px);
+    padding: var(--20px);
+    font-size: var(--font-size-h2);
+}
+
+/* Style des liens dans le menu */
+nav ul li a {
+    text-decoration: none;
+    color: var(--AccentColor1);
+    font-weight: bold;
+}
+
+/* Changement de couleur au survol des liens */
+nav ul li a:hover {
+    color: var(--AccentColor2);
+}
+
+/*   ID   */
+
+
+/*---------------------------------------------*/
+/*                  BUTTONS                    */
+/*---------------------------------------------*/
+/*   CLASSES   */
+button {
+    background-color: var(--AccentColor2);
+    border: none;
+    color: var(--WhiteMilk);
+    cursor: pointer;
+    padding: 0.75em 1.25em;
+    border-radius: var(--12px);
+    font-size: var(--font-size-default);
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    white-space: nowrap; /* Empêche le texte de se casser */
+}
+
+/* div s'inscrire / se connecter */
+.auth-buttons {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position : absolute;
+    top: var(--20px);
+    right: var(--20px);
+    gap: var(--14px);
+}
+
+/*   ID   */
+#signin-button{
+
+}
+
+#reset-button{ /* NE FONCTIONNE PAS */
+    background-color:var(--ColorResetButton) ;
+}
+
+/* Changement de couleur au survol des boutons */
+button:hover {
+    background-color: var(--PrimaryColor);
+}
+
+.auth-buttons > button:hover {
+    border-color: var(--AccentColor1);
+}
+#reset-button:hover{
+    background-color: var(--AccentColor3);
+}
+
+
+/*---------------------------------------------*/
+/*                   FORM                     */
+/*---------------------------------------------*/
+/*   CLASSES   */
+/* Style du formulaire */
+form {
+    background-color: var(--AccentColor1);
+    padding: var(--20px);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 50%;
+    margin: var(--40px) auto;
+}
+
+form ul {
+    list-style: none;
+}
+
+/*   ID   */
+
+
+/*---------------------------------------------*/
+/*               FORM LABELS                   */
+/*---------------------------------------------*/
+/*   CLASSES   */
+/* Style des étiquettes du formulaire */
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: var(--10px);
+    color: var(--PrimaryColor);
+}
+/*   ID   */
+
+
+/*---------------------------------------------*/
+/*                  INPUTS                    */
+/*---------------------------------------------*/
+/*   CLASSES   */
+/* Style des champs de saisie, sélection et textarea */
+input, select, textarea {
+    width: 100%;
+    height: 1em;
+    padding: var(--20px);
+    margin-bottom: var(--20px);
+    border: 1px solid var(--AccentColor3);
+    border-radius: 4px;
+    background-color: var(--AccentColor1);
+    font-size: 16px;
+    color: var(--Black);
+}
+
+/*   ID   */
+
+
+/*---------------------------------------------*/
+/*                   TABLE                     */
+/*---------------------------------------------*/
+/*   CLASSES   */
+/* Style du tableau */
+table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    margin-top: var(--20px);
+}
+
+/* Style des cellules du tableau */
+table th, table td {
+    padding: var(--20px);
+    text-align: left;
+    border-bottom: 1px solid var(--SecondaryColor);
+}
+
+/* Style des en-têtes du tableau */
+table th {
+    background-color: var(--AccentColor3);
+    color: var(--AccentColor1);
+    font-size: var(--font-size-h2);
+}
+
+/* Style des lignes paires du tableau */
+table tr:nth-child(even) {
+    background-color: var(--AccentColor1);
+}
+
+/* Style au survol des lignes du tableau */
+table tr:hover {
+    background-color: var(--SecondaryColor);
+    color: var(--AccentColor1);
+    font-weight: bold;
+}
+
+/*   ID   */

@@ -18,10 +18,13 @@ import java.util.List;
 @Service
 @Primary
 public class ArticleVenduServiceImpl implements ArticleVenduService {
-
-    // Injection des Repository
     @Autowired
     private ArticleVenduDAO articleVenduDAO;
+    // Injection des Repository
+
+    public ArticleVenduServiceImpl(ArticleVenduDAO articleVenduDAO) {
+        this.articleVenduDAO = articleVenduDAO;
+    }
 
 
     @Override
