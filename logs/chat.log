@@ -3166,3 +3166,1086 @@ Action:
 
 Consider defining a bean of type 'fr.eni.lesobjetssontnosamis.dal.CategorieDAO' in your configuration.
 
+2025-02-04T22:36:21.857+01:00  INFO 11116 --- [LesObjetsSontNosAmis] [restartedMain] f.e.l.LesObjetsSontNosAmisApplication    : Starting LesObjetsSontNosAmisApplication using Java 17.0.13 with PID 11116 (D:\Projet-Encheres-ENI-non\build\classes\java\main started by jevariste2024 in D:\Projet-Encheres-ENI-non)
+2025-02-04T22:36:21.859+01:00  INFO 11116 --- [LesObjetsSontNosAmis] [restartedMain] f.e.l.LesObjetsSontNosAmisApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-02-04T22:36:21.891+01:00  INFO 11116 --- [LesObjetsSontNosAmis] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-02-04T22:36:21.892+01:00  INFO 11116 --- [LesObjetsSontNosAmis] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-02-04T22:36:22.991+01:00  INFO 11116 --- [LesObjetsSontNosAmis] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-02-04T22:36:23.001+01:00  INFO 11116 --- [LesObjetsSontNosAmis] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-04T22:36:23.001+01:00  INFO 11116 --- [LesObjetsSontNosAmis] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-04T22:36:23.040+01:00  INFO 11116 --- [LesObjetsSontNosAmis] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-04T22:36:23.040+01:00  INFO 11116 --- [LesObjetsSontNosAmis] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1148 ms
+2025-02-04T22:36:23.241+01:00  WARN 11116 --- [LesObjetsSontNosAmis] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'categorieServiceImpl' defined in file [D:\Projet-Encheres-ENI-non\build\classes\java\main\fr\eni\lesobjetssontnosamis\bll\CategorieServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'fr.eni.lesobjetssontnosamis.dal.CategorieDAO' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2025-02-04T22:36:23.243+01:00  INFO 11116 --- [LesObjetsSontNosAmis] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-02-04T22:36:23.268+01:00  INFO 11116 --- [LesObjetsSontNosAmis] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-02-04T22:36:23.285+01:00 ERROR 11116 --- [LesObjetsSontNosAmis] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in fr.eni.lesobjetssontnosamis.bll.CategorieServiceImpl required a bean of type 'fr.eni.lesobjetssontnosamis.dal.CategorieDAO' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'fr.eni.lesobjetssontnosamis.dal.CategorieDAO' in your configuration.
+
+2025-02-04T22:36:57.170+01:00  INFO 12864 --- [LesObjetsSontNosAmis] [restartedMain] f.e.l.LesObjetsSontNosAmisApplication    : Starting LesObjetsSontNosAmisApplication using Java 17.0.13 with PID 12864 (D:\Projet-Encheres-ENI-non\build\classes\java\main started by jevariste2024 in D:\Projet-Encheres-ENI-non)
+2025-02-04T22:36:57.171+01:00  INFO 12864 --- [LesObjetsSontNosAmis] [restartedMain] f.e.l.LesObjetsSontNosAmisApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-02-04T22:36:57.207+01:00  INFO 12864 --- [LesObjetsSontNosAmis] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-02-04T22:36:57.207+01:00  INFO 12864 --- [LesObjetsSontNosAmis] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-02-04T22:36:58.291+01:00  INFO 12864 --- [LesObjetsSontNosAmis] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-02-04T22:36:58.301+01:00  INFO 12864 --- [LesObjetsSontNosAmis] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-04T22:36:58.301+01:00  INFO 12864 --- [LesObjetsSontNosAmis] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-04T22:36:58.337+01:00  INFO 12864 --- [LesObjetsSontNosAmis] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-04T22:36:58.337+01:00  INFO 12864 --- [LesObjetsSontNosAmis] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1129 ms
+2025-02-04T22:36:58.529+01:00  WARN 12864 --- [LesObjetsSontNosAmis] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'categorieServiceImpl' defined in file [D:\Projet-Encheres-ENI-non\build\classes\java\main\fr\eni\lesobjetssontnosamis\bll\CategorieServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'fr.eni.lesobjetssontnosamis.dal.CategorieDAO' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2025-02-04T22:36:58.531+01:00  INFO 12864 --- [LesObjetsSontNosAmis] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-02-04T22:36:58.556+01:00  INFO 12864 --- [LesObjetsSontNosAmis] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-02-04T22:36:58.573+01:00 ERROR 12864 --- [LesObjetsSontNosAmis] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in fr.eni.lesobjetssontnosamis.bll.CategorieServiceImpl required a bean of type 'fr.eni.lesobjetssontnosamis.dal.CategorieDAO' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'fr.eni.lesobjetssontnosamis.dal.CategorieDAO' in your configuration.
+
+2025-02-04T22:40:25.541+01:00  INFO 12764 --- [LesObjetsSontNosAmis] [restartedMain] f.e.l.LesObjetsSontNosAmisApplication    : Starting LesObjetsSontNosAmisApplication using Java 17.0.13 with PID 12764 (D:\Projet-Encheres-ENI-non\build\classes\java\main started by jevariste2024 in D:\Projet-Encheres-ENI-non)
+2025-02-04T22:40:25.543+01:00  INFO 12764 --- [LesObjetsSontNosAmis] [restartedMain] f.e.l.LesObjetsSontNosAmisApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-02-04T22:40:25.575+01:00  INFO 12764 --- [LesObjetsSontNosAmis] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-02-04T22:40:25.575+01:00  INFO 12764 --- [LesObjetsSontNosAmis] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-02-04T22:40:26.697+01:00  INFO 12764 --- [LesObjetsSontNosAmis] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-02-04T22:40:26.707+01:00  INFO 12764 --- [LesObjetsSontNosAmis] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-04T22:40:26.708+01:00  INFO 12764 --- [LesObjetsSontNosAmis] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-04T22:40:26.745+01:00  INFO 12764 --- [LesObjetsSontNosAmis] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-04T22:40:26.745+01:00  INFO 12764 --- [LesObjetsSontNosAmis] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1170 ms
+2025-02-04T22:40:27.015+01:00  INFO 12764 --- [LesObjetsSontNosAmis] [restartedMain] o.s.s.p.JdbcUserDetailsManager           : No authentication manager set. Reauthentication of users when changing passwords will not be performed.
+2025-02-04T22:40:27.019+01:00  INFO 12764 --- [LesObjetsSontNosAmis] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsManager
+2025-02-04T22:40:27.070+01:00  INFO 12764 --- [LesObjetsSontNosAmis] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-02-04T22:40:27.264+01:00  INFO 12764 --- [LesObjetsSontNosAmis] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-02-04T22:40:27.524+01:00  INFO 12764 --- [LesObjetsSontNosAmis] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-02-04T22:40:27.573+01:00  INFO 12764 --- [LesObjetsSontNosAmis] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-02-04T22:40:27.588+01:00  INFO 12764 --- [LesObjetsSontNosAmis] [restartedMain] f.e.l.LesObjetsSontNosAmisApplication    : Started LesObjetsSontNosAmisApplication in 2.372 seconds (process running for 2.837)
+2025-02-04T22:40:27.963+01:00  INFO 12764 --- [LesObjetsSontNosAmis] [RMI TCP Connection(1)-10.44.101.2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-04T22:40:27.964+01:00  INFO 12764 --- [LesObjetsSontNosAmis] [RMI TCP Connection(1)-10.44.101.2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-02-04T22:40:27.965+01:00  INFO 12764 --- [LesObjetsSontNosAmis] [RMI TCP Connection(1)-10.44.101.2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-02-04T22:40:27.983+01:00  INFO 12764 --- [LesObjetsSontNosAmis] [RMI TCP Connection(3)-10.44.101.2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-02-04T22:40:28.178+01:00  INFO 12764 --- [LesObjetsSontNosAmis] [RMI TCP Connection(3)-10.44.101.2] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection ConnectionID:1 ClientConnectionId: 31419e2b-26e7-4f77-aa2c-0bd7edade826
+2025-02-04T22:40:28.181+01:00  INFO 12764 --- [LesObjetsSontNosAmis] [RMI TCP Connection(3)-10.44.101.2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-02-04T22:41:36.443+01:00 DEBUG 12764 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-2] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL update
+2025-02-04T22:41:36.444+01:00 DEBUG 12764 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-2] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [INSERT INTO utilisateurs (pseudo, nom, prenom, email, telephone, rue, code_postal, ville, mot_de_passe, credit, administrateur) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]
+2025-02-04T22:41:36.461+01:00 TRACE 12764 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-2] o.s.jdbc.core.StatementCreatorUtils      : Setting SQL statement parameter value: column index 1, parameter value [Thierry], value class [java.lang.String], SQL type unknown
+2025-02-04T22:41:36.463+01:00 TRACE 12764 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-2] o.s.jdbc.core.StatementCreatorUtils      : Setting SQL statement parameter value: column index 2, parameter value [Baille], value class [java.lang.String], SQL type unknown
+2025-02-04T22:41:36.463+01:00 TRACE 12764 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-2] o.s.jdbc.core.StatementCreatorUtils      : Setting SQL statement parameter value: column index 3, parameter value [Anne-Lise], value class [java.lang.String], SQL type unknown
+2025-02-04T22:41:36.463+01:00 TRACE 12764 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-2] o.s.jdbc.core.StatementCreatorUtils      : Setting SQL statement parameter value: column index 4, parameter value [jeanne.evariste2024@campus-eni.fr], value class [java.lang.String], SQL type unknown
+2025-02-04T22:41:36.463+01:00 TRACE 12764 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-2] o.s.jdbc.core.StatementCreatorUtils      : Setting SQL statement parameter value: column index 5, parameter value [0123456789], value class [java.lang.String], SQL type unknown
+2025-02-04T22:41:36.464+01:00 TRACE 12764 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-2] o.s.jdbc.core.StatementCreatorUtils      : Setting SQL statement parameter value: column index 6, parameter value [bgfxnbfs], value class [java.lang.String], SQL type unknown
+2025-02-04T22:41:36.464+01:00 TRACE 12764 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-2] o.s.jdbc.core.StatementCreatorUtils      : Setting SQL statement parameter value: column index 7, parameter value [35000], value class [java.lang.Integer], SQL type unknown
+2025-02-04T22:41:36.465+01:00 TRACE 12764 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-2] o.s.jdbc.core.StatementCreatorUtils      : Setting SQL statement parameter value: column index 8, parameter value [ngfsnsf], value class [java.lang.String], SQL type unknown
+2025-02-04T22:41:36.465+01:00 TRACE 12764 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-2] o.s.jdbc.core.StatementCreatorUtils      : Setting SQL statement parameter value: column index 9, parameter value [password123], value class [java.lang.String], SQL type unknown
+2025-02-04T22:41:36.465+01:00 TRACE 12764 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-2] o.s.jdbc.core.StatementCreatorUtils      : Setting SQL statement parameter value: column index 10, parameter value [0], value class [java.lang.Integer], SQL type unknown
+2025-02-04T22:41:36.466+01:00 TRACE 12764 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-2] o.s.jdbc.core.StatementCreatorUtils      : Setting SQL statement parameter value: column index 11, parameter value [false], value class [java.lang.Boolean], SQL type unknown
+2025-02-04T22:41:36.474+01:00 DEBUG 12764 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-2] o.s.jdbc.core.JdbcTemplate               : SQLWarning ignored: SQL state 'S0000', error code '3621', message [L'instruction a été arrêtée.]
+2025-02-04T22:41:36.488+01:00 ERROR 12764 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.jdbc.UncategorizedSQLException: PreparedStatementCallback; uncategorized SQLException for SQL [INSERT INTO utilisateurs (pseudo, nom, prenom, email, telephone, rue, code_postal, ville, mot_de_passe, credit, administrateur) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]; SQL state [S0001]; error code [2628]; Les données de chaîne ou binaires seraient tronquées dans la table 'bd_trocencheres.dbo.UTILISATEURS', colonne 'email'. Valeur tronquée : 'jeanne.evariste2024@'.] with root cause
+
+com.microsoft.sqlserver.jdbc.SQLServerException: Les données de chaîne ou binaires seraient tronquées dans la table 'bd_trocencheres.dbo.UTILISATEURS', colonne 'email'. Valeur tronquée : 'jeanne.evariste2024@'.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(SQLServerException.java:270) ~[mssql-jdbc-12.8.1.jre11.jar:na]
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.getNextResult(SQLServerStatement.java:1735) ~[mssql-jdbc-12.8.1.jre11.jar:na]
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(SQLServerPreparedStatement.java:675) ~[mssql-jdbc-12.8.1.jre11.jar:na]
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PrepStmtExecCmd.doExecute(SQLServerPreparedStatement.java:594) ~[mssql-jdbc-12.8.1.jre11.jar:na]
+	at com.microsoft.sqlserver.jdbc.TDSCommand.execute(IOBuffer.java:7745) ~[mssql-jdbc-12.8.1.jre11.jar:na]
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeCommand(SQLServerConnection.java:4391) ~[mssql-jdbc-12.8.1.jre11.jar:na]
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeCommand(SQLServerStatement.java:276) ~[mssql-jdbc-12.8.1.jre11.jar:na]
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeStatement(SQLServerStatement.java:246) ~[mssql-jdbc-12.8.1.jre11.jar:na]
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.executeUpdate(SQLServerPreparedStatement.java:537) ~[mssql-jdbc-12.8.1.jre11.jar:na]
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java) ~[HikariCP-5.1.0.jar:na]
+	at org.springframework.jdbc.core.JdbcTemplate.lambda$update$2(JdbcTemplate.java:977) ~[spring-jdbc-6.2.2.jar:6.2.2]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:658) ~[spring-jdbc-6.2.2.jar:6.2.2]
+	at org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:972) ~[spring-jdbc-6.2.2.jar:6.2.2]
+	at org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:993) ~[spring-jdbc-6.2.2.jar:6.2.2]
+	at org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate.update(NamedParameterJdbcTemplate.java:337) ~[spring-jdbc-6.2.2.jar:6.2.2]
+	at fr.eni.lesobjetssontnosamis.dal.UtilisateurDAOImpl.create(UtilisateurDAOImpl.java:47) ~[main/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359) ~[spring-aop-6.2.2.jar:6.2.2]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196) ~[spring-aop-6.2.2.jar:6.2.2]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-6.2.2.jar:6.2.2]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:138) ~[spring-tx-6.2.2.jar:6.2.2]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.2.jar:6.2.2]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:727) ~[spring-aop-6.2.2.jar:6.2.2]
+	at fr.eni.lesobjetssontnosamis.dal.UtilisateurDAOImpl$$SpringCGLIB$$0.create(<generated>) ~[main/:na]
+	at fr.eni.lesobjetssontnosamis.bll.UtilisateurServiceImpl.addUtilisateur(UtilisateurServiceImpl.java:21) ~[main/:na]
+	at fr.eni.lesobjetssontnosamis.controller.UtilisateurController.creerProfil(UtilisateurController.java:72) ~[main/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359) ~[spring-aop-6.2.2.jar:6.2.2]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196) ~[spring-aop-6.2.2.jar:6.2.2]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-6.2.2.jar:6.2.2]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:380) ~[spring-tx-6.2.2.jar:6.2.2]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-6.2.2.jar:6.2.2]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.2.jar:6.2.2]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:727) ~[spring-aop-6.2.2.jar:6.2.2]
+	at fr.eni.lesobjetssontnosamis.controller.UtilisateurController$$SpringCGLIB$$0.creerProfil(<generated>) ~[main/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:257) ~[spring-web-6.2.2.jar:6.2.2]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190) ~[spring-web-6.2.2.jar:6.2.2]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.2.2.jar:6.2.2]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986) ~[spring-webmvc-6.2.2.jar:6.2.2]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891) ~[spring-webmvc-6.2.2.jar:6.2.2]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.2.2.jar:6.2.2]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088) ~[spring-webmvc-6.2.2.jar:6.2.2]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978) ~[spring-webmvc-6.2.2.jar:6.2.2]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.2.jar:6.2.2]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.2.2.jar:6.2.2]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.34.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.2.jar:6.2.2]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.34.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.34.jar:10.1.34]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108) ~[spring-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231) ~[spring-security-web-6.4.2.jar:6.4.2]
+	at org.springframework.security.web.ObservationFilterChainDecorator$FilterObservation$SimpleFilterObservation.lambda$wrap$1(ObservationFilterChainDecorator.java:479) ~[spring-security-web-6.4.2.jar:6.4.2]
+	at org.springframework.security.web.ObservationFilterChainDecorator$AroundFilterObservation$SimpleAroundFilterObservation.lambda$wrap$1(ObservationFilterChainDecorator.java:340) ~[spring-security-web-6.4.2.jar:6.4.2]
+	at org.springframework.security.web.ObservationFilterChainDecorator.lambda$wrapSecured$0(ObservationFilterChainDecorator.java:82) ~[spring-security-web-6.4.2.jar:6.4.2]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:128) ~[spring-security-web-6.4.2.jar:6.4.2]
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101) ~[spring-security-web-6.4.2.jar:6.4.2]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.4.2.jar:6.4.2]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.4.2.jar:6.4.2]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.4.2.jar:6.4.2]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126) ~[spring-security-web-6.4.2.jar:6.4.2]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120) ~[spring-security-web-6.4.2.jar:6.4.2]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.4.2.jar:6.4.2]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.4.2.jar:6.4.2]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.4.2.jar:6.4.2]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100) ~[spring-security-web-6.4.2.jar:6.4.2]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.4.2.jar:6.4.2]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.4.2.jar:6.4.2]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.4.2.jar:6.4.2]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179) ~[spring-security-web-6.4.2.jar:6.4.2]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.4.2.jar:6.4.2]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.4.2.jar:6.4.2]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.4.2.jar:6.4.2]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-6.4.2.jar:6.4.2]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.4.2.jar:6.4.2]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.4.2.jar:6.4.2]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.4.2.jar:6.4.2]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:227) ~[spring-security-web-6.4.2.jar:6.4.2]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:221) ~[spring-security-web-6.4.2.jar:6.4.2]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.4.2.jar:6.4.2]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.4.2.jar:6.4.2]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.4.2.jar:6.4.2]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.4.2.jar:6.4.2]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.4.2.jar:6.4.2]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.4.2.jar:6.4.2]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.4.2.jar:6.4.2]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.4.2.jar:6.4.2]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.4.2.jar:6.4.2]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.4.2.jar:6.4.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.4.2.jar:6.4.2]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.4.2.jar:6.4.2]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.4.2.jar:6.4.2]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.4.2.jar:6.4.2]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.4.2.jar:6.4.2]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.4.2.jar:6.4.2]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.4.2.jar:6.4.2]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.4.2.jar:6.4.2]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.4.2.jar:6.4.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.4.2.jar:6.4.2]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.4.2.jar:6.4.2]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.4.2.jar:6.4.2]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.4.2.jar:6.4.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.4.2.jar:6.4.2]
+	at org.springframework.security.web.ObservationFilterChainDecorator$AroundFilterObservation$SimpleAroundFilterObservation.lambda$wrap$0(ObservationFilterChainDecorator.java:323) ~[spring-security-web-6.4.2.jar:6.4.2]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:224) ~[spring-security-web-6.4.2.jar:6.4.2]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.4.2.jar:6.4.2]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.4.2.jar:6.4.2]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.4.2.jar:6.4.2]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.2.2.jar:6.2.2]
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:243) ~[spring-webmvc-6.2.2.jar:6.2.2]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.2.2.jar:6.2.2]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:238) ~[spring-security-config-6.4.2.jar:6.4.2]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362) ~[spring-web-6.2.2.jar:6.2.2]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278) ~[spring-web-6.2.2.jar:6.2.2]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.2.jar:6.2.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.2.jar:6.2.2]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.2.jar:6.2.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.2.jar:6.2.2]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:114) ~[spring-web-6.2.2.jar:6.2.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.2.jar:6.2.2]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.2.jar:6.2.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.2.jar:6.2.2]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+
+2025-02-04T22:42:12.272+01:00 DEBUG 12764 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-1] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL update
+2025-02-04T22:42:12.273+01:00 DEBUG 12764 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-1] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [INSERT INTO utilisateurs (pseudo, nom, prenom, email, telephone, rue, code_postal, ville, mot_de_passe, credit, administrateur) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]
+2025-02-04T22:42:12.273+01:00 TRACE 12764 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-1] o.s.jdbc.core.StatementCreatorUtils      : Setting SQL statement parameter value: column index 1, parameter value [Thierry], value class [java.lang.String], SQL type unknown
+2025-02-04T22:42:12.273+01:00 TRACE 12764 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-1] o.s.jdbc.core.StatementCreatorUtils      : Setting SQL statement parameter value: column index 2, parameter value [Baille], value class [java.lang.String], SQL type unknown
+2025-02-04T22:42:12.273+01:00 TRACE 12764 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-1] o.s.jdbc.core.StatementCreatorUtils      : Setting SQL statement parameter value: column index 3, parameter value [Anne-Lise], value class [java.lang.String], SQL type unknown
+2025-02-04T22:42:12.273+01:00 TRACE 12764 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-1] o.s.jdbc.core.StatementCreatorUtils      : Setting SQL statement parameter value: column index 4, parameter value [gerard.A@email.com], value class [java.lang.String], SQL type unknown
+2025-02-04T22:42:12.273+01:00 TRACE 12764 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-1] o.s.jdbc.core.StatementCreatorUtils      : Setting SQL statement parameter value: column index 5, parameter value [0123456789], value class [java.lang.String], SQL type unknown
+2025-02-04T22:42:12.273+01:00 TRACE 12764 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-1] o.s.jdbc.core.StatementCreatorUtils      : Setting SQL statement parameter value: column index 6, parameter value [bgfxnbfs], value class [java.lang.String], SQL type unknown
+2025-02-04T22:42:12.273+01:00 TRACE 12764 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-1] o.s.jdbc.core.StatementCreatorUtils      : Setting SQL statement parameter value: column index 7, parameter value [35000], value class [java.lang.Integer], SQL type unknown
+2025-02-04T22:42:12.273+01:00 TRACE 12764 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-1] o.s.jdbc.core.StatementCreatorUtils      : Setting SQL statement parameter value: column index 8, parameter value [ngfsnsf], value class [java.lang.String], SQL type unknown
+2025-02-04T22:42:12.273+01:00 TRACE 12764 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-1] o.s.jdbc.core.StatementCreatorUtils      : Setting SQL statement parameter value: column index 9, parameter value [password123], value class [java.lang.String], SQL type unknown
+2025-02-04T22:42:12.273+01:00 TRACE 12764 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-1] o.s.jdbc.core.StatementCreatorUtils      : Setting SQL statement parameter value: column index 10, parameter value [0], value class [java.lang.Integer], SQL type unknown
+2025-02-04T22:42:12.273+01:00 TRACE 12764 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-1] o.s.jdbc.core.StatementCreatorUtils      : Setting SQL statement parameter value: column index 11, parameter value [false], value class [java.lang.Boolean], SQL type unknown
+2025-02-04T22:42:12.274+01:00 TRACE 12764 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-1] o.s.jdbc.core.JdbcTemplate               : SQL update affected 1 rows
+2025-02-04T22:42:12.282+01:00 DEBUG 12764 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-3] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2025-02-04T22:42:12.283+01:00 DEBUG 12764 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-3] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT no_article, nom_article, description, date_debut_encheres, date_fin_encheres, prix_initial, prix_vente, no_utilisateur, no_categorie FROM articles_vendus]
+2025-02-04T22:45:06.646+01:00  INFO 12764 --- [LesObjetsSontNosAmis] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-04T22:45:06.705+01:00  INFO 12764 --- [LesObjetsSontNosAmis] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-02-04T22:45:06.711+01:00  INFO 12764 --- [LesObjetsSontNosAmis] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-02-04T22:45:06.714+01:00  INFO 12764 --- [LesObjetsSontNosAmis] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-02-04T22:45:08.882+01:00  INFO 14276 --- [LesObjetsSontNosAmis] [restartedMain] f.e.l.LesObjetsSontNosAmisApplication    : Starting LesObjetsSontNosAmisApplication using Java 17.0.13 with PID 14276 (D:\Projet-Encheres-ENI-non\build\classes\java\main started by jevariste2024 in D:\Projet-Encheres-ENI-non)
+2025-02-04T22:45:08.884+01:00  INFO 14276 --- [LesObjetsSontNosAmis] [restartedMain] f.e.l.LesObjetsSontNosAmisApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-02-04T22:45:08.916+01:00  INFO 14276 --- [LesObjetsSontNosAmis] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-02-04T22:45:08.916+01:00  INFO 14276 --- [LesObjetsSontNosAmis] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-02-04T22:45:10.014+01:00  INFO 14276 --- [LesObjetsSontNosAmis] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-02-04T22:45:10.026+01:00  INFO 14276 --- [LesObjetsSontNosAmis] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-04T22:45:10.027+01:00  INFO 14276 --- [LesObjetsSontNosAmis] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-04T22:45:10.063+01:00  INFO 14276 --- [LesObjetsSontNosAmis] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-04T22:45:10.063+01:00  INFO 14276 --- [LesObjetsSontNosAmis] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1147 ms
+2025-02-04T22:45:10.312+01:00  INFO 14276 --- [LesObjetsSontNosAmis] [restartedMain] o.s.s.p.JdbcUserDetailsManager           : No authentication manager set. Reauthentication of users when changing passwords will not be performed.
+2025-02-04T22:45:10.316+01:00  INFO 14276 --- [LesObjetsSontNosAmis] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsManager
+2025-02-04T22:45:10.365+01:00  INFO 14276 --- [LesObjetsSontNosAmis] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-02-04T22:45:10.592+01:00  INFO 14276 --- [LesObjetsSontNosAmis] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-02-04T22:45:11.024+01:00  INFO 14276 --- [LesObjetsSontNosAmis] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-02-04T22:45:11.070+01:00  INFO 14276 --- [LesObjetsSontNosAmis] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-02-04T22:45:11.084+01:00  INFO 14276 --- [LesObjetsSontNosAmis] [restartedMain] f.e.l.LesObjetsSontNosAmisApplication    : Started LesObjetsSontNosAmisApplication in 2.539 seconds (process running for 2.975)
+2025-02-04T22:45:11.287+01:00  INFO 14276 --- [LesObjetsSontNosAmis] [RMI TCP Connection(3)-10.44.101.2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-04T22:45:11.288+01:00  INFO 14276 --- [LesObjetsSontNosAmis] [RMI TCP Connection(3)-10.44.101.2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-02-04T22:45:11.289+01:00  INFO 14276 --- [LesObjetsSontNosAmis] [RMI TCP Connection(3)-10.44.101.2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-02-04T22:45:11.305+01:00  INFO 14276 --- [LesObjetsSontNosAmis] [RMI TCP Connection(2)-10.44.101.2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-02-04T22:45:11.512+01:00  INFO 14276 --- [LesObjetsSontNosAmis] [RMI TCP Connection(2)-10.44.101.2] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection ConnectionID:1 ClientConnectionId: 35958071-a8ad-4b51-a61f-7f220f765b4e
+2025-02-04T22:45:11.515+01:00  INFO 14276 --- [LesObjetsSontNosAmis] [RMI TCP Connection(2)-10.44.101.2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-02-04T22:46:37.161+01:00  INFO 14276 --- [LesObjetsSontNosAmis] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 18 class path changes (0 additions, 0 deletions, 18 modifications)
+2025-02-04T22:46:37.166+01:00  INFO 14276 --- [LesObjetsSontNosAmis] [Thread-5] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-04T22:46:37.237+01:00  INFO 14276 --- [LesObjetsSontNosAmis] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-02-04T22:46:37.242+01:00  INFO 14276 --- [LesObjetsSontNosAmis] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-02-04T22:46:37.244+01:00  INFO 14276 --- [LesObjetsSontNosAmis] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-02-04T22:46:37.309+01:00  INFO 14276 --- [LesObjetsSontNosAmis] [restartedMain] f.e.l.LesObjetsSontNosAmisApplication    : Starting LesObjetsSontNosAmisApplication using Java 17.0.13 with PID 14276 (D:\Projet-Encheres-ENI-non\build\classes\java\main started by jevariste2024 in D:\Projet-Encheres-ENI-non)
+2025-02-04T22:46:37.309+01:00  INFO 14276 --- [LesObjetsSontNosAmis] [restartedMain] f.e.l.LesObjetsSontNosAmisApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-02-04T22:46:37.622+01:00  INFO 14276 --- [LesObjetsSontNosAmis] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-02-04T22:46:37.623+01:00  INFO 14276 --- [LesObjetsSontNosAmis] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-04T22:46:37.623+01:00  INFO 14276 --- [LesObjetsSontNosAmis] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-04T22:46:37.635+01:00  INFO 14276 --- [LesObjetsSontNosAmis] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-04T22:46:37.635+01:00  INFO 14276 --- [LesObjetsSontNosAmis] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 325 ms
+2025-02-04T22:46:37.705+01:00  INFO 14276 --- [LesObjetsSontNosAmis] [restartedMain] o.s.s.p.JdbcUserDetailsManager           : No authentication manager set. Reauthentication of users when changing passwords will not be performed.
+2025-02-04T22:46:37.707+01:00  INFO 14276 --- [LesObjetsSontNosAmis] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsManager
+2025-02-04T22:46:37.713+01:00  INFO 14276 --- [LesObjetsSontNosAmis] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-02-04T22:46:37.772+01:00  INFO 14276 --- [LesObjetsSontNosAmis] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-02-04T22:46:37.852+01:00  INFO 14276 --- [LesObjetsSontNosAmis] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-02-04T22:46:37.864+01:00  INFO 14276 --- [LesObjetsSontNosAmis] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-02-04T22:46:37.873+01:00  INFO 14276 --- [LesObjetsSontNosAmis] [restartedMain] f.e.l.LesObjetsSontNosAmisApplication    : Started LesObjetsSontNosAmisApplication in 0.583 seconds (process running for 89.765)
+2025-02-04T22:46:37.875+01:00  INFO 14276 --- [LesObjetsSontNosAmis] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-02-04T22:47:30.918+01:00  INFO 14276 --- [LesObjetsSontNosAmis] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-04T22:47:30.976+01:00  INFO 14276 --- [LesObjetsSontNosAmis] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-02-04T22:47:33.153+01:00  INFO 7548 --- [LesObjetsSontNosAmis] [restartedMain] f.e.l.LesObjetsSontNosAmisApplication    : Starting LesObjetsSontNosAmisApplication using Java 17.0.13 with PID 7548 (D:\Projet-Encheres-ENI-non\build\classes\java\main started by jevariste2024 in D:\Projet-Encheres-ENI-non)
+2025-02-04T22:47:33.155+01:00  INFO 7548 --- [LesObjetsSontNosAmis] [restartedMain] f.e.l.LesObjetsSontNosAmisApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-02-04T22:47:33.187+01:00  INFO 7548 --- [LesObjetsSontNosAmis] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-02-04T22:47:33.187+01:00  INFO 7548 --- [LesObjetsSontNosAmis] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-02-04T22:47:34.284+01:00  INFO 7548 --- [LesObjetsSontNosAmis] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-02-04T22:47:34.294+01:00  INFO 7548 --- [LesObjetsSontNosAmis] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-04T22:47:34.294+01:00  INFO 7548 --- [LesObjetsSontNosAmis] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-04T22:47:34.331+01:00  INFO 7548 --- [LesObjetsSontNosAmis] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-04T22:47:34.331+01:00  INFO 7548 --- [LesObjetsSontNosAmis] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1143 ms
+2025-02-04T22:47:34.581+01:00  INFO 7548 --- [LesObjetsSontNosAmis] [restartedMain] o.s.s.p.JdbcUserDetailsManager           : No authentication manager set. Reauthentication of users when changing passwords will not be performed.
+2025-02-04T22:47:34.585+01:00  INFO 7548 --- [LesObjetsSontNosAmis] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsManager
+2025-02-04T22:47:34.636+01:00  INFO 7548 --- [LesObjetsSontNosAmis] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-02-04T22:47:34.834+01:00  INFO 7548 --- [LesObjetsSontNosAmis] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-02-04T22:47:35.097+01:00  INFO 7548 --- [LesObjetsSontNosAmis] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-02-04T22:47:35.144+01:00  INFO 7548 --- [LesObjetsSontNosAmis] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-02-04T22:47:35.156+01:00  INFO 7548 --- [LesObjetsSontNosAmis] [restartedMain] f.e.l.LesObjetsSontNosAmisApplication    : Started LesObjetsSontNosAmisApplication in 2.334 seconds (process running for 2.819)
+2025-02-04T22:47:35.458+01:00  INFO 7548 --- [LesObjetsSontNosAmis] [RMI TCP Connection(2)-10.44.101.2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-04T22:47:35.460+01:00  INFO 7548 --- [LesObjetsSontNosAmis] [RMI TCP Connection(2)-10.44.101.2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-02-04T22:47:35.459+01:00  INFO 7548 --- [LesObjetsSontNosAmis] [RMI TCP Connection(1)-10.44.101.2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-02-04T22:47:35.461+01:00  INFO 7548 --- [LesObjetsSontNosAmis] [RMI TCP Connection(2)-10.44.101.2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-02-04T22:47:35.656+01:00  INFO 7548 --- [LesObjetsSontNosAmis] [RMI TCP Connection(1)-10.44.101.2] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection ConnectionID:1 ClientConnectionId: d5240051-4cfa-4efa-b708-745592f67b2a
+2025-02-04T22:47:35.659+01:00  INFO 7548 --- [LesObjetsSontNosAmis] [RMI TCP Connection(1)-10.44.101.2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-02-04T22:47:43.308+01:00 DEBUG 7548 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-1] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2025-02-04T22:47:43.309+01:00 DEBUG 7548 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-1] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT no_article, nom_article, description, date_debut_encheres, date_fin_encheres, prix_initial, prix_vente, no_utilisateur, no_categorie FROM articles_vendus]
+2025-02-04T22:47:48.466+01:00 DEBUG 7548 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-3] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2025-02-04T22:47:48.467+01:00 DEBUG 7548 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-3] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT no_article, nom_article, description, date_debut_encheres, date_fin_encheres, prix_initial, prix_vente, no_utilisateur, no_categorie FROM articles_vendus]
+2025-02-04T22:48:01.153+01:00 DEBUG 7548 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-9] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2025-02-04T22:48:01.153+01:00 DEBUG 7548 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-9] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [select pseudo,mot_de_passe,1 from Utilisateurs where pseudo=?]
+2025-02-04T22:48:01.157+01:00 TRACE 7548 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-9] o.s.jdbc.core.StatementCreatorUtils      : Setting SQL statement parameter value: column index 1, parameter value [], value class [java.lang.String], SQL type unknown
+2025-02-04T22:50:28.944+01:00  INFO 7548 --- [LesObjetsSontNosAmis] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-04T22:50:28.997+01:00  INFO 7548 --- [LesObjetsSontNosAmis] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-02-04T22:50:29.003+01:00  INFO 7548 --- [LesObjetsSontNosAmis] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-02-04T22:50:29.004+01:00  INFO 7548 --- [LesObjetsSontNosAmis] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-02-04T22:51:21.400+01:00  INFO 2764 --- [LesObjetsSontNosAmis] [restartedMain] f.e.l.LesObjetsSontNosAmisApplication    : Starting LesObjetsSontNosAmisApplication using Java 17.0.13 with PID 2764 (D:\Projet-Encheres-ENI-non\build\classes\java\main started by jevariste2024 in D:\Projet-Encheres-ENI-non)
+2025-02-04T22:51:21.402+01:00  INFO 2764 --- [LesObjetsSontNosAmis] [restartedMain] f.e.l.LesObjetsSontNosAmisApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-02-04T22:51:21.437+01:00  INFO 2764 --- [LesObjetsSontNosAmis] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-02-04T22:51:21.437+01:00  INFO 2764 --- [LesObjetsSontNosAmis] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-02-04T22:51:22.483+01:00  INFO 2764 --- [LesObjetsSontNosAmis] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-02-04T22:51:22.493+01:00  INFO 2764 --- [LesObjetsSontNosAmis] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-04T22:51:22.494+01:00  INFO 2764 --- [LesObjetsSontNosAmis] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-04T22:51:22.530+01:00  INFO 2764 --- [LesObjetsSontNosAmis] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-04T22:51:22.530+01:00  INFO 2764 --- [LesObjetsSontNosAmis] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1092 ms
+2025-02-04T22:51:22.776+01:00  INFO 2764 --- [LesObjetsSontNosAmis] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-02-04T22:51:23.138+01:00  INFO 2764 --- [LesObjetsSontNosAmis] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-02-04T22:51:23.143+01:00  INFO 2764 --- [LesObjetsSontNosAmis] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-02-04T22:51:23.193+01:00  INFO 2764 --- [LesObjetsSontNosAmis] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-02-04T22:51:23.207+01:00  INFO 2764 --- [LesObjetsSontNosAmis] [restartedMain] f.e.l.LesObjetsSontNosAmisApplication    : Started LesObjetsSontNosAmisApplication in 2.15 seconds (process running for 2.589)
+2025-02-04T22:51:23.839+01:00  INFO 2764 --- [LesObjetsSontNosAmis] [RMI TCP Connection(2)-10.44.101.2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-04T22:51:23.839+01:00  INFO 2764 --- [LesObjetsSontNosAmis] [RMI TCP Connection(2)-10.44.101.2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-02-04T22:51:23.840+01:00  INFO 2764 --- [LesObjetsSontNosAmis] [RMI TCP Connection(2)-10.44.101.2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-02-04T22:51:23.851+01:00  INFO 2764 --- [LesObjetsSontNosAmis] [RMI TCP Connection(4)-10.44.101.2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-02-04T22:51:24.040+01:00  INFO 2764 --- [LesObjetsSontNosAmis] [RMI TCP Connection(4)-10.44.101.2] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection ConnectionID:1 ClientConnectionId: 88d0d003-2a14-4d97-9a63-c92374216081
+2025-02-04T22:51:24.043+01:00  INFO 2764 --- [LesObjetsSontNosAmis] [RMI TCP Connection(4)-10.44.101.2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-02-04T22:51:50.734+01:00  WARN 2764 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'username' for method parameter type String is not present]
+2025-02-04T22:52:36.601+01:00  INFO 2764 --- [LesObjetsSontNosAmis] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-04T22:52:36.677+01:00  INFO 2764 --- [LesObjetsSontNosAmis] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-02-04T22:52:36.682+01:00  INFO 2764 --- [LesObjetsSontNosAmis] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-02-04T22:52:36.684+01:00  INFO 2764 --- [LesObjetsSontNosAmis] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-02-04T22:52:38.649+01:00  INFO 11300 --- [LesObjetsSontNosAmis] [restartedMain] f.e.l.LesObjetsSontNosAmisApplication    : Starting LesObjetsSontNosAmisApplication using Java 17.0.13 with PID 11300 (D:\Projet-Encheres-ENI-non\build\classes\java\main started by jevariste2024 in D:\Projet-Encheres-ENI-non)
+2025-02-04T22:52:38.651+01:00  INFO 11300 --- [LesObjetsSontNosAmis] [restartedMain] f.e.l.LesObjetsSontNosAmisApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-02-04T22:52:38.689+01:00  INFO 11300 --- [LesObjetsSontNosAmis] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-02-04T22:52:38.689+01:00  INFO 11300 --- [LesObjetsSontNosAmis] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-02-04T22:52:39.733+01:00  INFO 11300 --- [LesObjetsSontNosAmis] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-02-04T22:52:39.743+01:00  INFO 11300 --- [LesObjetsSontNosAmis] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-04T22:52:39.743+01:00  INFO 11300 --- [LesObjetsSontNosAmis] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-04T22:52:39.778+01:00  INFO 11300 --- [LesObjetsSontNosAmis] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-04T22:52:39.778+01:00  INFO 11300 --- [LesObjetsSontNosAmis] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1088 ms
+2025-02-04T22:52:40.017+01:00  INFO 11300 --- [LesObjetsSontNosAmis] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-02-04T22:52:40.358+01:00  INFO 11300 --- [LesObjetsSontNosAmis] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-02-04T22:52:40.363+01:00  INFO 11300 --- [LesObjetsSontNosAmis] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-02-04T22:52:40.414+01:00  INFO 11300 --- [LesObjetsSontNosAmis] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-02-04T22:52:40.427+01:00  INFO 11300 --- [LesObjetsSontNosAmis] [restartedMain] f.e.l.LesObjetsSontNosAmisApplication    : Started LesObjetsSontNosAmisApplication in 2.117 seconds (process running for 2.543)
+2025-02-04T22:52:40.534+01:00  INFO 11300 --- [LesObjetsSontNosAmis] [RMI TCP Connection(1)-10.44.101.2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-04T22:52:40.534+01:00  INFO 11300 --- [LesObjetsSontNosAmis] [RMI TCP Connection(1)-10.44.101.2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-02-04T22:52:40.535+01:00  INFO 11300 --- [LesObjetsSontNosAmis] [RMI TCP Connection(1)-10.44.101.2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-02-04T22:52:40.546+01:00  INFO 11300 --- [LesObjetsSontNosAmis] [RMI TCP Connection(3)-10.44.101.2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-02-04T22:52:40.742+01:00  INFO 11300 --- [LesObjetsSontNosAmis] [RMI TCP Connection(3)-10.44.101.2] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection ConnectionID:1 ClientConnectionId: 9f570305-e97c-4407-a999-29d74e6b7619
+2025-02-04T22:52:40.745+01:00  INFO 11300 --- [LesObjetsSontNosAmis] [RMI TCP Connection(3)-10.44.101.2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-02-04T22:52:56.517+01:00  INFO 11300 --- [LesObjetsSontNosAmis] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-04T22:52:56.589+01:00  INFO 11300 --- [LesObjetsSontNosAmis] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-02-04T22:52:56.595+01:00  INFO 11300 --- [LesObjetsSontNosAmis] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-02-04T22:52:56.597+01:00  INFO 11300 --- [LesObjetsSontNosAmis] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-02-04T22:52:58.226+01:00  INFO 2392 --- [LesObjetsSontNosAmis] [restartedMain] f.e.l.LesObjetsSontNosAmisApplication    : Starting LesObjetsSontNosAmisApplication using Java 17.0.13 with PID 2392 (D:\Projet-Encheres-ENI-non\build\classes\java\main started by jevariste2024 in D:\Projet-Encheres-ENI-non)
+2025-02-04T22:52:58.227+01:00  INFO 2392 --- [LesObjetsSontNosAmis] [restartedMain] f.e.l.LesObjetsSontNosAmisApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-02-04T22:52:58.261+01:00  INFO 2392 --- [LesObjetsSontNosAmis] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-02-04T22:52:58.261+01:00  INFO 2392 --- [LesObjetsSontNosAmis] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-02-04T22:52:59.278+01:00  INFO 2392 --- [LesObjetsSontNosAmis] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-02-04T22:52:59.288+01:00  INFO 2392 --- [LesObjetsSontNosAmis] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-04T22:52:59.289+01:00  INFO 2392 --- [LesObjetsSontNosAmis] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-04T22:52:59.326+01:00  INFO 2392 --- [LesObjetsSontNosAmis] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-04T22:52:59.327+01:00  INFO 2392 --- [LesObjetsSontNosAmis] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1065 ms
+2025-02-04T22:52:59.579+01:00  INFO 2392 --- [LesObjetsSontNosAmis] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-02-04T22:52:59.938+01:00  INFO 2392 --- [LesObjetsSontNosAmis] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-02-04T22:52:59.943+01:00  INFO 2392 --- [LesObjetsSontNosAmis] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-02-04T22:52:59.994+01:00  INFO 2392 --- [LesObjetsSontNosAmis] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-02-04T22:53:00.008+01:00  INFO 2392 --- [LesObjetsSontNosAmis] [restartedMain] f.e.l.LesObjetsSontNosAmisApplication    : Started LesObjetsSontNosAmisApplication in 2.11 seconds (process running for 2.595)
+2025-02-04T22:53:00.587+01:00  INFO 2392 --- [LesObjetsSontNosAmis] [RMI TCP Connection(2)-10.44.101.2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-04T22:53:00.587+01:00  INFO 2392 --- [LesObjetsSontNosAmis] [RMI TCP Connection(2)-10.44.101.2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-02-04T22:53:00.588+01:00  INFO 2392 --- [LesObjetsSontNosAmis] [RMI TCP Connection(2)-10.44.101.2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-02-04T22:53:00.591+01:00  INFO 2392 --- [LesObjetsSontNosAmis] [RMI TCP Connection(1)-10.44.101.2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-02-04T22:53:00.789+01:00  INFO 2392 --- [LesObjetsSontNosAmis] [RMI TCP Connection(1)-10.44.101.2] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection ConnectionID:1 ClientConnectionId: 1e826dbb-3cb0-4f17-b438-77dc23fc9118
+2025-02-04T22:53:00.792+01:00  INFO 2392 --- [LesObjetsSontNosAmis] [RMI TCP Connection(1)-10.44.101.2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-02-04T22:53:25.776+01:00 DEBUG 2392 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-8] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2025-02-04T22:53:25.776+01:00 DEBUG 2392 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-8] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT no_categorie, libelle FROM categories]
+2025-02-04T22:53:25.796+01:00 DEBUG 2392 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-8] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2025-02-04T22:53:25.796+01:00 DEBUG 2392 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-8] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT pseudo, nom, prenom, email, telephone, rue, code_postal, ville FROM utilisateurs]
+2025-02-04T22:53:25.801+01:00 DEBUG 2392 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-8] o.s.jdbc.core.BeanPropertyRowMapper      : Mapping column 'pseudo' to property 'pseudo' of type 'java.lang.String'
+2025-02-04T22:53:25.802+01:00 DEBUG 2392 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-8] o.s.jdbc.core.BeanPropertyRowMapper      : Mapping column 'nom' to property 'nom' of type 'java.lang.String'
+2025-02-04T22:53:25.802+01:00 DEBUG 2392 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-8] o.s.jdbc.core.BeanPropertyRowMapper      : Mapping column 'prenom' to property 'prenom' of type 'java.lang.String'
+2025-02-04T22:53:25.802+01:00 DEBUG 2392 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-8] o.s.jdbc.core.BeanPropertyRowMapper      : Mapping column 'email' to property 'email' of type 'java.lang.String'
+2025-02-04T22:53:25.802+01:00 DEBUG 2392 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-8] o.s.jdbc.core.BeanPropertyRowMapper      : Mapping column 'telephone' to property 'telephone' of type 'java.lang.String'
+2025-02-04T22:53:25.802+01:00 DEBUG 2392 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-8] o.s.jdbc.core.BeanPropertyRowMapper      : Mapping column 'rue' to property 'rue' of type 'java.lang.String'
+2025-02-04T22:53:25.802+01:00 DEBUG 2392 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-8] o.s.jdbc.core.BeanPropertyRowMapper      : Mapping column 'code_postal' to property 'codePostal' of type 'int'
+2025-02-04T22:53:25.802+01:00 DEBUG 2392 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-8] o.s.jdbc.core.BeanPropertyRowMapper      : Mapping column 'ville' to property 'ville' of type 'java.lang.String'
+2025-02-04T22:56:48.033+01:00  INFO 2392 --- [LesObjetsSontNosAmis] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-02-04T22:56:48.035+01:00  INFO 2392 --- [LesObjetsSontNosAmis] [Thread-5] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-04T22:56:48.111+01:00  INFO 2392 --- [LesObjetsSontNosAmis] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-02-04T22:56:48.116+01:00  INFO 2392 --- [LesObjetsSontNosAmis] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-02-04T22:56:48.118+01:00  INFO 2392 --- [LesObjetsSontNosAmis] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-02-04T22:56:48.185+01:00  INFO 2392 --- [LesObjetsSontNosAmis] [restartedMain] f.e.l.LesObjetsSontNosAmisApplication    : Starting LesObjetsSontNosAmisApplication using Java 17.0.13 with PID 2392 (D:\Projet-Encheres-ENI-non\build\classes\java\main started by jevariste2024 in D:\Projet-Encheres-ENI-non)
+2025-02-04T22:56:48.185+01:00  INFO 2392 --- [LesObjetsSontNosAmis] [restartedMain] f.e.l.LesObjetsSontNosAmisApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-02-04T22:56:48.468+01:00  INFO 2392 --- [LesObjetsSontNosAmis] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-02-04T22:56:48.468+01:00  INFO 2392 --- [LesObjetsSontNosAmis] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-04T22:56:48.468+01:00  INFO 2392 --- [LesObjetsSontNosAmis] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-04T22:56:48.480+01:00  INFO 2392 --- [LesObjetsSontNosAmis] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-04T22:56:48.481+01:00  INFO 2392 --- [LesObjetsSontNosAmis] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 295 ms
+2025-02-04T22:56:48.554+01:00  INFO 2392 --- [LesObjetsSontNosAmis] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-02-04T22:56:48.662+01:00  INFO 2392 --- [LesObjetsSontNosAmis] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-02-04T22:56:48.665+01:00  INFO 2392 --- [LesObjetsSontNosAmis] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-02-04T22:56:48.681+01:00  INFO 2392 --- [LesObjetsSontNosAmis] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-02-04T22:56:48.689+01:00  INFO 2392 --- [LesObjetsSontNosAmis] [restartedMain] f.e.l.LesObjetsSontNosAmisApplication    : Started LesObjetsSontNosAmisApplication in 0.523 seconds (process running for 231.278)
+2025-02-04T22:56:48.692+01:00  INFO 2392 --- [LesObjetsSontNosAmis] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-02-04T22:56:54.124+01:00  INFO 2392 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-04T22:56:54.124+01:00  INFO 2392 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-02-04T22:56:54.125+01:00  INFO 2392 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-02-04T23:04:19.240+01:00  INFO 2392 --- [LesObjetsSontNosAmis] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-04T23:04:19.309+01:00  INFO 2392 --- [LesObjetsSontNosAmis] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-02-04T23:04:21.317+01:00  INFO 10100 --- [LesObjetsSontNosAmis] [restartedMain] f.e.l.LesObjetsSontNosAmisApplication    : Starting LesObjetsSontNosAmisApplication using Java 17.0.13 with PID 10100 (D:\Projet-Encheres-ENI-non\build\classes\java\main started by jevariste2024 in D:\Projet-Encheres-ENI-non)
+2025-02-04T23:04:21.319+01:00  INFO 10100 --- [LesObjetsSontNosAmis] [restartedMain] f.e.l.LesObjetsSontNosAmisApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-02-04T23:04:21.355+01:00  INFO 10100 --- [LesObjetsSontNosAmis] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-02-04T23:04:21.355+01:00  INFO 10100 --- [LesObjetsSontNosAmis] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-02-04T23:04:22.399+01:00  INFO 10100 --- [LesObjetsSontNosAmis] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-02-04T23:04:22.409+01:00  INFO 10100 --- [LesObjetsSontNosAmis] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-04T23:04:22.409+01:00  INFO 10100 --- [LesObjetsSontNosAmis] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-04T23:04:22.445+01:00  INFO 10100 --- [LesObjetsSontNosAmis] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-04T23:04:22.445+01:00  INFO 10100 --- [LesObjetsSontNosAmis] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1090 ms
+2025-02-04T23:04:22.685+01:00  INFO 10100 --- [LesObjetsSontNosAmis] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-02-04T23:04:23.034+01:00  INFO 10100 --- [LesObjetsSontNosAmis] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-02-04T23:04:23.039+01:00  INFO 10100 --- [LesObjetsSontNosAmis] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-02-04T23:04:23.091+01:00  INFO 10100 --- [LesObjetsSontNosAmis] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-02-04T23:04:23.104+01:00  INFO 10100 --- [LesObjetsSontNosAmis] [restartedMain] f.e.l.LesObjetsSontNosAmisApplication    : Started LesObjetsSontNosAmisApplication in 2.118 seconds (process running for 2.557)
+2025-02-04T23:04:23.198+01:00  INFO 10100 --- [LesObjetsSontNosAmis] [RMI TCP Connection(2)-10.44.101.2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-02-04T23:04:23.210+01:00  INFO 10100 --- [LesObjetsSontNosAmis] [RMI TCP Connection(3)-10.44.101.2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-04T23:04:23.210+01:00  INFO 10100 --- [LesObjetsSontNosAmis] [RMI TCP Connection(3)-10.44.101.2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-02-04T23:04:23.213+01:00  INFO 10100 --- [LesObjetsSontNosAmis] [RMI TCP Connection(3)-10.44.101.2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-02-04T23:04:23.409+01:00  INFO 10100 --- [LesObjetsSontNosAmis] [RMI TCP Connection(2)-10.44.101.2] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection ConnectionID:1 ClientConnectionId: a271bde0-8c29-49b5-a9b4-194aa11944db
+2025-02-04T23:04:23.411+01:00  INFO 10100 --- [LesObjetsSontNosAmis] [RMI TCP Connection(2)-10.44.101.2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-02-04T23:04:46.617+01:00 DEBUG 10100 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-1] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2025-02-04T23:04:46.618+01:00 DEBUG 10100 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-1] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT no_categorie, libelle FROM categories]
+2025-02-04T23:04:46.638+01:00 DEBUG 10100 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-1] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2025-02-04T23:04:46.638+01:00 DEBUG 10100 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-1] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT pseudo, nom, prenom, email, telephone, rue, code_postal, ville FROM utilisateurs]
+2025-02-04T23:04:46.643+01:00 DEBUG 10100 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-1] o.s.jdbc.core.BeanPropertyRowMapper      : Mapping column 'pseudo' to property 'pseudo' of type 'java.lang.String'
+2025-02-04T23:04:46.643+01:00 DEBUG 10100 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-1] o.s.jdbc.core.BeanPropertyRowMapper      : Mapping column 'nom' to property 'nom' of type 'java.lang.String'
+2025-02-04T23:04:46.643+01:00 DEBUG 10100 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-1] o.s.jdbc.core.BeanPropertyRowMapper      : Mapping column 'prenom' to property 'prenom' of type 'java.lang.String'
+2025-02-04T23:04:46.643+01:00 DEBUG 10100 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-1] o.s.jdbc.core.BeanPropertyRowMapper      : Mapping column 'email' to property 'email' of type 'java.lang.String'
+2025-02-04T23:04:46.644+01:00 DEBUG 10100 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-1] o.s.jdbc.core.BeanPropertyRowMapper      : Mapping column 'telephone' to property 'telephone' of type 'java.lang.String'
+2025-02-04T23:04:46.644+01:00 DEBUG 10100 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-1] o.s.jdbc.core.BeanPropertyRowMapper      : Mapping column 'rue' to property 'rue' of type 'java.lang.String'
+2025-02-04T23:04:46.644+01:00 DEBUG 10100 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-1] o.s.jdbc.core.BeanPropertyRowMapper      : Mapping column 'code_postal' to property 'codePostal' of type 'int'
+2025-02-04T23:04:46.644+01:00 DEBUG 10100 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-1] o.s.jdbc.core.BeanPropertyRowMapper      : Mapping column 'ville' to property 'ville' of type 'java.lang.String'
+2025-02-04T23:04:47.425+01:00 DEBUG 10100 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-8] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2025-02-04T23:04:47.426+01:00 DEBUG 10100 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-8] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT no_article, nom_article, description, date_debut_encheres, date_fin_encheres, prix_initial, prix_vente, no_utilisateur, no_categorie FROM articles_vendus]
+2025-02-04T23:11:09.475+01:00  INFO 10100 --- [LesObjetsSontNosAmis] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-02-04T23:11:09.478+01:00  INFO 10100 --- [LesObjetsSontNosAmis] [Thread-5] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-04T23:11:09.533+01:00  INFO 10100 --- [LesObjetsSontNosAmis] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-02-04T23:11:09.537+01:00  INFO 10100 --- [LesObjetsSontNosAmis] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-02-04T23:11:09.542+01:00  INFO 10100 --- [LesObjetsSontNosAmis] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-02-04T23:11:09.635+01:00  INFO 10100 --- [LesObjetsSontNosAmis] [restartedMain] f.e.l.LesObjetsSontNosAmisApplication    : Starting LesObjetsSontNosAmisApplication using Java 17.0.13 with PID 10100 (D:\Projet-Encheres-ENI-non\build\classes\java\main started by jevariste2024 in D:\Projet-Encheres-ENI-non)
+2025-02-04T23:11:09.635+01:00  INFO 10100 --- [LesObjetsSontNosAmis] [restartedMain] f.e.l.LesObjetsSontNosAmisApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-02-04T23:11:09.920+01:00  INFO 10100 --- [LesObjetsSontNosAmis] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-02-04T23:11:09.921+01:00  INFO 10100 --- [LesObjetsSontNosAmis] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-04T23:11:09.921+01:00  INFO 10100 --- [LesObjetsSontNosAmis] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-04T23:11:09.933+01:00  INFO 10100 --- [LesObjetsSontNosAmis] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-04T23:11:09.934+01:00  INFO 10100 --- [LesObjetsSontNosAmis] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 297 ms
+2025-02-04T23:11:10.014+01:00  INFO 10100 --- [LesObjetsSontNosAmis] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-02-04T23:11:10.128+01:00  INFO 10100 --- [LesObjetsSontNosAmis] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-02-04T23:11:10.130+01:00  INFO 10100 --- [LesObjetsSontNosAmis] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-02-04T23:11:10.146+01:00  INFO 10100 --- [LesObjetsSontNosAmis] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-02-04T23:11:10.155+01:00  INFO 10100 --- [LesObjetsSontNosAmis] [restartedMain] f.e.l.LesObjetsSontNosAmisApplication    : Started LesObjetsSontNosAmisApplication in 0.539 seconds (process running for 409.622)
+2025-02-04T23:11:10.157+01:00  INFO 10100 --- [LesObjetsSontNosAmis] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-02-04T23:16:10.403+01:00  INFO 10100 --- [LesObjetsSontNosAmis] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-04T23:16:10.458+01:00  INFO 10100 --- [LesObjetsSontNosAmis] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-02-04T23:18:35.874+01:00  INFO 13916 --- [LesObjetsSontNosAmis] [restartedMain] f.e.l.LesObjetsSontNosAmisApplication    : Starting LesObjetsSontNosAmisApplication using Java 17.0.13 with PID 13916 (D:\Projet-Encheres-ENI-non\build\classes\java\main started by jevariste2024 in D:\Projet-Encheres-ENI-non)
+2025-02-04T23:18:35.876+01:00  INFO 13916 --- [LesObjetsSontNosAmis] [restartedMain] f.e.l.LesObjetsSontNosAmisApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-02-04T23:18:35.913+01:00  INFO 13916 --- [LesObjetsSontNosAmis] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-02-04T23:18:35.913+01:00  INFO 13916 --- [LesObjetsSontNosAmis] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-02-04T23:18:36.949+01:00  INFO 13916 --- [LesObjetsSontNosAmis] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-02-04T23:18:36.959+01:00  INFO 13916 --- [LesObjetsSontNosAmis] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-04T23:18:36.959+01:00  INFO 13916 --- [LesObjetsSontNosAmis] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-04T23:18:36.996+01:00  INFO 13916 --- [LesObjetsSontNosAmis] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-04T23:18:36.996+01:00  INFO 13916 --- [LesObjetsSontNosAmis] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1083 ms
+2025-02-04T23:18:37.242+01:00  INFO 13916 --- [LesObjetsSontNosAmis] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-02-04T23:18:37.607+01:00  INFO 13916 --- [LesObjetsSontNosAmis] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-02-04T23:18:37.612+01:00  INFO 13916 --- [LesObjetsSontNosAmis] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-02-04T23:18:37.664+01:00  INFO 13916 --- [LesObjetsSontNosAmis] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-02-04T23:18:37.677+01:00  INFO 13916 --- [LesObjetsSontNosAmis] [restartedMain] f.e.l.LesObjetsSontNosAmisApplication    : Started LesObjetsSontNosAmisApplication in 2.139 seconds (process running for 2.569)
+2025-02-04T23:18:37.846+01:00  INFO 13916 --- [LesObjetsSontNosAmis] [RMI TCP Connection(2)-10.44.101.2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-04T23:18:37.847+01:00  INFO 13916 --- [LesObjetsSontNosAmis] [RMI TCP Connection(2)-10.44.101.2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-02-04T23:18:37.849+01:00  INFO 13916 --- [LesObjetsSontNosAmis] [RMI TCP Connection(2)-10.44.101.2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-02-04T23:18:37.866+01:00  INFO 13916 --- [LesObjetsSontNosAmis] [RMI TCP Connection(3)-10.44.101.2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-02-04T23:18:38.073+01:00  INFO 13916 --- [LesObjetsSontNosAmis] [RMI TCP Connection(3)-10.44.101.2] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection ConnectionID:1 ClientConnectionId: 29e934e3-b172-4745-96f0-17f0bd1dfa3c
+2025-02-04T23:18:38.076+01:00  INFO 13916 --- [LesObjetsSontNosAmis] [RMI TCP Connection(3)-10.44.101.2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-02-04T23:21:20.198+01:00  INFO 13916 --- [LesObjetsSontNosAmis] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-04T23:21:20.257+01:00  INFO 13916 --- [LesObjetsSontNosAmis] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-02-04T23:21:20.262+01:00  INFO 13916 --- [LesObjetsSontNosAmis] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-02-04T23:21:20.264+01:00  INFO 13916 --- [LesObjetsSontNosAmis] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-02-04T23:21:22.175+01:00  INFO 14884 --- [LesObjetsSontNosAmis] [restartedMain] f.e.l.LesObjetsSontNosAmisApplication    : Starting LesObjetsSontNosAmisApplication using Java 17.0.13 with PID 14884 (D:\Projet-Encheres-ENI-non\build\classes\java\main started by jevariste2024 in D:\Projet-Encheres-ENI-non)
+2025-02-04T23:21:22.177+01:00  INFO 14884 --- [LesObjetsSontNosAmis] [restartedMain] f.e.l.LesObjetsSontNosAmisApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-02-04T23:21:22.209+01:00  INFO 14884 --- [LesObjetsSontNosAmis] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-02-04T23:21:22.209+01:00  INFO 14884 --- [LesObjetsSontNosAmis] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-02-04T23:21:23.255+01:00  INFO 14884 --- [LesObjetsSontNosAmis] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-02-04T23:21:23.264+01:00  INFO 14884 --- [LesObjetsSontNosAmis] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-04T23:21:23.265+01:00  INFO 14884 --- [LesObjetsSontNosAmis] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-04T23:21:23.301+01:00  INFO 14884 --- [LesObjetsSontNosAmis] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-04T23:21:23.301+01:00  INFO 14884 --- [LesObjetsSontNosAmis] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1091 ms
+2025-02-04T23:21:23.543+01:00  INFO 14884 --- [LesObjetsSontNosAmis] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-02-04T23:21:23.889+01:00  INFO 14884 --- [LesObjetsSontNosAmis] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-02-04T23:21:23.895+01:00  INFO 14884 --- [LesObjetsSontNosAmis] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-02-04T23:21:23.950+01:00  INFO 14884 --- [LesObjetsSontNosAmis] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-02-04T23:21:23.964+01:00  INFO 14884 --- [LesObjetsSontNosAmis] [restartedMain] f.e.l.LesObjetsSontNosAmisApplication    : Started LesObjetsSontNosAmisApplication in 2.157 seconds (process running for 2.589)
+2025-02-04T23:21:24.541+01:00  INFO 14884 --- [LesObjetsSontNosAmis] [RMI TCP Connection(1)-10.44.101.2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-04T23:21:24.542+01:00  INFO 14884 --- [LesObjetsSontNosAmis] [RMI TCP Connection(1)-10.44.101.2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-02-04T23:21:24.544+01:00  INFO 14884 --- [LesObjetsSontNosAmis] [RMI TCP Connection(1)-10.44.101.2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-02-04T23:21:24.562+01:00  INFO 14884 --- [LesObjetsSontNosAmis] [RMI TCP Connection(3)-10.44.101.2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-02-04T23:21:24.767+01:00  INFO 14884 --- [LesObjetsSontNosAmis] [RMI TCP Connection(3)-10.44.101.2] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection ConnectionID:1 ClientConnectionId: 750075f0-8b1e-466e-a61e-1167367ae4a2
+2025-02-04T23:21:24.770+01:00  INFO 14884 --- [LesObjetsSontNosAmis] [RMI TCP Connection(3)-10.44.101.2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-02-04T23:21:43.459+01:00 ERROR 14884 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-3] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-3] Exception processing template "/view-article-create": An error happened during template parsing (template: "class path resource [templates//view-article-create.html]")
+
+org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates//view-article-create.html]")
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:241) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372) ~[thymeleaf-spring6-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192) ~[thymeleaf-spring6-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1435) ~[spring-webmvc-6.2.2.jar:6.2.2]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1167) ~[spring-webmvc-6.2.2.jar:6.2.2]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1105) ~[spring-webmvc-6.2.2.jar:6.2.2]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978) ~[spring-webmvc-6.2.2.jar:6.2.2]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.2.jar:6.2.2]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.2.2.jar:6.2.2]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.34.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.2.jar:6.2.2]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.34.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.34.jar:10.1.34]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.2.jar:6.2.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.2.jar:6.2.2]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.2.jar:6.2.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.2.jar:6.2.2]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:114) ~[spring-web-6.2.2.jar:6.2.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.2.jar:6.2.2]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.2.jar:6.2.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.2.jar:6.2.2]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+Caused by: org.attoparser.ParseException: Error during execution of processor 'org.thymeleaf.spring6.processor.SpringSelectFieldTagProcessor' (template: "fragments/frag-article-form" - line 14, col 43)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:393) ~[attoparser-2.0.7.RELEASE.jar:2.0.7.RELEASE]
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257) ~[attoparser-2.0.7.RELEASE.jar:2.0.7.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	... 52 common frames omitted
+Caused by: org.thymeleaf.exceptions.TemplateProcessingException: Error during execution of processor 'org.thymeleaf.spring6.processor.SpringSelectFieldTagProcessor' (template: "fragments/frag-article-form" - line 14, col 43)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:117) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.Model.process(Model.java:282) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1587) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.Model.process(Model.java:282) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1587) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.Model.process(Model.java:282) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1587) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleOpenElementEnd(TemplateHandlerAdapterMarkupHandler.java:304) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:278) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleOpenElementEnd(OutputExpressionInlinePreProcessorHandler.java:186) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:124) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.attoparser.HtmlElement.handleOpenElementEnd(HtmlElement.java:109) ~[attoparser-2.0.7.RELEASE.jar:2.0.7.RELEASE]
+	at org.attoparser.HtmlMarkupHandler.handleOpenElementEnd(HtmlMarkupHandler.java:297) ~[attoparser-2.0.7.RELEASE.jar:2.0.7.RELEASE]
+	at org.attoparser.MarkupEventProcessorHandler.handleOpenElementEnd(MarkupEventProcessorHandler.java:402) ~[attoparser-2.0.7.RELEASE.jar:2.0.7.RELEASE]
+	at org.attoparser.ParsingElementMarkupUtil.parseOpenElement(ParsingElementMarkupUtil.java:159) ~[attoparser-2.0.7.RELEASE.jar:2.0.7.RELEASE]
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:710) ~[attoparser-2.0.7.RELEASE.jar:2.0.7.RELEASE]
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301) ~[attoparser-2.0.7.RELEASE.jar:2.0.7.RELEASE]
+	... 54 common frames omitted
+Caused by: java.lang.IllegalStateException: Neither BindingResult nor plain target object for bean name 'utilisateurList' available as request attribute
+	at org.springframework.web.servlet.support.BindStatus.<init>(BindStatus.java:153) ~[spring-webmvc-6.2.2.jar:6.2.2]
+	at org.springframework.web.servlet.support.RequestContext.getBindStatus(RequestContext.java:928) ~[spring-webmvc-6.2.2.jar:6.2.2]
+	at org.thymeleaf.spring6.context.webmvc.SpringWebMvcThymeleafRequestContext.getBindStatus(SpringWebMvcThymeleafRequestContext.java:232) ~[thymeleaf-spring6-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.spring6.util.FieldUtils.getBindStatusFromParsedExpression(FieldUtils.java:306) ~[thymeleaf-spring6-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.spring6.util.FieldUtils.getBindStatus(FieldUtils.java:258) ~[thymeleaf-spring6-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.spring6.util.FieldUtils.getBindStatus(FieldUtils.java:227) ~[thymeleaf-spring6-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.spring6.processor.AbstractSpringFieldTagProcessor.doProcess(AbstractSpringFieldTagProcessor.java:174) ~[thymeleaf-spring6-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	... 76 common frames omitted
+
+2025-02-04T23:21:43.467+01:00 ERROR 14884 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-3] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates//view-article-create.html]")] with root cause
+
+java.lang.IllegalStateException: Neither BindingResult nor plain target object for bean name 'utilisateurList' available as request attribute
+	at org.springframework.web.servlet.support.BindStatus.<init>(BindStatus.java:153) ~[spring-webmvc-6.2.2.jar:6.2.2]
+	at org.springframework.web.servlet.support.RequestContext.getBindStatus(RequestContext.java:928) ~[spring-webmvc-6.2.2.jar:6.2.2]
+	at org.thymeleaf.spring6.context.webmvc.SpringWebMvcThymeleafRequestContext.getBindStatus(SpringWebMvcThymeleafRequestContext.java:232) ~[thymeleaf-spring6-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.spring6.util.FieldUtils.getBindStatusFromParsedExpression(FieldUtils.java:306) ~[thymeleaf-spring6-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.spring6.util.FieldUtils.getBindStatus(FieldUtils.java:258) ~[thymeleaf-spring6-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.spring6.util.FieldUtils.getBindStatus(FieldUtils.java:227) ~[thymeleaf-spring6-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.spring6.processor.AbstractSpringFieldTagProcessor.doProcess(AbstractSpringFieldTagProcessor.java:174) ~[thymeleaf-spring6-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.Model.process(Model.java:282) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1587) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.Model.process(Model.java:282) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1587) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.Model.process(Model.java:282) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1587) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleOpenElementEnd(TemplateHandlerAdapterMarkupHandler.java:304) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:278) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleOpenElementEnd(OutputExpressionInlinePreProcessorHandler.java:186) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:124) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.attoparser.HtmlElement.handleOpenElementEnd(HtmlElement.java:109) ~[attoparser-2.0.7.RELEASE.jar:2.0.7.RELEASE]
+	at org.attoparser.HtmlMarkupHandler.handleOpenElementEnd(HtmlMarkupHandler.java:297) ~[attoparser-2.0.7.RELEASE.jar:2.0.7.RELEASE]
+	at org.attoparser.MarkupEventProcessorHandler.handleOpenElementEnd(MarkupEventProcessorHandler.java:402) ~[attoparser-2.0.7.RELEASE.jar:2.0.7.RELEASE]
+	at org.attoparser.ParsingElementMarkupUtil.parseOpenElement(ParsingElementMarkupUtil.java:159) ~[attoparser-2.0.7.RELEASE.jar:2.0.7.RELEASE]
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:710) ~[attoparser-2.0.7.RELEASE.jar:2.0.7.RELEASE]
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301) ~[attoparser-2.0.7.RELEASE.jar:2.0.7.RELEASE]
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257) ~[attoparser-2.0.7.RELEASE.jar:2.0.7.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372) ~[thymeleaf-spring6-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192) ~[thymeleaf-spring6-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1435) ~[spring-webmvc-6.2.2.jar:6.2.2]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1167) ~[spring-webmvc-6.2.2.jar:6.2.2]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1105) ~[spring-webmvc-6.2.2.jar:6.2.2]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978) ~[spring-webmvc-6.2.2.jar:6.2.2]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.2.jar:6.2.2]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.2.2.jar:6.2.2]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.34.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.2.jar:6.2.2]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.34.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.34.jar:10.1.34]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.2.jar:6.2.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.2.jar:6.2.2]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.2.jar:6.2.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.2.jar:6.2.2]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:114) ~[spring-web-6.2.2.jar:6.2.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.2.jar:6.2.2]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.2.jar:6.2.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.2.jar:6.2.2]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+
+2025-02-04T23:21:55.420+01:00 ERROR 14884 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-7] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-7] Exception processing template "/view-article-create": An error happened during template parsing (template: "class path resource [templates//view-article-create.html]")
+
+org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates//view-article-create.html]")
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:241) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372) ~[thymeleaf-spring6-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192) ~[thymeleaf-spring6-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1435) ~[spring-webmvc-6.2.2.jar:6.2.2]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1167) ~[spring-webmvc-6.2.2.jar:6.2.2]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1105) ~[spring-webmvc-6.2.2.jar:6.2.2]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978) ~[spring-webmvc-6.2.2.jar:6.2.2]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.2.jar:6.2.2]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.2.2.jar:6.2.2]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.34.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.2.jar:6.2.2]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.34.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.34.jar:10.1.34]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.2.jar:6.2.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.2.jar:6.2.2]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.2.jar:6.2.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.2.jar:6.2.2]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:114) ~[spring-web-6.2.2.jar:6.2.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.2.jar:6.2.2]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.2.jar:6.2.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.2.jar:6.2.2]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+Caused by: org.attoparser.ParseException: Error during execution of processor 'org.thymeleaf.spring6.processor.SpringSelectFieldTagProcessor' (template: "fragments/frag-article-form" - line 14, col 43)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:393) ~[attoparser-2.0.7.RELEASE.jar:2.0.7.RELEASE]
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257) ~[attoparser-2.0.7.RELEASE.jar:2.0.7.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	... 52 common frames omitted
+Caused by: org.thymeleaf.exceptions.TemplateProcessingException: Error during execution of processor 'org.thymeleaf.spring6.processor.SpringSelectFieldTagProcessor' (template: "fragments/frag-article-form" - line 14, col 43)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:117) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.Model.process(Model.java:282) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1587) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.Model.process(Model.java:282) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1587) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.Model.process(Model.java:282) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1587) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleOpenElementEnd(TemplateHandlerAdapterMarkupHandler.java:304) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:278) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleOpenElementEnd(OutputExpressionInlinePreProcessorHandler.java:186) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:124) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.attoparser.HtmlElement.handleOpenElementEnd(HtmlElement.java:109) ~[attoparser-2.0.7.RELEASE.jar:2.0.7.RELEASE]
+	at org.attoparser.HtmlMarkupHandler.handleOpenElementEnd(HtmlMarkupHandler.java:297) ~[attoparser-2.0.7.RELEASE.jar:2.0.7.RELEASE]
+	at org.attoparser.MarkupEventProcessorHandler.handleOpenElementEnd(MarkupEventProcessorHandler.java:402) ~[attoparser-2.0.7.RELEASE.jar:2.0.7.RELEASE]
+	at org.attoparser.ParsingElementMarkupUtil.parseOpenElement(ParsingElementMarkupUtil.java:159) ~[attoparser-2.0.7.RELEASE.jar:2.0.7.RELEASE]
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:710) ~[attoparser-2.0.7.RELEASE.jar:2.0.7.RELEASE]
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301) ~[attoparser-2.0.7.RELEASE.jar:2.0.7.RELEASE]
+	... 54 common frames omitted
+Caused by: java.lang.IllegalStateException: Neither BindingResult nor plain target object for bean name 'utilisateurList' available as request attribute
+	at org.springframework.web.servlet.support.BindStatus.<init>(BindStatus.java:153) ~[spring-webmvc-6.2.2.jar:6.2.2]
+	at org.springframework.web.servlet.support.RequestContext.getBindStatus(RequestContext.java:928) ~[spring-webmvc-6.2.2.jar:6.2.2]
+	at org.thymeleaf.spring6.context.webmvc.SpringWebMvcThymeleafRequestContext.getBindStatus(SpringWebMvcThymeleafRequestContext.java:232) ~[thymeleaf-spring6-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.spring6.util.FieldUtils.getBindStatusFromParsedExpression(FieldUtils.java:306) ~[thymeleaf-spring6-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.spring6.util.FieldUtils.getBindStatus(FieldUtils.java:258) ~[thymeleaf-spring6-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.spring6.util.FieldUtils.getBindStatus(FieldUtils.java:227) ~[thymeleaf-spring6-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.spring6.processor.AbstractSpringFieldTagProcessor.doProcess(AbstractSpringFieldTagProcessor.java:174) ~[thymeleaf-spring6-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	... 76 common frames omitted
+
+2025-02-04T23:21:55.422+01:00 ERROR 14884 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-7] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates//view-article-create.html]")] with root cause
+
+java.lang.IllegalStateException: Neither BindingResult nor plain target object for bean name 'utilisateurList' available as request attribute
+	at org.springframework.web.servlet.support.BindStatus.<init>(BindStatus.java:153) ~[spring-webmvc-6.2.2.jar:6.2.2]
+	at org.springframework.web.servlet.support.RequestContext.getBindStatus(RequestContext.java:928) ~[spring-webmvc-6.2.2.jar:6.2.2]
+	at org.thymeleaf.spring6.context.webmvc.SpringWebMvcThymeleafRequestContext.getBindStatus(SpringWebMvcThymeleafRequestContext.java:232) ~[thymeleaf-spring6-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.spring6.util.FieldUtils.getBindStatusFromParsedExpression(FieldUtils.java:306) ~[thymeleaf-spring6-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.spring6.util.FieldUtils.getBindStatus(FieldUtils.java:258) ~[thymeleaf-spring6-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.spring6.util.FieldUtils.getBindStatus(FieldUtils.java:227) ~[thymeleaf-spring6-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.spring6.processor.AbstractSpringFieldTagProcessor.doProcess(AbstractSpringFieldTagProcessor.java:174) ~[thymeleaf-spring6-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.Model.process(Model.java:282) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1587) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.Model.process(Model.java:282) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1587) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.Model.process(Model.java:282) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1587) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleOpenElementEnd(TemplateHandlerAdapterMarkupHandler.java:304) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:278) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleOpenElementEnd(OutputExpressionInlinePreProcessorHandler.java:186) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:124) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.attoparser.HtmlElement.handleOpenElementEnd(HtmlElement.java:109) ~[attoparser-2.0.7.RELEASE.jar:2.0.7.RELEASE]
+	at org.attoparser.HtmlMarkupHandler.handleOpenElementEnd(HtmlMarkupHandler.java:297) ~[attoparser-2.0.7.RELEASE.jar:2.0.7.RELEASE]
+	at org.attoparser.MarkupEventProcessorHandler.handleOpenElementEnd(MarkupEventProcessorHandler.java:402) ~[attoparser-2.0.7.RELEASE.jar:2.0.7.RELEASE]
+	at org.attoparser.ParsingElementMarkupUtil.parseOpenElement(ParsingElementMarkupUtil.java:159) ~[attoparser-2.0.7.RELEASE.jar:2.0.7.RELEASE]
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:710) ~[attoparser-2.0.7.RELEASE.jar:2.0.7.RELEASE]
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301) ~[attoparser-2.0.7.RELEASE.jar:2.0.7.RELEASE]
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257) ~[attoparser-2.0.7.RELEASE.jar:2.0.7.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077) ~[thymeleaf-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372) ~[thymeleaf-spring6-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192) ~[thymeleaf-spring6-3.1.3.RELEASE.jar:3.1.3.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1435) ~[spring-webmvc-6.2.2.jar:6.2.2]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1167) ~[spring-webmvc-6.2.2.jar:6.2.2]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1105) ~[spring-webmvc-6.2.2.jar:6.2.2]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978) ~[spring-webmvc-6.2.2.jar:6.2.2]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.2.jar:6.2.2]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.2.2.jar:6.2.2]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.34.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.2.jar:6.2.2]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.34.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.34.jar:10.1.34]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.2.jar:6.2.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.2.jar:6.2.2]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.2.jar:6.2.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.2.jar:6.2.2]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:114) ~[spring-web-6.2.2.jar:6.2.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.2.jar:6.2.2]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.2.jar:6.2.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.2.jar:6.2.2]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+
+2025-02-04T23:24:01.595+01:00  INFO 14884 --- [LesObjetsSontNosAmis] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-02-04T23:24:01.603+01:00  INFO 14884 --- [LesObjetsSontNosAmis] [Thread-5] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-04T23:24:01.658+01:00  INFO 14884 --- [LesObjetsSontNosAmis] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-02-04T23:24:01.663+01:00  INFO 14884 --- [LesObjetsSontNosAmis] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-02-04T23:24:01.665+01:00  INFO 14884 --- [LesObjetsSontNosAmis] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-02-04T23:24:01.760+01:00  INFO 14884 --- [LesObjetsSontNosAmis] [restartedMain] f.e.l.LesObjetsSontNosAmisApplication    : Starting LesObjetsSontNosAmisApplication using Java 17.0.13 with PID 14884 (D:\Projet-Encheres-ENI-non\build\classes\java\main started by jevariste2024 in D:\Projet-Encheres-ENI-non)
+2025-02-04T23:24:01.760+01:00  INFO 14884 --- [LesObjetsSontNosAmis] [restartedMain] f.e.l.LesObjetsSontNosAmisApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-02-04T23:24:02.026+01:00  INFO 14884 --- [LesObjetsSontNosAmis] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-02-04T23:24:02.026+01:00  INFO 14884 --- [LesObjetsSontNosAmis] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-04T23:24:02.026+01:00  INFO 14884 --- [LesObjetsSontNosAmis] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-04T23:24:02.041+01:00  INFO 14884 --- [LesObjetsSontNosAmis] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-04T23:24:02.041+01:00  INFO 14884 --- [LesObjetsSontNosAmis] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 279 ms
+2025-02-04T23:24:02.111+01:00  INFO 14884 --- [LesObjetsSontNosAmis] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-02-04T23:24:02.220+01:00  INFO 14884 --- [LesObjetsSontNosAmis] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-02-04T23:24:02.223+01:00  INFO 14884 --- [LesObjetsSontNosAmis] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-02-04T23:24:02.240+01:00  INFO 14884 --- [LesObjetsSontNosAmis] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-02-04T23:24:02.249+01:00  INFO 14884 --- [LesObjetsSontNosAmis] [restartedMain] f.e.l.LesObjetsSontNosAmisApplication    : Started LesObjetsSontNosAmisApplication in 0.507 seconds (process running for 160.876)
+2025-02-04T23:24:02.251+01:00  INFO 14884 --- [LesObjetsSontNosAmis] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-02-04T23:28:47.046+01:00  INFO 14884 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-04T23:28:47.046+01:00  INFO 14884 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-02-04T23:28:47.047+01:00  INFO 14884 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-02-04T23:28:53.059+01:00 DEBUG 14884 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-2] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2025-02-04T23:28:53.060+01:00 DEBUG 14884 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-2] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT no_utilisateur, pseudo, nom, prenom, email, telephone, rue, code_postal, ville FROM utilisateurs WHERE email = ?]
+2025-02-04T23:28:53.060+01:00  INFO 14884 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2025-02-04T23:28:53.075+01:00  INFO 14884 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-2] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection ConnectionID:11 ClientConnectionId: a1f01cbc-00d8-47d5-9199-47ec29b502fc
+2025-02-04T23:28:53.075+01:00  INFO 14884 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2025-02-04T23:28:53.092+01:00 TRACE 14884 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-2] o.s.jdbc.core.StatementCreatorUtils      : Setting SQL statement parameter value: column index 1, parameter value [paul.b@email.com], value class [java.lang.String], SQL type unknown
+2025-02-04T23:28:53.105+01:00 DEBUG 14884 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-2] o.s.jdbc.core.BeanPropertyRowMapper      : Mapping column 'no_utilisateur' to property 'noUtilisateur' of type 'int'
+2025-02-04T23:28:53.106+01:00 DEBUG 14884 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-2] o.s.jdbc.core.BeanPropertyRowMapper      : Mapping column 'pseudo' to property 'pseudo' of type 'java.lang.String'
+2025-02-04T23:28:53.106+01:00 DEBUG 14884 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-2] o.s.jdbc.core.BeanPropertyRowMapper      : Mapping column 'nom' to property 'nom' of type 'java.lang.String'
+2025-02-04T23:28:53.106+01:00 DEBUG 14884 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-2] o.s.jdbc.core.BeanPropertyRowMapper      : Mapping column 'prenom' to property 'prenom' of type 'java.lang.String'
+2025-02-04T23:28:53.107+01:00 DEBUG 14884 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-2] o.s.jdbc.core.BeanPropertyRowMapper      : Mapping column 'email' to property 'email' of type 'java.lang.String'
+2025-02-04T23:28:53.107+01:00 DEBUG 14884 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-2] o.s.jdbc.core.BeanPropertyRowMapper      : Mapping column 'telephone' to property 'telephone' of type 'java.lang.String'
+2025-02-04T23:28:53.107+01:00 DEBUG 14884 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-2] o.s.jdbc.core.BeanPropertyRowMapper      : Mapping column 'rue' to property 'rue' of type 'java.lang.String'
+2025-02-04T23:28:53.107+01:00 DEBUG 14884 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-2] o.s.jdbc.core.BeanPropertyRowMapper      : Mapping column 'code_postal' to property 'codePostal' of type 'int'
+2025-02-04T23:28:53.107+01:00 DEBUG 14884 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-2] o.s.jdbc.core.BeanPropertyRowMapper      : Mapping column 'ville' to property 'ville' of type 'java.lang.String'
+2025-02-04T23:28:53.113+01:00 ERROR 14884 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.dao.IncorrectResultSizeDataAccessException: Incorrect result size: expected 1, actual 2] with root cause
+
+org.springframework.dao.IncorrectResultSizeDataAccessException: Incorrect result size: expected 1, actual 2
+	at org.springframework.dao.support.DataAccessUtils.nullableSingleResult(DataAccessUtils.java:197) ~[spring-tx-6.2.2.jar:6.2.2]
+	at org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate.queryForObject(NamedParameterJdbcTemplate.java:253) ~[spring-jdbc-6.2.2.jar:6.2.2]
+	at fr.eni.lesobjetssontnosamis.dal.UtilisateurDAOImpl.read(UtilisateurDAOImpl.java:56) ~[main/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359) ~[spring-aop-6.2.2.jar:6.2.2]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196) ~[spring-aop-6.2.2.jar:6.2.2]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-6.2.2.jar:6.2.2]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:138) ~[spring-tx-6.2.2.jar:6.2.2]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.2.jar:6.2.2]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:727) ~[spring-aop-6.2.2.jar:6.2.2]
+	at fr.eni.lesobjetssontnosamis.dal.UtilisateurDAOImpl$$SpringCGLIB$$0.read(<generated>) ~[main/:na]
+	at fr.eni.lesobjetssontnosamis.bll.UtilisateurServiceImpl.findUtilisateurByEmail(UtilisateurServiceImpl.java:40) ~[main/:na]
+	at fr.eni.lesobjetssontnosamis.controller.UtilisateurController.afficherProfil(UtilisateurController.java:48) ~[main/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359) ~[spring-aop-6.2.2.jar:6.2.2]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:723) ~[spring-aop-6.2.2.jar:6.2.2]
+	at fr.eni.lesobjetssontnosamis.controller.UtilisateurController$$SpringCGLIB$$0.afficherProfil(<generated>) ~[main/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:257) ~[spring-web-6.2.2.jar:6.2.2]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190) ~[spring-web-6.2.2.jar:6.2.2]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.2.2.jar:6.2.2]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986) ~[spring-webmvc-6.2.2.jar:6.2.2]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891) ~[spring-webmvc-6.2.2.jar:6.2.2]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.2.2.jar:6.2.2]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088) ~[spring-webmvc-6.2.2.jar:6.2.2]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978) ~[spring-webmvc-6.2.2.jar:6.2.2]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.2.jar:6.2.2]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.2.2.jar:6.2.2]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.34.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.2.jar:6.2.2]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.34.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.34.jar:10.1.34]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.2.jar:6.2.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.2.jar:6.2.2]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.2.jar:6.2.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.2.jar:6.2.2]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:114) ~[spring-web-6.2.2.jar:6.2.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.2.jar:6.2.2]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.2.jar:6.2.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.2.jar:6.2.2]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+
+2025-02-04T23:32:09.156+01:00  INFO 14884 --- [LesObjetsSontNosAmis] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-04T23:32:09.215+01:00  INFO 14884 --- [LesObjetsSontNosAmis] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-02-04T23:32:09.218+01:00  INFO 14884 --- [LesObjetsSontNosAmis] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2025-02-04T23:32:09.219+01:00  INFO 14884 --- [LesObjetsSontNosAmis] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2025-02-04T23:32:12.590+01:00  INFO 1468 --- [LesObjetsSontNosAmis] [restartedMain] f.e.l.LesObjetsSontNosAmisApplication    : Starting LesObjetsSontNosAmisApplication using Java 17.0.13 with PID 1468 (D:\Projet-Encheres-ENI-non\build\classes\java\main started by jevariste2024 in D:\Projet-Encheres-ENI-non)
+2025-02-04T23:32:12.592+01:00  INFO 1468 --- [LesObjetsSontNosAmis] [restartedMain] f.e.l.LesObjetsSontNosAmisApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-02-04T23:32:12.623+01:00  INFO 1468 --- [LesObjetsSontNosAmis] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-02-04T23:32:12.623+01:00  INFO 1468 --- [LesObjetsSontNosAmis] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-02-04T23:32:13.692+01:00  INFO 1468 --- [LesObjetsSontNosAmis] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-02-04T23:32:13.702+01:00  INFO 1468 --- [LesObjetsSontNosAmis] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-04T23:32:13.702+01:00  INFO 1468 --- [LesObjetsSontNosAmis] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-04T23:32:13.738+01:00  INFO 1468 --- [LesObjetsSontNosAmis] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-04T23:32:13.739+01:00  INFO 1468 --- [LesObjetsSontNosAmis] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1116 ms
+2025-02-04T23:32:13.964+01:00  INFO 1468 --- [LesObjetsSontNosAmis] [restartedMain] o.s.s.p.JdbcUserDetailsManager           : No authentication manager set. Reauthentication of users when changing passwords will not be performed.
+2025-02-04T23:32:14.021+01:00  INFO 1468 --- [LesObjetsSontNosAmis] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsManager
+2025-02-04T23:32:14.072+01:00  INFO 1468 --- [LesObjetsSontNosAmis] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-02-04T23:32:14.267+01:00  INFO 1468 --- [LesObjetsSontNosAmis] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-02-04T23:32:14.524+01:00  INFO 1468 --- [LesObjetsSontNosAmis] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-02-04T23:32:14.573+01:00  INFO 1468 --- [LesObjetsSontNosAmis] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-02-04T23:32:14.587+01:00  INFO 1468 --- [LesObjetsSontNosAmis] [restartedMain] f.e.l.LesObjetsSontNosAmisApplication    : Started LesObjetsSontNosAmisApplication in 2.447 seconds (process running for 4.005)
+2025-02-04T23:32:14.939+01:00  INFO 1468 --- [LesObjetsSontNosAmis] [RMI TCP Connection(1)-10.44.101.2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-04T23:32:14.939+01:00  INFO 1468 --- [LesObjetsSontNosAmis] [RMI TCP Connection(1)-10.44.101.2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-02-04T23:32:14.940+01:00  INFO 1468 --- [LesObjetsSontNosAmis] [RMI TCP Connection(1)-10.44.101.2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-02-04T23:32:14.939+01:00  INFO 1468 --- [LesObjetsSontNosAmis] [RMI TCP Connection(3)-10.44.101.2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-02-04T23:32:15.132+01:00  INFO 1468 --- [LesObjetsSontNosAmis] [RMI TCP Connection(3)-10.44.101.2] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection ConnectionID:1 ClientConnectionId: d66a4c5b-d0fd-4fc9-8712-8f4c17c58727
+2025-02-04T23:32:15.134+01:00  INFO 1468 --- [LesObjetsSontNosAmis] [RMI TCP Connection(3)-10.44.101.2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-02-04T23:32:34.091+01:00 DEBUG 1468 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-5] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2025-02-04T23:32:34.091+01:00 DEBUG 1468 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-5] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [select pseudo,mot_de_passe,1 from Utilisateurs where pseudo=?]
+2025-02-04T23:32:34.111+01:00 TRACE 1468 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-5] o.s.jdbc.core.StatementCreatorUtils      : Setting SQL statement parameter value: column index 1, parameter value [], value class [java.lang.String], SQL type unknown
+2025-02-04T23:32:53.863+01:00  INFO 1468 --- [LesObjetsSontNosAmis] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-04T23:32:53.929+01:00  INFO 1468 --- [LesObjetsSontNosAmis] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-02-04T23:32:53.935+01:00  INFO 1468 --- [LesObjetsSontNosAmis] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-02-04T23:32:53.937+01:00  INFO 1468 --- [LesObjetsSontNosAmis] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

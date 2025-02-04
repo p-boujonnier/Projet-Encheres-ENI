@@ -5,14 +5,15 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.namedparam.MapSqlParameterSource;
 import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
-import org.springframework.security.crypto.password.PasswordEncoder;
+//import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+//import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
 
 @Repository
+
 public class UtilisateurDAOImpl implements UtilisateurDAO {
 
     private final String CREATE = "INSERT INTO utilisateurs (pseudo, nom, prenom, email, telephone, rue, code_postal, ville, mot_de_passe, credit, administrateur) VALUES (:pseudo, :nom, :prenom, :email, :telephone, :rue, :codepostal, :ville, :motdepasse, :credit, :administrateur)";
@@ -22,8 +23,8 @@ public class UtilisateurDAOImpl implements UtilisateurDAO {
     private final String compteUnique = "SELECT COUNT(email) FROM utilisateurs WHERE email = :email";
 
 
-    @Autowired
-    public PasswordEncoder passwordEncoder;
+//    @Autowired
+//    public PasswordEncoder passwordEncoder;
 
     @Autowired
     private NamedParameterJdbcTemplate jdbcTemplate;

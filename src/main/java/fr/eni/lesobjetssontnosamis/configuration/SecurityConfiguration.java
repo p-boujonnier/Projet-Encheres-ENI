@@ -14,7 +14,7 @@ import org.springframework.security.provisioning.UserDetailsManager;
 import org.springframework.security.web.SecurityFilterChain;
 
 import javax.sql.DataSource;
-
+//
 @EnableWebSecurity
 @Configuration
 public class SecurityConfiguration {
@@ -29,13 +29,13 @@ public class SecurityConfiguration {
         return jdbcuserDetailsManager;
 
     }
-
-    @Bean
-    public PasswordEncoder passwordEncoder() {
-        return new BCryptPasswordEncoder();
-    }
-
-
+//
+//    @Bean
+//    public PasswordEncoder passwordEncoder() {
+//        return new BCryptPasswordEncoder();
+//    }
+//
+//
 
     @Bean
     SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
