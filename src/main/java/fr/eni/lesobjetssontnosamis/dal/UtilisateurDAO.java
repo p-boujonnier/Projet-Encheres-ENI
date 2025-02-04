@@ -4,14 +4,12 @@ import fr.eni.lesobjetssontnosamis.bo.Utilisateur;
 
 import java.util.List;
 
-public interface UtilisateursDAO {
-
-    List<Utilisateur> findAll();
+public interface UtilisateurDAO {
+    void create(Utilisateur utilisateur);
 
     Utilisateur read(String email);
 
-
-    void create(Utilisateur utilisateur);
+    List<Utilisateur> readAll();
 
     void update(Utilisateur utilisateur);
 

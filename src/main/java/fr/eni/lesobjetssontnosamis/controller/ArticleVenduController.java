@@ -2,8 +2,10 @@ package fr.eni.lesobjetssontnosamis.controller;
 
 import fr.eni.lesobjetssontnosamis.bll.ArticleVenduService;
 import fr.eni.lesobjetssontnosamis.bll.CategorieService;
+import fr.eni.lesobjetssontnosamis.bll.UtilisateurService;
 import fr.eni.lesobjetssontnosamis.bo.ArticleVendu;
 import fr.eni.lesobjetssontnosamis.bo.Categorie;
+import fr.eni.lesobjetssontnosamis.bo.Utilisateur;
 import jakarta.validation.Valid;
 import org.springframework.stereotype.Controller;
 import org.springframework.transaction.annotation.Transactional;
@@ -22,26 +24,29 @@ public class ArticleVenduController {
     // Dépendance
     private ArticleVenduService articleVenduService;
     private CategorieService categorieService;
+    private UtilisateurService utilisateurService;
 
-    public ArticleVenduController(ArticleVenduService articleVenduService, CategorieService categorieService) {
+    public ArticleVenduController(ArticleVenduService articleVenduService, CategorieService categorieService, UtilisateurService utilisateurService) {
         this.articleVenduService = articleVenduService;
         this.categorieService = categorieService;
+        this.utilisateurService = utilisateurService;
     }
-
 
     @GetMapping
     public String afficherArticles(Model model) {
         List<ArticleVendu> articleVendus = articleVenduService.getArticleVendus();
         model.addAttribute("articleVendus", articleVendus);
-        return "view-articles";
+        return "view-article";
     }
 
     @GetMapping("/creer")
     public String creerArticleVendu(Model model) {
-        List<Categorie> categoriesList = categorieService.findAllCategories();
         model.addAttribute("article", new ArticleVendu());
-        model.addAttribute("categoriesList", categoriesList);  // Liste des catégories
-        return "view-articles-create";
+        List<Categorie> categoriesList = categorieService.readAllCategories();
+        model.addAttribute("categoriesList", categoriesList);// Liste des catégories
+        List<Utilisateur> utilisateurList = utilisateurService.findAllUtilisateurs();
+        model.addAttribute("utilisateurList", utilisateurList);// Liste des utilisateurs (provisoirement nécessaire)
+        return "view-article-create";
     }
 
     // Création d'un nouvel article
@@ -49,6 +54,6 @@ public class ArticleVenduController {
     @Transactional
     public String creerArticleVendu(@Valid @ModelAttribute ArticleVendu articleVendu, BindingResult bindingResult) {
         articleVenduService.addArticleVendu(articleVendu);
-        return "redirect:/view-articles";
+        return "redirect:/view-article";
     }
 }

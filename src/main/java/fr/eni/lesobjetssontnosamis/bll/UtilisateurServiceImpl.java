@@ -4,7 +4,7 @@ package fr.eni.lesobjetssontnosamis.bll;
 import fr.eni.lesobjetssontnosamis.bo.Utilisateur;
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Service;
-import fr.eni.lesobjetssontnosamis.dal.UtilisateursDAO;
+import fr.eni.lesobjetssontnosamis.dal.UtilisateurDAO;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.List;
@@ -13,16 +13,16 @@ import java.util.List;
 @Primary
 public class UtilisateurServiceImpl implements UtilisateurService {
     @Autowired
-    private UtilisateursDAO utilisateursDAO;
+    private UtilisateurDAO utilisateurDAO;
 
     @Override
     public void addUtilisateur(Utilisateur utilisateur) {
-        utilisateursDAO.create(utilisateur);
+        utilisateurDAO.create(utilisateur);
     }
 
     @Override
-    public List<Utilisateur> getUtilisateurs() {
-        return utilisateursDAO.findAll();
+    public List<Utilisateur> findAllUtilisateurs() {
+        return utilisateurDAO.readAll();
     }
 
     @Override
@@ -36,6 +36,6 @@ public class UtilisateurServiceImpl implements UtilisateurService {
 
     @Override
     public Utilisateur findUtilisateurByEmail(String email) {
-        return utilisateursDAO.read(email);
+        return utilisateurDAO.read(email);
     }
 }

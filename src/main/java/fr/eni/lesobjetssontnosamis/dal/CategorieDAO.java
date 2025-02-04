@@ -1,6 +1,7 @@
 package fr.eni.lesobjetssontnosamis.dal;
 
 import fr.eni.lesobjetssontnosamis.bo.Categorie;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 

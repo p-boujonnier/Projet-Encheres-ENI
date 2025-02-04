@@ -40,7 +40,7 @@ public class UtilisateurController {
     public String rechercherUtilisateur(@RequestParam("email") String email, Model model, RedirectAttributes redirectAttributes) {
         Utilisateur utilisateur = utilisateurService.findUtilisateurByEmail(email);
         redirectAttributes.addAttribute("email", email);
-        return "redirect:/view-profil/profil";
+        return "redirect:/detail";
     }
 
     @GetMapping("/detail")
@@ -61,12 +61,14 @@ public class UtilisateurController {
     @GetMapping("/creer")
     public String creerProfil(Model model, Principal principal) {
         model.addAttribute("utilisateur", new Utilisateur());
+        model.addAttribute("action", "/encheres");
+
         return "view-profil-create";
     }
 
     @PostMapping("/creer")
     @Transactional
-    public String creerProfil(@Valid @ModelAttribute Utilisateur utilisateur, BindingResult result) {
+    public String creerProfil(@Valid @ModelAttribute Utilisateur utilisateur, BindingResult bindingResult) {
         utilisateurService.addUtilisateur(utilisateur);
         //return "redirect:/login"; //à mettre une fois qu'on aura la page qui fonctionne
         return "redirect:/encheres";
