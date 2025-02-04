@@ -10,8 +10,6 @@ public interface UtilisateurService {
 
     List<Utilisateur> getUtilisateurs();
 
-    Utilisateur findByEmail(String emailUtilisateur);
-
     void updateUtilisateur(Utilisateur utilisateur);
 
     Utilisateur findUtilisateurById(Long id);

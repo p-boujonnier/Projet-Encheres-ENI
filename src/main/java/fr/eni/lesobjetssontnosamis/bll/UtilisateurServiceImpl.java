@@ -26,11 +26,6 @@ public class UtilisateurServiceImpl implements UtilisateurService {
     }
 
     @Override
-    public Utilisateur findByEmail(String emailUtilisateur) {
-        return null;
-    }
-
-    @Override
     public void updateUtilisateur(Utilisateur utilisateur) {
     }
 

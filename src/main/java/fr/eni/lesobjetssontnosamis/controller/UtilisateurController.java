@@ -51,7 +51,7 @@ public class UtilisateurController {
     @GetMapping("/profil-modifier")
     public String modifierProfil(Model model, Principal principal) {
         var utilisateur = principal.getName();
-        model.addAttribute("utilisateur", utilisateurService.findByEmail(utilisateur));
+        model.addAttribute("utilisateur", utilisateurService.findUtilisateurByEmail(utilisateur));
         return "view-profil-modifier";
 
     }
