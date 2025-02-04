@@ -13,7 +13,7 @@ import java.util.List;
 @Repository
 public class UtilisateursDAOImpl implements UtilisateursDAO {
 
-    private final String INSERT = "INSERT INTO utilisateurs (pseudo, nom, prenom, email, telephone, rue, code_postal, ville, mot_de_passe, credit, administateur) VALUES (:pseudo, :nom, :prenom, :email, :telephone, :rue, :codepostal, :ville, :motdepasse, :credit, :administateur)";
+    private final String INSERT = "INSERT INTO utilisateurs (pseudo, nom, prenom, email, telephone, rue, code_postal, ville, mot_de_passe, credit, administrateur) VALUES (:pseudo, :nom, :prenom, :email, :telephone, :rue, :codepostal, :ville, :motdepasse, :credit, :administrateur)";
     private final String FIND_BY_EMAIL = "SELECT pseudo, nom, prenom, email, telephone, rue, code_postal, ville FROM utilisateurs WHERE email = :email";
     private final String FIND_ALL = "SELECT email, nom, prenom FROM utilisateurs";
     private final String UPDATE = "UPDATE utilisateurs SET nom = :nom, prenom = :prenom WHERE email = :email";
@@ -51,7 +51,7 @@ public class UtilisateursDAOImpl implements UtilisateursDAO {
         namedParameters.addValue("motdepasse", utilisateur.getMotDePasse());
         namedParameters.addValue("credit", utilisateur.getCredit());
         utilisateur.setAdministrateur(false);
-        namedParameters.addValue("admnistrateur", utilisateur.isAdministrateur());
+        namedParameters.addValue("administrateur", utilisateur.isAdministrateur());
         jdbcTemplate.update(INSERT, namedParameters);
     }
 
