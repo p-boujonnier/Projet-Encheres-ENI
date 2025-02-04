@@ -50,7 +50,9 @@
         <li>
             <!-- Champ Photo -->
             <label for="inputPhoto" data-th-text="#{frag-articles-form.photo}"> </label>
-            <p id="inputPhoto">Photo a gérer plus tard</p>
+            <input type="file"
+                   id="inputPhoto"
+            >
         </li>
         <li>
             <!-- Champ Mise à Prix -->
@@ -84,7 +86,7 @@
         </li>
     </ul>
 
-    <button>Enregistrer</button>
-    <button>Annuler</button>
+    <button id="signin-button">Enregistrer</button>
+    <button id="reset-button">Annuler</button>
 
 </form>

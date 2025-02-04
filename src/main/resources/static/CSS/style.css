@@ -1,348 +1,270 @@
-/* import de la font */
-/* Roboto*/
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-/* Monsterrat */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-/* Lato */
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-/* Poppins */
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-/* Raleway */
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/*---------------------------------------------*/
+/*               GLOBAL STYLES                 */
+/*---------------------------------------------*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
+body {
+    background-color: var(--BackGround);
+    color: var(--PrimaryColor);
+    padding: var(--20px);
+    font-size: var(--font-size-default);
+}
 
 /*---------------------------------------------*/
-/*                    BODY                     */
+/*         DECLARATION DES VARIABLES           */
 /*---------------------------------------------*/
-body {
-    /* déclaration de mes couleurs en variables */
-    /* Palette choisie */
+:root {
+    /* Couleurs */
     --PrimaryColor: #0FA3B1;
     --SecondaryColor: #B5E2FA;
-    --AccentColor1: #F9F7F3;
+    --AccentColor1: #FDFCFA;
     --AccentColor2: #EDDEA4;
     --AccentColor3: #F7A072;
-    --BackGround: whitesmoke;
-    --BackgroundWhite : #FFFFFF;
+    --AccentColor4:#F1C7A6;
+    --WhiteMilk: #FDFFF5;
+    --Black: #333333;
+    --BackGround: var(--WhiteMilk);
+    --ColorResetButton : #D3D3D3;
 
-    /* Font */
-    --PrimaryFront: Roboto;
-    --SecondaryFront: Monsterrat;
-    --LinkFrontH1:Roboto;
-    --H1Size : 1.2em;
+    /* Conversion de px en em */
+    --10px: 0.625em;
+    --12px: 0.75em;
+    --14px: 0.875em;
+    --20px: 1.25em;
+    --40px: 2.5em;
 
-    background-color: var(--BackGround);
-    font-family: var(--PrimaryFront);
-    /*color: whitesmoke; */
-    /*font-family: ;*/
-
-    /* CLASSES :                                   */
-
-    /* ID :                                        */
-
+    /* Font-size */
+    --font-size-default: 1em;
+    --font-size-h1: 1.5em;
+    --font-size-h2: 1.25em;
 }
-
-/*---------------------------------------------*/
-/*                    TEMPLATE                 */
-/*---------------------------------------------*/
-/*  
-    *background-color (= savoir la zone à laquelle on est en 1er)
-    * affichage
-    display
-    justify-content
-    *truc à changer
-    color
-    font
-    etc
-    *gestion des marges / espacement :
-    gap 
-    padding 
-    margin
-    *gestion de la taille :
-    min-max height - width
-    height - width
-*/
-
 
 /*---------------------------------------------*/
 /*                    HEADER                   */
 /*---------------------------------------------*/
-/* CLASSES : */
-header{
+/*   CLASSES   */
+header {
+    background-color: var(--PrimaryColor);
+    color: var(--AccentColor1);
+    padding: var(--12px);
+    position: relative;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
+/*   ID   */
 
-header section{
+/*---------------------------------------------*/
+/*              NAVIGATION TITLE              */
+/*---------------------------------------------*/
+/*   CLASSES   */
+
+/*   ID   */
+/* Zone du titre de navigation (logo et texte) */
+#nav-title {
     display: flex;
     justify-content: space-between;
-    padding: 0.75em;
-    margin: 0em;
-    width: 30em;
-}
-nav {
-    display: flex;
-    width: 70em;
-}
-
-h1 {
-    font-family: var(--LinkFrontH1);
-    font-size: var(--H1Size);
-    font-weight: bold;
     align-items: center;
+    max-height: 10vh;
 }
 
-header span{
-    align-items: center;
-}
-
-/* les liens */
-a{
-    display: flex;
-    color: var(--PrimaryColor);
-    font-weight: bold;
-    align-items: center;
-}
-
-a:hover{
-    color: var(--PrimaryColor);
-}
-a:visited{
-    color: var(--AccentColor3);
-}
-
-
-header ul {
-    display: inline-flex;
-    cursor: pointer;
-    gap: 1em;
-}
-
-ul {
-    list-style: none;
-    align-items: center;
-}
-
-
-/* les bouttons */
-button {
-    background-color: var(--PrimaryColor);
-    border: none;
-    border-radius: 20px;
-    color: whitesmoke;
-    cursor: pointer;
-    padding: 0.75em;
-    margin: 0.5em;
-}
-button:hover {
-    background-color:var(--AccentColor3);
-    cursor: pointer;
-    scale: 1.1;
-
-}
-
-/* ID :                                        */
-/* img logo*/
 #logo-LOSNA {
-    height: 15vh;
+    max-width: 7vw;
+    margin-right: var(--10px);
 }
-/* lien vers liste des enchères*/
-#div-h1 {
+
+#nav-title a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--AccentColor1);
+    font-size: var(--font-size-h1);
+    font-weight: bold;
+}
+
+/*---------------------------------------------*/
+/*              NAVIGATION MENU               */
+/*---------------------------------------------*/
+/*   CLASSES   */
+/* Menu de navigation sous le titre */
+nav {
+    width: 100%;
     display: flex;
     justify-content: center;
+}
+
+/* Style du menu de navigation */
+nav ul{
+    list-style-type: none;
+    display: flex;
+    gap: var(--20px);
+    padding: var(--20px);
+    font-size: var(--font-size-h2);
+}
+
+/* Style des liens dans le menu */
+nav ul li a {
     text-decoration: none;
+    color: var(--AccentColor1);
+    font-weight: bold;
+}
+
+/* Changement de couleur au survol des liens */
+nav ul li a:hover {
+    color: var(--AccentColor2);
+}
+
+/*   ID   */
+
+
+/*---------------------------------------------*/
+/*                  BUTTONS                    */
+/*---------------------------------------------*/
+/*   CLASSES   */
+button {
+    background-color: var(--AccentColor2);
+    border: none;
+    color: var(--WhiteMilk);
     cursor: pointer;
-}
-
-
-
-
-
-
-/*---------------------------------------------*/
-/*                    FOOTER                   */
-/*---------------------------------------------*/
-/* CLASSES :                                   */
-
-/* ID :                                        */
-
-
-/*---------------------------------------------*/
-/*                    FORM                     */
-/*---------------------------------------------*/
-/* CLASSES :                                   */
-form, .login-form {
-    width: 75%;
-    margin-top: 6.25rem;
-    font-style: italic;
-    font-size: large;
-    background-color: #dbdbdbc2;
-    padding: 0.5em;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-form input[type="text"] {
-    width: 100%;
-    padding: 0.75em;
-    margin: 8px 0;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    background-color: rgba(162, 177, 196, 0.64);
-    font-size: large;
-    font-style: italic;
+    padding: 0.75em 1.25em;
+    border-radius: var(--12px);
+    font-size: var(--font-size-default);
+    font-weight: bold;
     transition: background-color 0.3s ease;
-    font-weight: 900;
+    white-space: nowrap; /* Empêche le texte de se casser */
 }
 
-form input[type="text"]:focus {
-    background-color: var(--SecondaryColor);
+/* div s'inscrire / se connecter */
+.auth-buttons {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position : absolute;
+    top: var(--20px);
+    right: var(--20px);
+    gap: var(--14px);
+}
+
+/*   ID   */
+#signin-button{
+
+}
+
+#reset-button{ /* NE FONCTIONNE PAS */
+    background-color:var(--ColorResetButton) ;
+}
+
+/* Changement de couleur au survol des boutons */
+button:hover {
+    background-color: var(--PrimaryColor);
+}
+
+.auth-buttons > button:hover {
     border-color: var(--AccentColor1);
 }
-
-form label {
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #333;
+#reset-button:hover{
+    background-color: var(--AccentColor3);
 }
 
-form button {
-    padding: 12px 20px;
-    font-size: large;
-    font-weight: bold;
-    background-color: var(--PrimaryColor);
-    border: none;
-    border-radius: 4px;
-    color: var(--BackgroundWhite);
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+
+/*---------------------------------------------*/
+/*                   FORM                     */
+/*---------------------------------------------*/
+/*   CLASSES   */
+/* Style du formulaire */
+form {
+    background-color: var(--AccentColor1);
+    padding: var(--20px);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 50%;
+    margin: var(--40px) auto;
 }
 
 form ul {
     list-style: none;
-    padding: 0;
 }
 
-form li {
-    margin-bottom: 1em;
-}
-/* ID :                                        */
+/*   ID   */
+
 
 /*---------------------------------------------*/
-/*                    TABLE                    */
+/*               FORM LABELS                   */
 /*---------------------------------------------*/
-/* CLASSES :                                   */
+/*   CLASSES   */
+/* Style des étiquettes du formulaire */
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: var(--10px);
+    color: var(--PrimaryColor);
+}
+/*   ID   */
+
+
+/*---------------------------------------------*/
+/*                  INPUTS                    */
+/*---------------------------------------------*/
+/*   CLASSES   */
+/* Style des champs de saisie, sélection et textarea */
+input, select, textarea {
+    width: 100%;
+    height: 1em;
+    padding: var(--20px);
+    margin-bottom: var(--20px);
+    border: 1px solid var(--AccentColor3);
+    border-radius: 4px;
+    background-color: var(--AccentColor1);
+    font-size: 16px;
+    color: var(--Black);
+}
+
+/*   ID   */
+
+
+/*---------------------------------------------*/
+/*                   TABLE                     */
+/*---------------------------------------------*/
+/*   CLASSES   */
+/* Style du tableau */
 table {
-
-    width: 75%;
-    margin-top: 6.25em;
-    font-style: italic;
-    font-size: large;
-    background-color:var(--AccentColor2);
-    padding: 1.25em;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    margin-top: var(--20px);
 }
 
-table th,table td {
-    padding: 0.75em;
-    border-bottom: 1px solid #ddd;
-    background-color: var(--SecondaryColor);
-    padding-left: 41px;
+/* Style des cellules du tableau */
+table th, table td {
+    padding: var(--20px);
+    text-align: left;
+    border-bottom: 1px solid var(--SecondaryColor);
 }
 
+/* Style des en-têtes du tableau */
 table th {
-    background-color: var(--AccentColor2);
+    background-color: var(--AccentColor3);
+    color: var(--AccentColor1);
+    font-size: var(--font-size-h2);
+}
+
+/* Style des lignes paires du tableau */
+table tr:nth-child(even) {
+    background-color: var(--AccentColor1);
+}
+
+/* Style au survol des lignes du tableau */
+table tr:hover {
+    background-color: var(--SecondaryColor);
+    color: var(--AccentColor1);
     font-weight: bold;
 }
 
-table tr:hover {
-    background-color: var(--BackgroundWhite);
-}
-/* ID :                                        */
-
-/*---------------------------------------------*/
-/*                PAGE INDEX                   */
-/*---------------------------------------------*/
-/* CLASSES :                                   */
-
-/* ID :                                        */
-#home{
-    display: flex;
-    height: 5vh;
-    background-color: #0FA3B1;
-    align-items: center;
-    justify-content: center;
-}
-#home h1{
-    display: flex;
-}
-
-/*---------------------------------------------*/
-/*             PAGE VIEW-ARTICLES              */
-/*---------------------------------------------*/
-/* CLASSES :                                   */
-
-
-.view-articles-filtres {
-    /* => section filtres */
-    margin: 1em;
-}
-
-.liste-articles-container {
-    /* => section affichage de chaque article */
-    display: flex;
-    justify-content: space-evenly;
-    padding: 0.75em;
-}
-
-.article-container {
-    /* => div contenant tout ce qui concerne l'article */
-    background-color: var(--BackgroundWhite);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    border-radius: 8px;
-    gap: 1em;
-    padding: 1em ;
-    margin: 1em 3em 1em 3em;
-    min-width: 274px;
-    height: 30vh;
-    width: 30vw;
-}
-
-.img-article {
-    /* => photo de l'article */
-    /*background-color: rgba(41, 36, 36, 0.733); */
-    display: flex;
-    justify-content: center;
-    flex: 1;
-    border-radius: 12px;
-    min-width: 10vw;
-
-}
-
-.article-template {
-    /* => affichage de l'article */
-    flex: 1;
-    min-width: 10vw;
-    margin-top: 2em;
-
-}
-.show-article{
-    display: inline-block;
-
-}
-
-/* ID :                                        */
-#filtres {
-    /* => section affichage des filtres */
-    width: 25%;
-}
-
-
+/*   ID   */

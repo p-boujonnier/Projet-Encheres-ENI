@@ -15,9 +15,13 @@
                 <li><a href="/encheres/creer" data-th-text="#{frag-header.articles.creer}"></a></li>
                 <li><a href="/profil/get-profil" data-th-text="#{frag-header.utilisateur}"></a></li>
                 <li><a href="/profil/creer" data-th-text="#{frag-header.utilisateur.creer}"></a></li>
-<!--                <li data-th-if="${!#authorization.expression('isAuthenticated()')}"><a data-th-href="@{/view_profil()}"><button>S'inscrire / Se connecter</button></a></li>-->
-<!--                <li data-th-if="${#authorization.expression('isAuthenticated()')}"><a data-th-href="@{/logout}"><button>Se déconnecter</button></a></li>-->
-            </th:block>
         </ul>
+
+        <div class="auth-buttons">
+        <button>S'inscrire</button>
+        <!--                <li data-th-if="${#authorization.expression('isAuthenticated()')}"><a data-th-href="@{/logout}"><button class="auth-buttons">S'inscrire / Se connecter</button></a>-->
+        <button>Se connecter</button>
+        <!--                <li data-th-if="${!#authorization.expression('isAuthenticated()')}"><a data-th-href="@{/view_profil()}"><button class="auth-buttons">Se déconnecter</button></a>-->
+        </div>
     </nav>
 </header>
