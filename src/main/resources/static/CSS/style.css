@@ -273,26 +273,22 @@ input::placeholder {
 
 /* Section affichage de chaque article */
 .liste-articles-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    width: 100%;
     padding: 0.75em;
 }
 
 /* Div contenant tout ce qui concerne l'article */
 .article-container {
-    background-color: var(--AccentColor1);
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-evenly;
-    border-radius: 8px;
+    background-color: var(--AccentColor1);
+    border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     gap: 1em;
     padding: var(--20px);
-    margin: 1em 3em 1em 3em;
-    min-height: 30vh;
-    width: 30%;
-    margin: var(--40px) auto;
+    min-height: 40vh;
+    width: 40%;
+    margin: var(--20px) auto;
 }
 
 .img-article {
@@ -343,13 +339,17 @@ input::placeholder {
 #categorie {
     width: 35%;
 }
+
+#categorie option {
+    padding: 0;
+}
 /*---------------------------------------------*/
 /*                   TEMPLATE                    */
 /*---------------------------------------------*/
 /*   CLASSES   */
 /*.profil-create-form {
 mettre sur 2 colonnes?
- */
+*/
 /*}*/
 /*   ID   */
 
@@ -403,4 +403,3 @@ table tr:hover {
 /*---------------------------------------------*/
 /*   CLASSES   */
 /*   ID   */
-

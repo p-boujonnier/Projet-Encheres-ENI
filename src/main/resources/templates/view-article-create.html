@@ -25,9 +25,11 @@
                 <label for="inputUtilisateur" data-th-text="#{frag-articles-form.pseudo}"></label>
                 <!-- Champ Utlisateur -->
                 <select id="inputUtilisateur" data-th-field="*{vendeur}" required>
+                    <option value="none" selected disabled>Sélectionnez un utilisateur</option>
                     <option data-th-each="u : ${utilisateurList}"
                             data-th-value="${u.noUtilisateur}"
-                            data-th-text="${u.pseudo}"></option>
+                            data-th-text="${u.pseudo}">
+                    </option>
                 </select>
             </li>
             <li>

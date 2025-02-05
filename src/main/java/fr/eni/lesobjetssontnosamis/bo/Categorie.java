@@ -40,7 +40,7 @@ public class Categorie {
     public long getNoCategorie() {
         return noCategorie;
     }
-    public void setNoCategorie(int noCategorie) {
+    public void setNoCategorie(long noCategorie) {
         this.noCategorie = noCategorie;
     }
 

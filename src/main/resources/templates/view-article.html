@@ -28,10 +28,6 @@
             <label for="categorie">Catégorie :</label>
             <!--            <label for="categorie" data-th-text="#{frag-articles-form.categorie}">Catégorie :</label>-->
             <select name="categorie" id="categorie">
-                <!-- Itération dynamique sur la liste des catégories -->
-                <option value="toutes" selected>Toutes</option>
-                <option value="mobilier">Mobilier</option>
-                <option value="jardin">Jardin</option>
                 <option th:each="c : ${categoriesList}"
                         th:value="${c.noCategorie}"
                         th:text="${c.libelle}">
@@ -44,125 +40,46 @@
         </form>
     </section>
 
-<!--    <section class="liste-articles-container">-->
 
-<!--        <div class="article-container">-->
-<!--            <div class="img-article">-->
-<!--                <img src="./img/shoppingmode.svg" alt="photo de l'article">-->
-<!--            </div>-->
-<!--            <div class="article-template">-->
-<!--                <ul>-->
-<!--                    <li class="h3-link-article"><a href="#">PC Gamer pour travailler</a></li>-->
-<!--                    <li><span class="bold">Prix :</span> 210 points</li>-->
-<!--                    <li><span class="bold">Fin de l'enchère :</span> 10/08/2018</li>-->
-<!--                    <li><span class="bold">Vendeur :</span> Jojo44</li>-->
-<!--                </ul>-->
-<!--            </div>-->
-<!--            <div class="show-article">-->
-<!--                <button>Voir cette annonce</button>-->
-<!--            </div>-->
-<!--        </div>-->
+    <!--                    <li class="h3-link-article"><a href="#">PC Gamer pour travailler</a></li>-->
+    <!--                    <li><span class="bold">Prix :</span> 210 points</li>-->
+    <!--                    <li><span class="bold">Fin de l'enchère :</span> 10/08/2018</li>-->
+    <!--                    <li><span class="bold">Vendeur :</span> Jojo44</li>-->
 
-<!--        <div class="article-container">-->
-<!--            <div class="img-article">-->
-<!--                <img src="./img/image.svg" alt="photo de l'article">-->
-<!--            </div>-->
-<!--            <div class="article-template">-->
-<!--                <ul>-->
-<!--                    <li class="h3-link-article"><a href="#">Rocket stove pour riz et pâtes</a></li>-->
-<!--                    <li><span class="bold">Prix :</span>185 points</li>-->
-<!--                    <li><span class="bold">Fin de l'enchère :</span> 09/10/2018</li>-->
-<!--                    <li><span class="bold">Vendeur :</span> NineJea</li>-->
-<!--                </ul>-->
-<!--            </div>-->
-<!--            <div class="show-article">-->
-<!--                <button>Voir cette annonce</button>-->
-<!--            </div>-->
-<!--        </div>-->
-
-<!--        <div class="article-container">-->
-<!--            <div class="img-article">-->
-<!--                <img src="./img/image.svg" alt="photo de l'article">-->
-<!--            </div>-->
-<!--            <div class="article-template">-->
-<!--                <ul>-->
-<!--                    <li class="h3-link-article"><a href="#">PC Gamer pour travailler</a></li>-->
-<!--                    <li><span class="bold">Prix :</span> 210 points</li>-->
-<!--                    <li><span class="bold">Fin de l'enchère :</span> 10/08/2018</li>-->
-<!--                    <li><span class="bold">Vendeur :</span> Jojo44</li>-->
-<!--                </ul>-->
-<!--            </div>-->
-<!--            <div class="show-article">-->
-<!--                <button>Voir cette annonce</button>-->
-<!--            </div>-->
-<!--        </div>-->
-
-<!--        <div class="article-container">-->
-<!--            <div class="img-article">-->
-<!--                <img src="./img/image.svg" alt="photo de l'article">-->
-<!--            </div>-->
-<!--            <div class="article-template">-->
-<!--                <ul>-->
-<!--                    <li class="h3-link-article"><a href="#">Rocket stove pour riz et pâtes</a></li>-->
-<!--                    <li><span class="bold">Prix :</span>185 points</li>-->
-<!--                    <li><span class="bold">Fin de l'enchère :</span> 09/10/2018</li>-->
-<!--                    <li><span class="bold">Vendeur :</span> NineJea</li>-->
-<!--                </ul>-->
-<!--            </div>-->
-<!--            <div class="show-article">-->
-<!--                <button>Voir cette annonce</button>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </section>-->
 
     <!--code section affichage des encheres qui ne fonctionne pas -->
-        <section class="liste-articles-container">
-            <div class="article-container">
-                <div class="article-container" data-th-each="article : ${articleVendus}">
-                    <div class="img-article">
-                        <img data-th-src="@{/img/construction.svg}" data-th-alt="${article.nomArticle}">
-                    </div>
-                    <div class="article-template">
-                        <ul>
-                            <li><a href="#" data-th-text="${article.nomArticle}"></a></li>
-                            <li data-th-text="${article.prixVente}">Prix :</li>
-                            <li data-th-text="${article.dateFinEncheres}">Fin de l'enchère :</li>
-                            <li data-th-text="${article.vendeur}">Vendeur :</li>
-                        </ul>
-                    </div>
-                    <div class="show-article">
-                        <button>Voir cette annonce</button>
-                    </div>
+    <section class="liste-articles-container">
+        <div>
+            <div class="article-container" data-th-each="article : ${articleVendus}">
+                <div class="img-article">
+                    <!--                        img de l'article si pas d'image-->
+                    <img data-th-src="@{/img/sell.svg}" data-th-alt="${article.nomArticle}">
+                    <!--                        <img data-th-src="@{/img/{image}(image=${article.image})}" data-th-alt="${article.nomArticle}">-->
                 </div>
-        </section>
 
+                <div class="article-template">
+                    <ul>
+                        <li class="h3-link-article"><a  href="#" data-th-text="${article.nomArticle}"></a></li>
+                        <li>
+                            <span class="bold">Prix : </span>
+                            <span data-th-text="${article.prixVente}"></span>
+                        </li>
+                        <li>
+                            <span class="bold">Fin de l'enchère : </span>
+                            <span data-th-text="${article.dateFinEncheres}"></span>
+                        </li>
+                        <li>
+                            <span class="bold">Vendeur : </span>
+                            <span data-th-text="${article.vendeur}"></span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="show-article">
+                    <button>Voir cette annonce</button>
+                </div>
+            </div>
+    </section>
 
-    <!--    à supprimer quand ça fonctionnera    -->
-    <!--    <table>-->
-    <!--        &lt;!&ndash; Entête Tableau &ndash;&gt;-->
-    <!--        <thead>-->
-    <!--        <tr>-->
-    <!--            &lt;!&ndash; Nom entêtes définit dans messages.properties &ndash;&gt;-->
-    <!--            <th data-th-text="#{view-articles.numero}"></th>-->
-    <!--            <th data-th-text="#{view-articles.nom-article}"></th>-->
-    <!--            <th data-th-text="#{view-articles.description}"></th>-->
-    <!--            <th data-th-text="#{view-articles.date-debut-encheres}"></th>-->
-    <!--            <th data-th-text="#{view-articles.date-fin-encheres}"></th>-->
-    <!--            <th data-th-text="#{view-articles.prix}"></th>-->
-    <!--        </tr>-->
-    <!--        </thead>-->
-    <!--        &lt;!&ndash; Corps Tableau &ndash;&gt;-->
-    <!--        <tbody>-->
-    <!--        <tr data-th-each="article : ${articleVendus}">-->
-    <!--            <td data-th-text="${article.noArticle}"></td>-->
-    <!--            <td data-th-text="${article.nomArticle}"></td>-->
-    <!--            <td data-th-text="${article.description}"></td>-->
-    <!--            <td data-th-text="${article.dateDebutEncheres}"></td>-->
-    <!--            <td data-th-text="${article.dateFinEncheres}"></td>-->
-    <!--            <td data-th-text="${article.prixVente}"></td>-->
-    <!--        </tr>-->
-    <!--        </tbody>-->
-    <!--    </table>-->
 </main>
 </body>
 </html>

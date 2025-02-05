@@ -48,25 +48,18 @@ public class ArticleVendu implements Serializable {
     }
 
     public ArticleVendu(List<Enchere> encheres, Categorie categorie, Retrait lieuRetrait) {
-        this.encheres = encheres;
-        this.categorie = categorie;
+        this();
         this.lieuRetrait = lieuRetrait;
     }
 
     public ArticleVendu(Utilisateur vendeur, List<Enchere> encheres, Categorie categorie, Retrait lieuRetrait) {
+        this();
         this.vendeur = vendeur;
-        this.encheres = encheres;
-        this.categorie = categorie;
-        this.lieuRetrait = lieuRetrait;
     }
 
     public ArticleVendu(Utilisateur vendeur, List<Enchere> encheres, Categorie categorie, Retrait lieuRetrait, int noArticle, String nomArticle, String description, LocalDate dateFinEncheres, int miseAPrix, int prixVente, String etatVente) {
         this();
-
-        this.vendeur = vendeur;
         this.encheres = encheres;
-        this.categorie = categorie;
-        this.lieuRetrait = lieuRetrait;
         this.noArticle = noArticle;
         this.nomArticle = nomArticle;
         this.description = description;
@@ -77,7 +70,6 @@ public class ArticleVendu implements Serializable {
         this.etatVente = etatVente;
     }
 
-
     //--------------------------------
     // GETTERS & SETTERS
     //--------------------------------
@@ -85,7 +77,7 @@ public class ArticleVendu implements Serializable {
     public long getNoArticle() {
         return noArticle;
     }
-    public void setNoArticle(int noArticle) {
+    public void setNoArticle(long noArticle) {
         this.noArticle = noArticle;
     }
 

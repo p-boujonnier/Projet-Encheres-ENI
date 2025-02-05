@@ -34,6 +34,8 @@ public class ArticleVenduController {
     public String afficherArticles(Model model) {
         List<ArticleVendu> articleVendus = articleVenduService.getArticleVendus();
         model.addAttribute("articleVendus", articleVendus);
+        List<Categorie> categoriesList = categorieService.readAllCategories();
+        model.addAttribute("categoriesList", categoriesList);// Liste des catégories
         return "view-article";
     }
 

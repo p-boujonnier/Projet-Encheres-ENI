@@ -67,7 +67,7 @@ public class Utilisateur implements Serializable {
     }
 
     public Utilisateur(int noUtilisateur, String pseudo, String nom, String prenom, String email, String telephone, String rue, int codePostal, String ville, String motDePasse, int credit, boolean administrateur) {
-        this(); // appel du constructeur par défaut
+        this();
         this.noUtilisateur = noUtilisateur;
         this.pseudo = pseudo;
         this.nom = nom;
@@ -89,7 +89,7 @@ public class Utilisateur implements Serializable {
     public long getNoUtilisateur() {
         return noUtilisateur;
     }
-    public void setNoUtilisateur(int noUtilisateur) {
+    public void setNoUtilisateur(long noUtilisateur) {
         this.noUtilisateur = noUtilisateur;
     }
 
