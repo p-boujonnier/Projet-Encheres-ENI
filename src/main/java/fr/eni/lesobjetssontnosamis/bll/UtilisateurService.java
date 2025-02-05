@@ -11,7 +11,7 @@ public interface UtilisateurService {
 
     void updateUtilisateur(Utilisateur utilisateur);
 
-    Utilisateur findUtilisateurById(Long id);
+    Utilisateur findUtilisateurById(long id);
 
     Utilisateur findUtilisateurByEmail(String email);
 

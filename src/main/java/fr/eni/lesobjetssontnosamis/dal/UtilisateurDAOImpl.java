@@ -14,6 +14,7 @@ public class UtilisateurDAOImpl implements UtilisateurDAO {
 
     private final String CREATE = "INSERT INTO utilisateurs (pseudo, nom, prenom, email, telephone, rue, code_postal, ville, mot_de_passe, credit, administrateur) VALUES (:pseudo, :nom, :prenom, :email, :telephone, :rue, :codepostal, :ville, :motdepasse, :credit, :administrateur)";
     private final String READ_BY_EMAIL = "SELECT no_utilisateur, pseudo, nom, prenom, email, telephone, rue, code_postal, ville FROM utilisateurs WHERE email = :email";
+    private final String READ_BY_NO = "SELECT no_utilisateur, pseudo, nom, prenom, email, telephone, rue, code_postal, ville FROM utilisateurs WHERE no_utilisateur = :no_utilisateur";
     private final String READ_ALL = "SELECT pseudo, nom, prenom, email, telephone, rue, code_postal, ville FROM utilisateurs";
     private final String UPDATE = "UPDATE utilisateurs SET nom = :nom, prenom = :prenom WHERE email = :email";
     private final String compteUnique = "SELECT COUNT(email) FROM utilisateurs WHERE email = :email";
@@ -46,6 +47,15 @@ public class UtilisateurDAOImpl implements UtilisateurDAO {
 
         return jdbcTemplate.queryForObject(READ_BY_EMAIL, namedParameters,
                 new BeanPropertyRowMapper<>(Utilisateur.class));
+    }
+
+    @Override
+    public Utilisateur readByNo(long noUtilisateur) {
+        MapSqlParameterSource namedParameters = new MapSqlParameterSource();
+        namedParameters.addValue("no_utilisateur", noUtilisateur);
+
+        return  jdbcTemplate.queryForObject(READ_BY_NO, namedParameters,
+                BeanPropertyRowMapper.newInstance(Utilisateur.class));
     }
 
     @Override

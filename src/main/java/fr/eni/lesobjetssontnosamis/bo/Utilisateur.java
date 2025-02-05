@@ -14,7 +14,7 @@ public class Utilisateur implements Serializable {
     // ATTRIBUTS
     //--------------------------------
     private static final long serialVersionUID = 1L;
-    private int noUtilisateur;
+    private long noUtilisateur;
 
     // @NotBlank
     // @Size(min = 2, max=250, message = "Pseudo non valide")
@@ -86,7 +86,7 @@ public class Utilisateur implements Serializable {
     // GETTERS & SETTERS
     // --------------------------------
 
-    public int getNoUtilisateur() {
+    public long getNoUtilisateur() {
         return noUtilisateur;
     }
     public void setNoUtilisateur(int noUtilisateur) {

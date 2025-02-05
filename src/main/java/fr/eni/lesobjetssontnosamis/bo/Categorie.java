@@ -8,7 +8,7 @@ public class Categorie {
     // ATRIBUTS
     //--------------------------------
 
-    private int noCategorie;
+    private long noCategorie;
     private String libelle;
 
     // Une catégorie par article et plusieurs articles pour chaque catégorie
@@ -37,7 +37,7 @@ public class Categorie {
     // GETTERS & SETTERS
     //--------------------------------
 
-    public int getNoCategorie() {
+    public long getNoCategorie() {
         return noCategorie;
     }
     public void setNoCategorie(int noCategorie) {

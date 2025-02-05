@@ -32,30 +32,30 @@ public class ArticleVenduServiceImpl implements ArticleVenduService {
     }
 
     @Override
-    public ArticleVendu findArticleVendu(int noArticle) {
+    public ArticleVendu findArticleVendu(long noArticle) {
         return null;
     }
 
     @Override
     @Transactional
     public void addArticleVendu(ArticleVendu articleVendu) {
-        BusinessException be = new BusinessException();
-        boolean isValid = true;
-        isValid &= validerNom(articleVendu, be);
-        isValid &= validerDescription(articleVendu, be);
-        isValid &= validerDateFintEncheres(articleVendu, be);
-        isValid &= validerMiseAPrix(articleVendu, be);
-
-        if (isValid) {
-            try {
-                articleVenduDAO.create(articleVendu);
-            } catch (DataAccessException e) {
-                be.add(BusinessCode.BLL_ARTICLE_CREATE_ERREUR);
-                throw be;
-            }
-        } else {
-            throw be;
-        }
+        articleVenduDAO.create(articleVendu);
+//        BusinessException be = new BusinessException();
+//        boolean isValid = true;
+//        isValid &= validerNom(articleVendu, be);
+//        isValid &= validerDescription(articleVendu, be);
+//        isValid &= validerDateFintEncheres(articleVendu, be);
+//        isValid &= validerMiseAPrix(articleVendu, be);
+//
+//        if (isValid) {
+//            try {
+//            } catch (DataAccessException e) {
+//                be.add(BusinessCode.BLL_ARTICLE_CREATE_ERREUR);
+//                throw be;
+//            }
+//        } else {
+//            throw be;
+//        }
     }
 
     // Validation des BOs
