@@ -28,21 +28,6 @@ public class UtilisateurController {
         this.utilisateurService = utilisateurService;
     }
 
-    // à supprimer après
-    @GetMapping("/get-profil")
-    public String getProfil(Model model) {
-        model.addAttribute("utilisateurProvisoire", new Utilisateur());
-        return "view-ask-profil-provisory";
-    }
-
-    // à supprimer après
-    @PostMapping("/get-profil")
-    public String rechercherUtilisateur(@RequestParam("email") String email, Model model, RedirectAttributes redirectAttributes) {
-        Utilisateur utilisateur = utilisateurService.findUtilisateurByEmail(email);
-        redirectAttributes.addAttribute("email", email);
-        return "redirect:/detail";
-    }
-
     @GetMapping("/detail")
     public String afficherProfil(@RequestParam("email") String email, Model model) {
         Utilisateur utilisateur = utilisateurService.findUtilisateurByEmail(email);
@@ -57,22 +42,5 @@ public class UtilisateurController {
         return "view-profil-modify";
 
     }
-
-    @GetMapping("/creer")
-    public String creerProfil(Model model, Principal principal) {
-        model.addAttribute("utilisateur", new Utilisateur());
-        model.addAttribute("action", "/encheres");
-
-        return "view-profil-create";
-    }
-
-    @PostMapping("/creer")
-    @Transactional
-    public String creerProfil(@Valid @ModelAttribute Utilisateur utilisateur, BindingResult bindingResult) {
-        utilisateurService.addUtilisateur(utilisateur);
-        //return "redirect:/login"; //à mettre une fois qu'on aura la page qui fonctionne
-        return "redirect:/encheres";
-    }
-    // creerProfil dans le Get & Post => ok le même nom (= c'est normal)
 
 }

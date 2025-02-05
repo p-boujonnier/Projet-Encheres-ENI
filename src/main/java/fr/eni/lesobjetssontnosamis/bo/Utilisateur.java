@@ -2,14 +2,17 @@ package fr.eni.lesobjetssontnosamis.bo;
 
 import java.io.Serializable;
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Pattern;
 import jakarta.validation.constraints.Size;
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.userdetails.UserDetails;
 
-public class Utilisateur implements Serializable {
+public class Utilisateur implements UserDetails {
     //--------------------------------
     // ATTRIBUTS
     //--------------------------------
@@ -198,5 +201,25 @@ public class Utilisateur implements Serializable {
                 ", credit=" + credit +
                 ", administrateur=" + administrateur +
                 '}';
+    }
+
+    @Override
+    public Collection<? extends GrantedAuthority> getAuthorities() {
+        return List.of();
+    }
+
+    @Override
+    public String getPassword() {
+        return "motDePasse";
+    }
+
+    @Override
+    public String getUsername() {
+        return "email";
+    }
+
+    @Override
+    public boolean isEnabled() {
+        return true;
     }
 }
