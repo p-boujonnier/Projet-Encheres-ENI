@@ -2,6 +2,7 @@ package fr.eni.lesobjetssontnosamis.bo;
 
 import java.io.Serializable;
 import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.List;
 
 public class ArticleVendu implements Serializable {
@@ -22,7 +23,7 @@ public class ArticleVendu implements Serializable {
 
     // Chaque article a un lieu de retrait
     private Retrait lieuRetrait;
-    private int noArticle;
+    private long noArticle;
     private String nomArticle;
     private String description;
     private LocalDate dateDebutEncheres;
@@ -34,7 +35,12 @@ public class ArticleVendu implements Serializable {
     //--------------------------------
     // CONSTRUCTEURS
     //--------------------------------
-    public ArticleVendu() {}
+    public ArticleVendu() {
+        this.vendeur = new Utilisateur();
+        this.encheres = new ArrayList<Enchere>();
+        this.categorie = new Categorie();
+        this.lieuRetrait = new Retrait();
+    }
 
     public ArticleVendu(Categorie categorie, Retrait lieuRetrait) {
         this.categorie = categorie;
@@ -76,7 +82,7 @@ public class ArticleVendu implements Serializable {
     // GETTERS & SETTERS
     //--------------------------------
 
-    public int getNoArticle() {
+    public long getNoArticle() {
         return noArticle;
     }
     public void setNoArticle(int noArticle) {

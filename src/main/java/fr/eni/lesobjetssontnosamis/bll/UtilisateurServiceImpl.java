@@ -30,8 +30,8 @@ public class UtilisateurServiceImpl implements UtilisateurService {
     }
 
     @Override
-    public Utilisateur findUtilisateurById(Long id) {
-        return null;
+    public Utilisateur findUtilisateurById(long id) {
+        return utilisateurDAO.readByNo(id);
     }
 
     @Override

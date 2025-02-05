@@ -9,6 +9,8 @@ public interface UtilisateurDAO {
 
     Utilisateur read(String email);
 
+    Utilisateur readByNo(long noUtilisateur);
+
     List<Utilisateur> readAll();
 
     void update(Utilisateur utilisateur);
@@ -16,4 +18,5 @@ public interface UtilisateurDAO {
     void delete(Utilisateur utilisateur);
 
     Utilisateur compteUnique(String Email);
+
 }

@@ -10,7 +10,7 @@ public interface ArticleVenduService {
 
     List<ArticleVendu> getArticleVendus();
 
-    ArticleVendu findArticleVendu(int noArticle);
+    ArticleVendu findArticleVendu(long noArticle);
 
     void addArticleVendu(ArticleVendu articleVendu);
 }
