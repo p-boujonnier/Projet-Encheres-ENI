@@ -53,13 +53,14 @@ public AuthenticationManager authenticationManager(HttpSecurity http) throws Exc
 
 
             auth.requestMatchers(HttpMethod.GET, "/encheres").permitAll();
+            auth.requestMatchers(HttpMethod.POST, "/encheres").permitAll();
+            auth.requestMatchers(HttpMethod.GET, "/encheres/details").permitAll();
             auth.requestMatchers(HttpMethod.GET, "/login").permitAll();
             auth.requestMatchers(HttpMethod.GET, "/view-profil/").permitAll();
             auth.requestMatchers(HttpMethod.GET, "/articles").permitAll();
             auth.requestMatchers(HttpMethod.GET, "/view-articles/").permitAll();
             auth.requestMatchers(HttpMethod.POST, "/view-articles/").permitAll();
             auth.requestMatchers(HttpMethod.GET, "/view-articles/get-article").permitAll();
-
 
             auth.requestMatchers("/css/*").permitAll();
             auth.requestMatchers("/images/*").permitAll();
