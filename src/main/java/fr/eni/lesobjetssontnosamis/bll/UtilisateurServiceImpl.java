@@ -44,6 +44,7 @@ public class UtilisateurServiceImpl implements UtilisateurService {
 
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-        return utilisateurDAO.read(username);
+        var result = utilisateurDAO.read(username);
+        return result;
     }
 }

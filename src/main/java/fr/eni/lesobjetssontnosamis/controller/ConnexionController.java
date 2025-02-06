@@ -72,6 +72,7 @@ public class ConnexionController {
         utilisateur.setMotDePasse(passwordEncoder.encode(password)); //encode
         utilisateurService.addUtilisateur(utilisateur);
         //return "redirect:/login"; //à mettre une fois qu'on aura la page qui fonctionne
+        System.out.println(utilisateur.getPassword());
         return "redirect:/encheres";
     }
 }

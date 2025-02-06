@@ -23,7 +23,7 @@ import javax.sql.DataSource;
 @Configuration
 public class SecurityConfiguration {
 
-
+    UserDetailsManager userdetailsManager;
     private final UtilisateurService utilisateurService;
 
     public SecurityConfiguration(UtilisateurService utilisateurService) {
@@ -35,21 +35,16 @@ public class SecurityConfiguration {
         return new BCryptPasswordEncoder();
     }
 
-//    @Bean
-//    public AuthenticationManager authenticationManager(HttpSecurity http) throws Exception {
-//        var auth = http.getSharedObject(AuthenticationManagerBuilder.class);
-//            auth.userDetailsService(utilisateurService)
-//                .passwordEncoder(passwordEncoder());
-//                        return auth.build();
-//    }
 
-    @Bean
-    public AuthenticationManager authenticationManager(HttpSecurity http) throws Exception {
-        AuthenticationManagerBuilder auth = http.getSharedObject(AuthenticationManagerBuilder.class);
-        auth.userDetailsService(utilisateurService)
-                .passwordEncoder(passwordEncoder());
-        return auth.build();
-    }
+@Bean
+public AuthenticationManager authenticationManager(HttpSecurity http) throws Exception {
+    AuthenticationManagerBuilder auth = http.getSharedObject(AuthenticationManagerBuilder.class);
+    auth.userDetailsService(utilisateurService)
+            .passwordEncoder(passwordEncoder());
+
+    return auth.build();
+}
+
 
     @Bean
     SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
@@ -89,5 +84,9 @@ public class SecurityConfiguration {
 //
            return http.build();
 
-    }}
+    }
+
+
+
+}
 
