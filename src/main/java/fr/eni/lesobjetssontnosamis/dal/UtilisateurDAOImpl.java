@@ -23,7 +23,7 @@ public class UtilisateurDAOImpl implements UtilisateurDAO {
 
     private final String DELETE_BY_EMAIL = "DELETE FROM utilisateurs WHERE email = :email";
 
-    private final String UPDATE = "UPDATE utilisateurs SET nom = :nom, prenom = :prenom WHERE email = :email";
+    // private final String UPDATE = "UPDATE utilisateurs SET nom = :nom, prenom = :prenom WHERE email = :email";
 
 
     private final String UPDATE_UTILISATEUR = """

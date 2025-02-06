@@ -42,32 +42,7 @@ public class UtilisateurController {
         return "view-profil-detail";
     }
 
-    @GetMapping("/modifier")
-    public String modifierProfil(Model model, Principal principal) {
-        var utilisateur = principal.getName();
-        model.addAttribute("utilisateur", utilisateurService.findUtilisateurByEmail(utilisateur));
-        return "view-profil-modify";
 
-
-
-    @GetMapping("/creer")
-    public String creerProfil(Model model, Principal principal) {
-        model.addAttribute("utilisateur", new Utilisateur());
-        model.addAttribute("action", "/encheres");
-
-        return "view-profil-create";
-    }
-
-    @PostMapping("/creer")
-    @Transactional
-    public String creerProfil(@Valid @ModelAttribute Utilisateur utilisateur, BindingResult bindingResult) {
-        utilisateurService.addUtilisateur(utilisateur);
-        //return "redirect:/login"; //à mettre une fois qu'on aura la page qui fonctionne
-        return "redirect:/encheres";
-    }
-    // creerProfil dans le Get & Post => ok le même nom (= c'est normal)
-
-    // --------------------------------------------
     // ------------- Supprimer Profil -------------
     @PostMapping("/supprimer")
     public String supprimerProfil(@RequestParam("email") String email, Model model) {
@@ -78,7 +53,6 @@ public class UtilisateurController {
 
         return "redirect:/profil/get-profil";
     }
-
 
 
     // --------------------------------------------
@@ -105,14 +79,13 @@ public class UtilisateurController {
     }
 
     @PostMapping("/modifier")
-    public String enregistrerModifications(@ModelAttribute Utilisateur utilisateur, RedirectAttributes redirectAttributes) {
+    public String enregistrerModifications(@ModelAttribute Utilisateur utilisateur, RedirectAttributes
+            redirectAttributes) {
         utilisateurService.updateUtilisateur(utilisateur);
 
         redirectAttributes.addFlashAttribute("message", "Profil mis à jour avec succès.");
         return "redirect:/profil/detail?email=" + utilisateur.getEmail(); // Retour au profil
     }
-
-
 
 
 }

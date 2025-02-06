@@ -4,6 +4,7 @@ import ch.qos.logback.core.net.SMTPAppenderBase;
 import fr.eni.lesobjetssontnosamis.bll.UtilisateurService;
 
 import fr.eni.lesobjetssontnosamis.bo.Utilisateur;
+import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.validation.Valid;
 import org.apache.commons.logging.Log;
@@ -66,11 +67,13 @@ public class ConnexionController {
     }
 
     @PostMapping("/creer")
-    public String creerProfil(@Valid @ModelAttribute Utilisateur utilisateur, BindingResult bindingResult, HttpServletRequest request) //ajout méthode email mdp = login
+    public String creerProfil(@Valid @ModelAttribute Utilisateur utilisateur, BindingResult bindingResult, HttpServletRequest request) throws ServletException //ajout méthode email mdp = login
     {
         var password = (utilisateur.getPassword());       //garde mdp clair
         utilisateur.setMotDePasse(passwordEncoder.encode(password)); //encode
         utilisateurService.addUtilisateur(utilisateur);
+        request.login(utilisateur.getEmail(), password);
+        request.logout();
         //return "redirect:/login"; //à mettre une fois qu'on aura la page qui fonctionne
         System.out.println(utilisateur.getPassword());
         return "redirect:/encheres";
