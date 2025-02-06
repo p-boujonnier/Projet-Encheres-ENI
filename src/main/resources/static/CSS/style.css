@@ -44,6 +44,7 @@ body {
     --font-size-h1: 1.5em;
     --font-size-h2: 1.25em;
     --font-size-h3: 1.15em;
+    --WelcomeUser: 2em;
 }
 
 /*---------------------------------------------*/
@@ -66,6 +67,13 @@ ul {
     font-weight: bold;
 }
 
+.hidden {
+    display: none;
+}
+
+.show {
+    display: flex;
+}
 /*   ID   */
 
 /*---------------------------------------------*/
@@ -174,21 +182,21 @@ button {
 }
 
 /*   ID   */
-#signin-button, #login-button {
+#signin-button, #login-button, #logout-button {
     background-color: var(--PrimaryColor);
     border: 3px solid var(--AccentColor1);
     border-radius: 35px;
     color: var(--WhiteMilk);
 }
+#signin-button a, #login-button a, #logout-button a {
+    text-decoration: none;
+    color: var(--AccentColor1);
+}
 
-#signin-button:hover, #login-button:hover {
+#signin-button:hover, #login-button:hover, #logout-button:hover {
     background-color: var(--AccentColor3);
 }
 
-#save-button:hover {
-    background-color: var(--AccentColor3);
-    border-color: var(--AccentColor3);
-}
 
 #reset-button {
     background-color: var(--ColorResetButton);
@@ -196,6 +204,11 @@ button {
     border-color: var(--ColorResetButton);
 }
 
+#welcome-user{
+    font-size: var(--WelcomeUser);
+    margin-top: 8rem;
+    margin-right: var(--20px);
+}
 /* Changement de couleur au survol des boutons */
 button:hover {
     background-color: var(--PrimaryColor);
@@ -294,17 +307,19 @@ input::placeholder {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     gap: 1em;
     padding: var(--20px);
-    min-height: 30vh;
+    min-height: 20vh;
+    max-height: 40vh;
     width: 40%;
     margin: var(--20px) auto;
 }
 
 .img-article {
-    display: flex;
-    justify-content: center;
-    flex: 1;
-    border-radius: 12px;
-    min-width: 10vw;
+    display: none;
+    /*display: flex;*/
+    /*justify-content: center;*/
+    /*flex: 1;*/
+    /*border-radius: 12px;*/
+    /*min-width: 10vw;*/
 }
 
 /* Affichage de l'article */
@@ -315,7 +330,9 @@ input::placeholder {
 }
 
 .show-article {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
 .search-button {
@@ -365,16 +382,12 @@ mettre sur 2 colonnes?
 
 
 /*---------------------------------------------*/
-/*                   TEMPLATE                    */
+/*              PAGE PROFIL-DETAIL             */
 /*---------------------------------------------*/
 /*   CLASSES   */
 
 table {
     border: 2px solid var(--PrimaryColor);
-}
-
-.hidden {
-    display: none;
 }
 
 .btns-delete-update-section {
@@ -392,9 +405,7 @@ table {
 
 /*   ID   */
 
-/*==================================================================================*/
-/*==================================================================================*/
-/*à voir si on garde*/
+
 /*---------------------------------------------*/
 /*                   TABLE                     */
 /*---------------------------------------------*/

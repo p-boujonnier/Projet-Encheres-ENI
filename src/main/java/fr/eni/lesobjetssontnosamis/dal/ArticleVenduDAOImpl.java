@@ -2,6 +2,7 @@ package fr.eni.lesobjetssontnosamis.dal;
 
 import fr.eni.lesobjetssontnosamis.bo.*;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.jdbc.core.namedparam.MapSqlParameterSource;
 import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
@@ -19,7 +20,7 @@ import java.util.List;
 public class ArticleVenduDAOImpl implements ArticleVenduDAO {
     private final String FIND_ALL = "SELECT no_article, nom_article, description, date_debut_encheres, date_fin_encheres, prix_initial, prix_vente, no_utilisateur, no_categorie FROM articles_vendus";
     private final String FIND_BY_CATEGORIE = "SELECT no_article, nom_article, description, date_debut_encheres, date_fin_encheres, prix_initial, prix_vente, no_utilisateur, no_categorie FROM articles_vendus WHERE no_categorie = :no_categorie";
-
+    private final String FIND_BY_ID = "SELECT no_article, nom_article, description, date_debut_encheres, date_fin_encheres, prix_initial, prix_vente, no_utilisateur, no_categorie FROM articles_vendus WHERE no_article = :no_article";
     private final String INSERT = "INSERT INTO ARTICLES_VENDUS (nom_article, description, date_debut_encheres, date_fin_encheres, prix_initial, prix_vente)"
             + "VALUES(:nomArticle, :description, :dateDebutEncheres, :dateFinEncheres, :miseAPrix, :prixVente)";
 
@@ -31,6 +32,11 @@ public class ArticleVenduDAOImpl implements ArticleVenduDAO {
         return jdbcTemplate.query(FIND_ALL, new ArticleVenduRowMapper());
     }
 
+    @Override
+    public ArticleVendu findArticleVendu(long noArticle) {
+        MapSqlParameterSource namedParameters = new MapSqlParameterSource("no_article", noArticle);
+        return jdbcTemplate.queryForObject(FIND_BY_ID, namedParameters, new ArticleVenduRowMapper());
+    }
 
     class ArticleVenduRowMapper implements RowMapper<ArticleVendu> {
         @Override
