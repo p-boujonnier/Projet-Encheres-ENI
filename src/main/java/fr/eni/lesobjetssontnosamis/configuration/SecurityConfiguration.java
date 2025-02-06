@@ -53,6 +53,8 @@ public AuthenticationManager authenticationManager(HttpSecurity http) throws Exc
 
 
             auth.requestMatchers(HttpMethod.GET, "/encheres").permitAll();
+            auth.requestMatchers(HttpMethod.POST, "/encheres").permitAll();
+            auth.requestMatchers(HttpMethod.GET,"/details").permitAll();
             auth.requestMatchers(HttpMethod.GET, "/login").permitAll();
             auth.requestMatchers(HttpMethod.GET, "/view-profil/").permitAll();
             auth.requestMatchers(HttpMethod.GET, "/articles").permitAll();
@@ -66,7 +68,7 @@ public AuthenticationManager authenticationManager(HttpSecurity http) throws Exc
             auth.anyRequest().permitAll();
         });
 
-//
+
             http.formLogin(form -> form
                             .loginPage("/login")
                             .usernameParameter("email")
@@ -76,6 +78,7 @@ public AuthenticationManager authenticationManager(HttpSecurity http) throws Exc
                     .logout(logout -> logout.logoutUrl("/logout")
                     .logoutSuccessUrl("/")
                     );
+
                  // Permet à tout le monde d'accéder à la déconnexion
 
 
