@@ -22,15 +22,11 @@
         </ul>
 
         <div class="auth-buttons">
-            <button><a href="/creer" data-th-text="#{frag-header.utilisateur.creer}">S'inscrire</a></button>
-            <!--                        <li data-th-if="${#authorization.expression('isAuthenticated()')}"><a data-th-href="@{/logout}"><button class="auth-buttons">S'inscrire / Se connecter</button></a>-->
-            <button><a href="/login">Se connecter</a></button>
+            <button><a data-th-if="!${#authorization.expression('isAuthenticated()')}" href="/creer" data-th-text="#{frag-header.utilisateur.creer}">S'inscrire</a></button>
+            <button><a data-th-if="!${#authorization.expression('isAuthenticated()')}" href="/login">Se connecter</a></button>
             <form th:action="@{/logout}" method="post">
                 <button data-th-if="${#authorization.expression('isAuthenticated()')}" type="submit"> Se deconnecter</button>
             </form>
         </div>
     </nav>
 </header>
-<!--              <li <a data-th-href="@{/view-profil-detail.html()}"><button class="auth-buttons">Se déconnecter</button></a> -->
-<!--<form action="/logout" method="post">-->
-<!--    <button data-th-if="${#authorization.expression('isAuthenticated()')}" type="submit">Se déconnecter</button>-->
