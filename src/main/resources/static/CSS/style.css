@@ -65,6 +65,7 @@ ul {
 .bold {
     font-weight: bold;
 }
+
 /*   ID   */
 
 /*---------------------------------------------*/
@@ -140,6 +141,11 @@ nav ul li a:hover {
     font-weight: bold;
 }
 
+#div-h1 {
+    display: flex;
+    justify-content: center;
+}
+
 /*---------------------------------------------*/
 /*                  BUTTONS                    */
 /*---------------------------------------------*/
@@ -168,12 +174,13 @@ button {
 }
 
 /*   ID   */
-#signin-button, #login-button{
+#signin-button, #login-button {
     background-color: var(--PrimaryColor);
-    border : 3px solid var(--AccentColor1);
+    border: 3px solid var(--AccentColor1);
     border-radius: 35px;
     color: var(--WhiteMilk);
 }
+
 #signin-button:hover, #login-button:hover {
     background-color: var(--AccentColor3);
 }
@@ -182,6 +189,7 @@ button {
     background-color: var(--AccentColor3);
     border-color: var(--AccentColor3);
 }
+
 #reset-button {
     background-color: var(--ColorResetButton);
     color: var(--WhiteMilk);
@@ -240,8 +248,8 @@ input, select, textarea, option {
     color: var(--Black);
 }
 
-test{
-    color : deeppink;
+test {
+    color: deeppink;
 }
 
 select {
@@ -252,7 +260,6 @@ input::placeholder {
     color: var(--SecondaryColor);
     font-style: italic;
 }
-
 
 
 /*Hover du select input changer le bleu foncé?*/
@@ -346,7 +353,6 @@ input::placeholder {
 }
 
 
-
 /*---------------------------------------------*/
 /*                   TEMPLATE                    */
 /*---------------------------------------------*/
@@ -366,6 +372,7 @@ mettre sur 2 colonnes?
 table {
     border: 2px solid var(--PrimaryColor);
 }
+
 .hidden {
     display: none;
 }
@@ -377,6 +384,7 @@ table {
     margin: var(--10px) auto;
     gap: 1em;
 }
+
 .btns-delete-update-section form {
     background-color: var(--BackGround);
     box-shadow: none;
