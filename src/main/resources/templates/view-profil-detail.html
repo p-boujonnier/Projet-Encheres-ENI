@@ -13,55 +13,56 @@
     </th:block>
 </head>
 <main>
-    <table>
-        <thead>
-        <tr>
-            <th data-th-text="#{view-profil.th.pseudo}"></th>
-            <th data-th-text="#{view-profil.th.nom}"></th>
-            <th data-th-text="#{view-profil.th.prenom}"></th>
-            <th data-th-text="#{view-profil.th.email}"></th>
-            <th data-th-text="#{view-profil.th.telephone}"></th>
-            <th data-th-text="#{view-profil.th.rue}"></th>
-            <th data-th-text="#{view-profil.th.codePostal}"></th>
-            <th data-th-text="#{view-profil.th.ville}"></th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <td data-th-text="${utilisateur.pseudo}"></td>
-            <td data-th-text="${utilisateur.nom}"></td>
-            <td data-th-text="${utilisateur.prenom}"></td>
-            <td data-th-text="${utilisateur.email}"></td>
-            <td data-th-text="${utilisateur.telephone}"></td>
-            <td data-th-text="${utilisateur.rue}"></td>
-            <td data-th-text="${utilisateur.codePostal}"></td>
-            <td data-th-text="${utilisateur.ville}"></td>
+<!--    Section des infos user-->
+    <section>
+        <table>
+            <thead>
+            <tr>
+                <!-- Entête dans messages.properties -->
+                <th data-th-text="#{view-profil.th.pseudo}"></th>
+                <th data-th-text="#{view-profil.th.nom}"></th>
+                <th data-th-text="#{view-profil.th.prenom}"></th>
+                <th data-th-text="#{view-profil.th.email}"></th>
+                <th data-th-text="#{view-profil.th.telephone}"></th>
+                <th data-th-text="#{view-profil.th.rue}"></th>
+                <th data-th-text="#{view-profil.th.codePostal}"></th>
+                <th data-th-text="#{view-profil.th.ville}"></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <!-- afficherProfil() > UtilisateurController -->
+                <td data-th-text="${utilisateur.pseudo}"></td>
+                <td data-th-text="${utilisateur.nom}"></td>
+                <td data-th-text="${utilisateur.prenom}"></td>
+                <td data-th-text="${utilisateur.email}"></td>
+                <td data-th-text="${utilisateur.telephone}"></td>
+                <td data-th-text="${utilisateur.rue}"></td>
+                <td data-th-text="${utilisateur.codePostal}"></td>
+                <td data-th-text="${utilisateur.ville}"></td>
 
-        </tr>
+            </tr>
+            </tbody>
+        </table>
+    </section>
 
-        <!--        Bouton suppression Profil                -->
-        <tr>
-            <form method="post" th:action="@{/profil/supprimer}" style="display:inline;">
-                <input type="hidden" name="email" th:value="${utilisateur.email}">
+<!--    Section des actions btns-->
+    <section class="btns-delete-update-section">
+        <div>
+            <form  method="post" th:action="@{/profil/supprimer}">
+                <input class="hidden" type="hidden" name="email" th:value="${utilisateur.email}">
                 <button type="submit" class="link-button">Supprimer ce profil</button>
             </form>
+        </div>
 
-        </tr>
+        <div>
+            <form  method="get" th:action="@{/profil/modifier}">
+                <input class="hidden" type="hidden" name="email" th:value="${utilisateur.email}">
+                <button type="submit" class="btn btn-primary">Modifier ce profil</button>
+            </form>
+        </div>
+    </section>
 
-        <!--        Bouton modifier Profil                -->
-        <tr>
-            <td colspan="8" style="text-align: center; padding-top: 10px;">
-                <form method="get" th:action="@{/profil/modifier}">
-                    <input type="hidden" name="email" th:value="${utilisateur.email}">
-                    <button type="submit" class="btn btn-primary">Modifier ce profil</button>
-                </form>
-            </td>
-        </tr>
-
-
-
-        </tbody>
-    </table>
 </main>
 </html>
 

@@ -19,10 +19,10 @@
 
     <section class="view-articles-filtres">
         <form th:action="@{/search-articles}" method="get">
-            <label for="filtres">Filtres :</label>
-            <!--            <label for="filtres" data-th-text="#{view-articles.filtres}">Filtres :</label>-->
-            <!-- Barre de recherche -->
-            <input type="text" name="filtres" id="filtres" placeholder="Le nom de l'article contient">
+            <!--            <label for="filtres">Filtres :</label>-->
+            <!--            &lt;!&ndash;            <label for="filtres" data-th-text="#{view-articles.filtres}">Filtres :</label>&ndash;&gt;-->
+            <!--            &lt;!&ndash; Barre de recherche &ndash;&gt;-->
+            <!--            <input type="text" name="filtres" id="filtres" placeholder="Le nom de l'article contient">-->
 
             <!-- Sélection de la catégorie avec les options dynamiques -->
             <label for="categorie">Catégorie :</label>
@@ -49,35 +49,36 @@
 
     <!--code section affichage des encheres qui ne fonctionne pas -->
     <section class="liste-articles-container">
-        <div>
-            <div class="article-container" data-th-each="article : ${articleVendus}">
-                <div class="img-article">
-                    <!--                        img de l'article si pas d'image-->
-                    <img data-th-src="@{/img/sell.svg}" data-th-alt="${article.nomArticle}">
-                    <!--                        <img data-th-src="@{/img/{image}(image=${article.image})}" data-th-alt="${article.nomArticle}">-->
-                </div>
-
-                <div class="article-template">
-                    <ul>
-                        <li class="h3-link-article"><a  href="#" data-th-text="${article.nomArticle}"></a></li>
-                        <li>
-                            <span class="bold">Prix : </span>
-                            <span data-th-text="${article.prixVente}"></span>
-                        </li>
-                        <li>
-                            <span class="bold">Fin de l'enchère : </span>
-                            <span data-th-text="${article.dateFinEncheres}"></span>
-                        </li>
-                        <li>
-                            <span class="bold">Vendeur : </span>
-                            <span data-th-text="${article.vendeur}"></span>
-                        </li>
-                    </ul>
-                </div>
-                <div class="show-article">
-                    <button>Voir cette annonce</button>
-                </div>
+        <form class="article-container" data-th-each="article : ${articleVendus}" data-th-action="@{/encheres/details}" method="post">
+            <div class="img-article">
+                <!--                        img de l'article si pas d'image-->
+                <img data-th-src="@{/img/sell.svg}" data-th-alt="${article.nomArticle}">
+                <!--                        <img data-th-src="@{/img/{image}(image=${article.image})}" data-th-alt="${article.nomArticle}">-->
             </div>
+
+            <div class="article-template">
+                <ul>
+                    <li class="h3-link-article"><a href="#" data-th-text="${article.nomArticle}"></a></li>
+                    <li>
+                        <span class="bold">Prix : </span>
+                        <span data-th-text="${article.prixVente}"></span>
+                    </li>
+                    <li>
+                        <span class="bold">Fin de l'enchère : </span>
+                        <span data-th-text="${article.dateFinEncheres}"></span>
+                    </li>
+                    <li>
+                        <span class="bold">Vendeur : </span>
+                        <span data-th-text="${article.vendeur.pseudo}"></span>
+                    </li>
+                </ul>
+            </div>
+            <div class="show-article">
+                <a data-th-href="@{/encheres/details}">
+                    <button>Voir cette annonce</button>
+                </a>
+            </div>
+        </form>
     </section>
 
 </main>

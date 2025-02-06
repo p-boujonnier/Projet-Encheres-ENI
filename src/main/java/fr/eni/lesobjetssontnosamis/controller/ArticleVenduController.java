@@ -33,10 +33,21 @@ public class ArticleVenduController {
     @GetMapping
     public String afficherArticles(Model model) {
         List<ArticleVendu> articleVendus = articleVenduService.getArticleVendus();
+        for (ArticleVendu articleVendu : articleVendus) {
+            long noUtilisateur = articleVendu.getVendeur().getNoUtilisateur();
+            articleVendu.getVendeur().setPseudo(utilisateurService.findUtilisateurById(noUtilisateur).getPseudo());
+        }
         model.addAttribute("articleVendus", articleVendus);
         List<Categorie> categoriesList = categorieService.readAllCategories();
         model.addAttribute("categoriesList", categoriesList);// Liste des catégories
+
         return "view-article";
+    }
+
+    @PostMapping
+    @Transactional
+    public void actionEncheres() {
+
     }
 
     @GetMapping("/creer")
@@ -57,5 +68,11 @@ public class ArticleVenduController {
             BindingResult bindingResult) {
         articleVenduService.addArticleVendu(articleVendu);
         return "redirect:/view-article";
+    }
+
+    // Affichege détail
+    @GetMapping("/details")
+    public String detailsArticleVendu(Model model) {
+        return "view-article-detail";
     }
 }

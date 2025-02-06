@@ -36,18 +36,7 @@ public class UtilisateurController {
             return "view-profil-detail";
         }
 
-//        Utilisateur utilisateur = utilisateurService.findUtilisateurByEmail(email);
 
-//
-//            // Ajout d'un message flash si l'email n'existe pas
-//            redirectAttributes.addFlashAttribute("errorMessage", "Aucun profil trouvé pour l'email : " + email);
-//            return "redirect:/profil/get-profil"; // Redirection vers la page de recherche
-//        }
-
-
-
-    
-    
     // ------------- Supprimer Profil -------------
     @PostMapping("/supprimer")
     public String supprimerProfil(@RequestParam("email") String email, Model model) {

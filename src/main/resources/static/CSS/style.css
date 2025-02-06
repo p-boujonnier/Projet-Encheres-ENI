@@ -13,7 +13,6 @@
 body {
     background-color: var(--BackGround);
     color: var(--PrimaryColor);
-    padding: var(--20px);
     font-size: var(--font-size-default);
 }
 
@@ -66,6 +65,7 @@ ul {
 .bold {
     font-weight: bold;
 }
+
 /*   ID   */
 
 /*---------------------------------------------*/
@@ -141,6 +141,11 @@ nav ul li a:hover {
     font-weight: bold;
 }
 
+#div-h1 {
+    display: flex;
+    justify-content: center;
+}
+
 /*---------------------------------------------*/
 /*                  BUTTONS                    */
 /*---------------------------------------------*/
@@ -169,12 +174,13 @@ button {
 }
 
 /*   ID   */
-#signin-button, #login-button{
+#signin-button, #login-button {
     background-color: var(--PrimaryColor);
-    border : 3px solid var(--AccentColor1);
+    border: 3px solid var(--AccentColor1);
     border-radius: 35px;
     color: var(--WhiteMilk);
 }
+
 #signin-button:hover, #login-button:hover {
     background-color: var(--AccentColor3);
 }
@@ -183,6 +189,7 @@ button {
     background-color: var(--AccentColor3);
     border-color: var(--AccentColor3);
 }
+
 #reset-button {
     background-color: var(--ColorResetButton);
     color: var(--WhiteMilk);
@@ -231,8 +238,8 @@ label {
 /* Style des champs de saisie, sélection et textarea */
 input, select, textarea, option {
     width: 100%;
-    height: 1em;
-    padding: var(--20px);
+    height: 2.5em;
+    padding: 2px;
     margin-bottom: var(--20px);
     border: 1px solid var(--AccentColor3);
     border-radius: 4px;
@@ -241,8 +248,8 @@ input, select, textarea, option {
     color: var(--Black);
 }
 
-test{
-    color : deeppink;
+test {
+    color: deeppink;
 }
 
 select {
@@ -253,6 +260,7 @@ input::placeholder {
     color: var(--SecondaryColor);
     font-style: italic;
 }
+
 
 /*Hover du select input changer le bleu foncé?*/
 /*select option:hover, select option:checked {*/
@@ -286,7 +294,7 @@ input::placeholder {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     gap: 1em;
     padding: var(--20px);
-    min-height: 40vh;
+    min-height: 30vh;
     width: 40%;
     margin: var(--20px) auto;
 }
@@ -343,6 +351,8 @@ input::placeholder {
 #categorie option {
     padding: 0;
 }
+
+
 /*---------------------------------------------*/
 /*                   TEMPLATE                    */
 /*---------------------------------------------*/
@@ -353,6 +363,34 @@ mettre sur 2 colonnes?
 /*}*/
 /*   ID   */
 
+
+/*---------------------------------------------*/
+/*                   TEMPLATE                    */
+/*---------------------------------------------*/
+/*   CLASSES   */
+
+table {
+    border: 2px solid var(--PrimaryColor);
+}
+
+.hidden {
+    display: none;
+}
+
+.btns-delete-update-section {
+    display: flex;
+    justify-content: center;
+    padding: var(--20px);
+    margin: var(--10px) auto;
+    gap: 1em;
+}
+
+.btns-delete-update-section form {
+    background-color: var(--BackGround);
+    box-shadow: none;
+}
+
+/*   ID   */
 
 /*==================================================================================*/
 /*==================================================================================*/
