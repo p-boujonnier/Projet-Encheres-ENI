@@ -72,6 +72,7 @@ public AuthenticationManager authenticationManager(HttpSecurity http) throws Exc
                             .usernameParameter("email")
                             .loginProcessingUrl("/login")
                             .permitAll());
+
 //                    .logout(logout -> logout
 //                            .logoutUrl("/logout")  // URL de déconnexion (quand l'utilisateur clique pour se déconnecter)
 //                            .logoutSuccessUrl("/")  // Page de redirection après la déconnexion
