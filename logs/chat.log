@@ -2476,3 +2476,283 @@ org.attoparser.ParseException: (Line = 29, Column = 1) Incomplete structure: "<!
 2025-02-06T10:24:39.307+01:00  INFO 3136 --- [LesObjetsSontNosAmis] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
 2025-02-06T10:28:40.729+01:00  INFO 3136 --- [LesObjetsSontNosAmis] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
 2025-02-06T10:28:40.785+01:00  INFO 3136 --- [LesObjetsSontNosAmis] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-02-06T10:28:42.952+01:00  INFO 6092 --- [LesObjetsSontNosAmis] [restartedMain] f.e.l.LesObjetsSontNosAmisApplication    : Starting LesObjetsSontNosAmisApplication using Java 17.0.13 with PID 6092 (D:\Projet-Encheres-ENI-non\build\classes\java\main started by jevariste2024 in D:\Projet-Encheres-ENI-non)
+2025-02-06T10:28:42.954+01:00  INFO 6092 --- [LesObjetsSontNosAmis] [restartedMain] f.e.l.LesObjetsSontNosAmisApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-02-06T10:28:42.985+01:00  INFO 6092 --- [LesObjetsSontNosAmis] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-02-06T10:28:42.985+01:00  INFO 6092 --- [LesObjetsSontNosAmis] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-02-06T10:28:44.086+01:00  INFO 6092 --- [LesObjetsSontNosAmis] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-02-06T10:28:44.096+01:00  INFO 6092 --- [LesObjetsSontNosAmis] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-06T10:28:44.096+01:00  INFO 6092 --- [LesObjetsSontNosAmis] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-06T10:28:44.133+01:00  INFO 6092 --- [LesObjetsSontNosAmis] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-06T10:28:44.133+01:00  INFO 6092 --- [LesObjetsSontNosAmis] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1147 ms
+2025-02-06T10:28:44.388+01:00  INFO 6092 --- [LesObjetsSontNosAmis] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name utilisateurServiceImpl
+2025-02-06T10:28:44.438+01:00  INFO 6092 --- [LesObjetsSontNosAmis] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-02-06T10:28:44.634+01:00  INFO 6092 --- [LesObjetsSontNosAmis] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-02-06T10:28:44.894+01:00  INFO 6092 --- [LesObjetsSontNosAmis] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-02-06T10:28:44.942+01:00  INFO 6092 --- [LesObjetsSontNosAmis] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-02-06T10:28:44.956+01:00  INFO 6092 --- [LesObjetsSontNosAmis] [restartedMain] f.e.l.LesObjetsSontNosAmisApplication    : Started LesObjetsSontNosAmisApplication in 2.336 seconds (process running for 2.788)
+2025-02-06T10:28:45.340+01:00  INFO 6092 --- [LesObjetsSontNosAmis] [RMI TCP Connection(2)-10.44.101.2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-06T10:28:45.340+01:00  INFO 6092 --- [LesObjetsSontNosAmis] [RMI TCP Connection(2)-10.44.101.2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-02-06T10:28:45.342+01:00  INFO 6092 --- [LesObjetsSontNosAmis] [RMI TCP Connection(2)-10.44.101.2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-02-06T10:28:45.340+01:00  INFO 6092 --- [LesObjetsSontNosAmis] [RMI TCP Connection(1)-10.44.101.2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-02-06T10:28:45.540+01:00  INFO 6092 --- [LesObjetsSontNosAmis] [RMI TCP Connection(1)-10.44.101.2] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection ConnectionID:1 ClientConnectionId: 19832edf-6b12-4906-9c00-e40a478993b5
+2025-02-06T10:28:45.543+01:00  INFO 6092 --- [LesObjetsSontNosAmis] [RMI TCP Connection(1)-10.44.101.2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-02-06T10:53:30.758+01:00  INFO 6092 --- [LesObjetsSontNosAmis] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-06T10:53:30.814+01:00  INFO 6092 --- [LesObjetsSontNosAmis] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-02-06T10:53:30.819+01:00  INFO 6092 --- [LesObjetsSontNosAmis] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-02-06T10:53:30.821+01:00  INFO 6092 --- [LesObjetsSontNosAmis] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-02-06T10:53:33.010+01:00  INFO 10424 --- [LesObjetsSontNosAmis] [restartedMain] f.e.l.LesObjetsSontNosAmisApplication    : Starting LesObjetsSontNosAmisApplication using Java 17.0.13 with PID 10424 (D:\Projet-Encheres-ENI-non\build\classes\java\main started by jevariste2024 in D:\Projet-Encheres-ENI-non)
+2025-02-06T10:53:33.012+01:00  INFO 10424 --- [LesObjetsSontNosAmis] [restartedMain] f.e.l.LesObjetsSontNosAmisApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-02-06T10:53:33.046+01:00  INFO 10424 --- [LesObjetsSontNosAmis] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-02-06T10:53:33.047+01:00  INFO 10424 --- [LesObjetsSontNosAmis] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-02-06T10:53:34.122+01:00  INFO 10424 --- [LesObjetsSontNosAmis] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-02-06T10:53:34.131+01:00  INFO 10424 --- [LesObjetsSontNosAmis] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-06T10:53:34.132+01:00  INFO 10424 --- [LesObjetsSontNosAmis] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-06T10:53:34.168+01:00  INFO 10424 --- [LesObjetsSontNosAmis] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-06T10:53:34.168+01:00  INFO 10424 --- [LesObjetsSontNosAmis] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1121 ms
+2025-02-06T10:53:34.414+01:00  INFO 10424 --- [LesObjetsSontNosAmis] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name utilisateurServiceImpl
+2025-02-06T10:53:34.465+01:00  INFO 10424 --- [LesObjetsSontNosAmis] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-02-06T10:53:34.659+01:00  INFO 10424 --- [LesObjetsSontNosAmis] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-02-06T10:53:34.932+01:00  INFO 10424 --- [LesObjetsSontNosAmis] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-02-06T10:53:34.973+01:00  INFO 10424 --- [LesObjetsSontNosAmis] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-02-06T10:53:34.987+01:00  INFO 10424 --- [LesObjetsSontNosAmis] [restartedMain] f.e.l.LesObjetsSontNosAmisApplication    : Started LesObjetsSontNosAmisApplication in 2.294 seconds (process running for 2.794)
+2025-02-06T10:53:35.303+01:00  INFO 10424 --- [LesObjetsSontNosAmis] [RMI TCP Connection(3)-10.44.101.2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-06T10:53:35.304+01:00  INFO 10424 --- [LesObjetsSontNosAmis] [RMI TCP Connection(3)-10.44.101.2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-02-06T10:53:35.306+01:00  INFO 10424 --- [LesObjetsSontNosAmis] [RMI TCP Connection(3)-10.44.101.2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-02-06T10:53:35.321+01:00  INFO 10424 --- [LesObjetsSontNosAmis] [RMI TCP Connection(4)-10.44.101.2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-02-06T10:53:35.511+01:00  INFO 10424 --- [LesObjetsSontNosAmis] [RMI TCP Connection(4)-10.44.101.2] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection ConnectionID:1 ClientConnectionId: 3f95a611-8429-4e50-a192-5a758dfea5b6
+2025-02-06T10:53:35.514+01:00  INFO 10424 --- [LesObjetsSontNosAmis] [RMI TCP Connection(4)-10.44.101.2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-02-06T10:53:45.406+01:00  INFO 10424 --- [LesObjetsSontNosAmis] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-06T10:53:45.474+01:00  INFO 10424 --- [LesObjetsSontNosAmis] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-02-06T10:53:45.479+01:00  INFO 10424 --- [LesObjetsSontNosAmis] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-02-06T10:53:45.481+01:00  INFO 10424 --- [LesObjetsSontNosAmis] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-02-06T10:53:49.397+01:00  INFO 14836 --- [LesObjetsSontNosAmis] [restartedMain] f.e.l.LesObjetsSontNosAmisApplication    : Starting LesObjetsSontNosAmisApplication using Java 17.0.13 with PID 14836 (D:\Projet-Encheres-ENI-non\build\classes\java\main started by jevariste2024 in D:\Projet-Encheres-ENI-non)
+2025-02-06T10:53:49.399+01:00  INFO 14836 --- [LesObjetsSontNosAmis] [restartedMain] f.e.l.LesObjetsSontNosAmisApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-02-06T10:53:49.436+01:00  INFO 14836 --- [LesObjetsSontNosAmis] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-02-06T10:53:49.436+01:00  INFO 14836 --- [LesObjetsSontNosAmis] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-02-06T10:53:50.506+01:00  INFO 14836 --- [LesObjetsSontNosAmis] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-02-06T10:53:50.516+01:00  INFO 14836 --- [LesObjetsSontNosAmis] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-06T10:53:50.516+01:00  INFO 14836 --- [LesObjetsSontNosAmis] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-06T10:53:50.554+01:00  INFO 14836 --- [LesObjetsSontNosAmis] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-06T10:53:50.554+01:00  INFO 14836 --- [LesObjetsSontNosAmis] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1117 ms
+2025-02-06T10:53:50.798+01:00  INFO 14836 --- [LesObjetsSontNosAmis] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name utilisateurServiceImpl
+2025-02-06T10:53:50.848+01:00  INFO 14836 --- [LesObjetsSontNosAmis] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-02-06T10:53:51.036+01:00  INFO 14836 --- [LesObjetsSontNosAmis] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-02-06T10:53:51.297+01:00  INFO 14836 --- [LesObjetsSontNosAmis] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-02-06T10:53:51.343+01:00  INFO 14836 --- [LesObjetsSontNosAmis] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-02-06T10:53:51.357+01:00  INFO 14836 --- [LesObjetsSontNosAmis] [restartedMain] f.e.l.LesObjetsSontNosAmisApplication    : Started LesObjetsSontNosAmisApplication in 2.293 seconds (process running for 2.745)
+2025-02-06T10:53:51.792+01:00  INFO 14836 --- [LesObjetsSontNosAmis] [RMI TCP Connection(2)-10.44.101.2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-06T10:53:51.792+01:00  INFO 14836 --- [LesObjetsSontNosAmis] [RMI TCP Connection(2)-10.44.101.2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-02-06T10:53:51.794+01:00  INFO 14836 --- [LesObjetsSontNosAmis] [RMI TCP Connection(2)-10.44.101.2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-02-06T10:53:51.808+01:00  INFO 14836 --- [LesObjetsSontNosAmis] [RMI TCP Connection(3)-10.44.101.2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-02-06T10:53:51.991+01:00  INFO 14836 --- [LesObjetsSontNosAmis] [RMI TCP Connection(3)-10.44.101.2] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection ConnectionID:1 ClientConnectionId: e56acfa3-c808-4285-ab3a-df01a5745b3c
+2025-02-06T10:53:51.995+01:00  INFO 14836 --- [LesObjetsSontNosAmis] [RMI TCP Connection(3)-10.44.101.2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-02-06T10:54:13.240+01:00 DEBUG 14836 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-5] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2025-02-06T10:54:13.241+01:00 DEBUG 14836 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-5] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT no_utilisateur, pseudo, nom, prenom, email, telephone, rue, code_postal, ville, mot_de_passe FROM utilisateurs WHERE email = ?]
+2025-02-06T10:54:13.258+01:00 TRACE 14836 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-5] o.s.jdbc.core.StatementCreatorUtils      : Setting SQL statement parameter value: column index 1, parameter value [thierry@email.fr], value class [java.lang.String], SQL type unknown
+2025-02-06T10:54:13.268+01:00 DEBUG 14836 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-5] o.s.jdbc.core.BeanPropertyRowMapper      : Mapping column 'no_utilisateur' to property 'noUtilisateur' of type 'int'
+2025-02-06T10:54:13.269+01:00 DEBUG 14836 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-5] o.s.jdbc.core.BeanPropertyRowMapper      : Mapping column 'pseudo' to property 'pseudo' of type 'java.lang.String'
+2025-02-06T10:54:13.269+01:00 DEBUG 14836 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-5] o.s.jdbc.core.BeanPropertyRowMapper      : Mapping column 'nom' to property 'nom' of type 'java.lang.String'
+2025-02-06T10:54:13.269+01:00 DEBUG 14836 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-5] o.s.jdbc.core.BeanPropertyRowMapper      : Mapping column 'prenom' to property 'prenom' of type 'java.lang.String'
+2025-02-06T10:54:13.269+01:00 DEBUG 14836 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-5] o.s.jdbc.core.BeanPropertyRowMapper      : Mapping column 'email' to property 'email' of type 'java.lang.String'
+2025-02-06T10:54:13.270+01:00 DEBUG 14836 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-5] o.s.jdbc.core.BeanPropertyRowMapper      : Mapping column 'telephone' to property 'telephone' of type 'java.lang.String'
+2025-02-06T10:54:13.270+01:00 DEBUG 14836 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-5] o.s.jdbc.core.BeanPropertyRowMapper      : Mapping column 'rue' to property 'rue' of type 'java.lang.String'
+2025-02-06T10:54:13.270+01:00 DEBUG 14836 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-5] o.s.jdbc.core.BeanPropertyRowMapper      : Mapping column 'code_postal' to property 'codePostal' of type 'int'
+2025-02-06T10:54:13.270+01:00 DEBUG 14836 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-5] o.s.jdbc.core.BeanPropertyRowMapper      : Mapping column 'ville' to property 'ville' of type 'java.lang.String'
+2025-02-06T10:54:13.270+01:00 DEBUG 14836 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-5] o.s.jdbc.core.BeanPropertyRowMapper      : Mapping column 'mot_de_passe' to property 'motDePasse' of type 'java.lang.String'
+2025-02-06T10:55:51.248+01:00  INFO 14836 --- [LesObjetsSontNosAmis] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-06T10:55:51.304+01:00  INFO 14836 --- [LesObjetsSontNosAmis] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-02-06T10:55:51.310+01:00  INFO 14836 --- [LesObjetsSontNosAmis] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-02-06T10:55:51.311+01:00  INFO 14836 --- [LesObjetsSontNosAmis] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-02-06T10:57:40.470+01:00  INFO 14952 --- [LesObjetsSontNosAmis] [restartedMain] f.e.l.LesObjetsSontNosAmisApplication    : Starting LesObjetsSontNosAmisApplication using Java 17.0.13 with PID 14952 (D:\Projet-Encheres-ENI-non\build\classes\java\main started by jevariste2024 in D:\Projet-Encheres-ENI-non)
+2025-02-06T10:57:40.472+01:00  INFO 14952 --- [LesObjetsSontNosAmis] [restartedMain] f.e.l.LesObjetsSontNosAmisApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-02-06T10:57:40.506+01:00  INFO 14952 --- [LesObjetsSontNosAmis] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-02-06T10:57:40.507+01:00  INFO 14952 --- [LesObjetsSontNosAmis] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-02-06T10:57:41.629+01:00  INFO 14952 --- [LesObjetsSontNosAmis] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-02-06T10:57:41.639+01:00  INFO 14952 --- [LesObjetsSontNosAmis] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-06T10:57:41.639+01:00  INFO 14952 --- [LesObjetsSontNosAmis] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-06T10:57:41.676+01:00  INFO 14952 --- [LesObjetsSontNosAmis] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-06T10:57:41.676+01:00  INFO 14952 --- [LesObjetsSontNosAmis] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1169 ms
+2025-02-06T10:57:41.936+01:00  INFO 14952 --- [LesObjetsSontNosAmis] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name utilisateurServiceImpl
+2025-02-06T10:57:41.986+01:00  INFO 14952 --- [LesObjetsSontNosAmis] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-02-06T10:57:42.177+01:00  INFO 14952 --- [LesObjetsSontNosAmis] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-02-06T10:57:42.456+01:00  INFO 14952 --- [LesObjetsSontNosAmis] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-02-06T10:57:42.506+01:00  INFO 14952 --- [LesObjetsSontNosAmis] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-02-06T10:57:42.521+01:00  INFO 14952 --- [LesObjetsSontNosAmis] [restartedMain] f.e.l.LesObjetsSontNosAmisApplication    : Started LesObjetsSontNosAmisApplication in 2.385 seconds (process running for 2.885)
+2025-02-06T10:57:42.846+01:00  INFO 14952 --- [LesObjetsSontNosAmis] [RMI TCP Connection(3)-10.44.101.2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-06T10:57:42.846+01:00  INFO 14952 --- [LesObjetsSontNosAmis] [RMI TCP Connection(3)-10.44.101.2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-02-06T10:57:42.847+01:00  INFO 14952 --- [LesObjetsSontNosAmis] [RMI TCP Connection(3)-10.44.101.2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-02-06T10:57:42.847+01:00  INFO 14952 --- [LesObjetsSontNosAmis] [RMI TCP Connection(2)-10.44.101.2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-02-06T10:57:43.050+01:00  INFO 14952 --- [LesObjetsSontNosAmis] [RMI TCP Connection(2)-10.44.101.2] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection ConnectionID:1 ClientConnectionId: cec2e2fa-851b-4b8b-8096-b1d711556af1
+2025-02-06T10:57:43.053+01:00  INFO 14952 --- [LesObjetsSontNosAmis] [RMI TCP Connection(2)-10.44.101.2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-02-06T10:57:59.348+01:00 DEBUG 14952 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-5] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2025-02-06T10:57:59.348+01:00 DEBUG 14952 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-5] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT no_utilisateur, pseudo, nom, prenom, email, telephone, rue, code_postal, ville, mot_de_passe FROM utilisateurs WHERE email = ?]
+2025-02-06T10:57:59.366+01:00 TRACE 14952 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-5] o.s.jdbc.core.StatementCreatorUtils      : Setting SQL statement parameter value: column index 1, parameter value [thierry@email.fr], value class [java.lang.String], SQL type unknown
+2025-02-06T10:57:59.376+01:00 DEBUG 14952 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-5] o.s.jdbc.core.BeanPropertyRowMapper      : Mapping column 'no_utilisateur' to property 'noUtilisateur' of type 'int'
+2025-02-06T10:57:59.376+01:00 DEBUG 14952 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-5] o.s.jdbc.core.BeanPropertyRowMapper      : Mapping column 'pseudo' to property 'pseudo' of type 'java.lang.String'
+2025-02-06T10:57:59.376+01:00 DEBUG 14952 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-5] o.s.jdbc.core.BeanPropertyRowMapper      : Mapping column 'nom' to property 'nom' of type 'java.lang.String'
+2025-02-06T10:57:59.377+01:00 DEBUG 14952 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-5] o.s.jdbc.core.BeanPropertyRowMapper      : Mapping column 'prenom' to property 'prenom' of type 'java.lang.String'
+2025-02-06T10:57:59.377+01:00 DEBUG 14952 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-5] o.s.jdbc.core.BeanPropertyRowMapper      : Mapping column 'email' to property 'email' of type 'java.lang.String'
+2025-02-06T10:57:59.377+01:00 DEBUG 14952 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-5] o.s.jdbc.core.BeanPropertyRowMapper      : Mapping column 'telephone' to property 'telephone' of type 'java.lang.String'
+2025-02-06T10:57:59.377+01:00 DEBUG 14952 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-5] o.s.jdbc.core.BeanPropertyRowMapper      : Mapping column 'rue' to property 'rue' of type 'java.lang.String'
+2025-02-06T10:57:59.377+01:00 DEBUG 14952 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-5] o.s.jdbc.core.BeanPropertyRowMapper      : Mapping column 'code_postal' to property 'codePostal' of type 'int'
+2025-02-06T10:57:59.377+01:00 DEBUG 14952 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-5] o.s.jdbc.core.BeanPropertyRowMapper      : Mapping column 'ville' to property 'ville' of type 'java.lang.String'
+2025-02-06T10:57:59.377+01:00 DEBUG 14952 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-5] o.s.jdbc.core.BeanPropertyRowMapper      : Mapping column 'mot_de_passe' to property 'motDePasse' of type 'java.lang.String'
+2025-02-06T11:00:00.644+01:00  INFO 14952 --- [LesObjetsSontNosAmis] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-06T11:00:00.697+01:00  INFO 14952 --- [LesObjetsSontNosAmis] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-02-06T11:00:00.703+01:00  INFO 14952 --- [LesObjetsSontNosAmis] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-02-06T11:00:00.704+01:00  INFO 14952 --- [LesObjetsSontNosAmis] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-02-06T11:00:04.247+01:00  INFO 6708 --- [LesObjetsSontNosAmis] [restartedMain] f.e.l.LesObjetsSontNosAmisApplication    : Starting LesObjetsSontNosAmisApplication using Java 17.0.13 with PID 6708 (D:\Projet-Encheres-ENI-non\build\classes\java\main started by jevariste2024 in D:\Projet-Encheres-ENI-non)
+2025-02-06T11:00:04.249+01:00  INFO 6708 --- [LesObjetsSontNosAmis] [restartedMain] f.e.l.LesObjetsSontNosAmisApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-02-06T11:00:04.286+01:00  INFO 6708 --- [LesObjetsSontNosAmis] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-02-06T11:00:04.287+01:00  INFO 6708 --- [LesObjetsSontNosAmis] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-02-06T11:00:05.356+01:00  INFO 6708 --- [LesObjetsSontNosAmis] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-02-06T11:00:05.366+01:00  INFO 6708 --- [LesObjetsSontNosAmis] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-06T11:00:05.366+01:00  INFO 6708 --- [LesObjetsSontNosAmis] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-06T11:00:05.405+01:00  INFO 6708 --- [LesObjetsSontNosAmis] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-06T11:00:05.406+01:00  INFO 6708 --- [LesObjetsSontNosAmis] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1118 ms
+2025-02-06T11:00:05.660+01:00  INFO 6708 --- [LesObjetsSontNosAmis] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name utilisateurServiceImpl
+2025-02-06T11:00:05.708+01:00  INFO 6708 --- [LesObjetsSontNosAmis] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-02-06T11:00:05.898+01:00  INFO 6708 --- [LesObjetsSontNosAmis] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-02-06T11:00:06.173+01:00  INFO 6708 --- [LesObjetsSontNosAmis] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-02-06T11:00:06.214+01:00  INFO 6708 --- [LesObjetsSontNosAmis] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-02-06T11:00:06.228+01:00  INFO 6708 --- [LesObjetsSontNosAmis] [restartedMain] f.e.l.LesObjetsSontNosAmisApplication    : Started LesObjetsSontNosAmisApplication in 2.316 seconds (process running for 2.784)
+2025-02-06T11:00:06.603+01:00  INFO 6708 --- [LesObjetsSontNosAmis] [RMI TCP Connection(3)-10.44.101.2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-06T11:00:06.603+01:00  INFO 6708 --- [LesObjetsSontNosAmis] [RMI TCP Connection(3)-10.44.101.2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-02-06T11:00:06.605+01:00  INFO 6708 --- [LesObjetsSontNosAmis] [RMI TCP Connection(3)-10.44.101.2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-02-06T11:00:06.607+01:00  INFO 6708 --- [LesObjetsSontNosAmis] [RMI TCP Connection(1)-10.44.101.2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-02-06T11:00:06.800+01:00  INFO 6708 --- [LesObjetsSontNosAmis] [RMI TCP Connection(1)-10.44.101.2] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection ConnectionID:1 ClientConnectionId: cdb810fe-28d5-4804-8fe5-5ea7162e501c
+2025-02-06T11:00:06.803+01:00  INFO 6708 --- [LesObjetsSontNosAmis] [RMI TCP Connection(1)-10.44.101.2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-02-06T11:00:46.838+01:00  INFO 6708 --- [LesObjetsSontNosAmis] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-02-06T11:00:46.841+01:00  INFO 6708 --- [LesObjetsSontNosAmis] [Thread-5] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-06T11:00:46.928+01:00  INFO 6708 --- [LesObjetsSontNosAmis] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-02-06T11:00:46.935+01:00  INFO 6708 --- [LesObjetsSontNosAmis] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-02-06T11:00:46.937+01:00  INFO 6708 --- [LesObjetsSontNosAmis] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-02-06T11:00:47.008+01:00  INFO 6708 --- [LesObjetsSontNosAmis] [restartedMain] f.e.l.LesObjetsSontNosAmisApplication    : Starting LesObjetsSontNosAmisApplication using Java 17.0.13 with PID 6708 (D:\Projet-Encheres-ENI-non\build\classes\java\main started by jevariste2024 in D:\Projet-Encheres-ENI-non)
+2025-02-06T11:00:47.008+01:00  INFO 6708 --- [LesObjetsSontNosAmis] [restartedMain] f.e.l.LesObjetsSontNosAmisApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-02-06T11:00:47.306+01:00  INFO 6708 --- [LesObjetsSontNosAmis] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-02-06T11:00:47.307+01:00  INFO 6708 --- [LesObjetsSontNosAmis] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-06T11:00:47.307+01:00  INFO 6708 --- [LesObjetsSontNosAmis] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-06T11:00:47.319+01:00  INFO 6708 --- [LesObjetsSontNosAmis] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-06T11:00:47.320+01:00  INFO 6708 --- [LesObjetsSontNosAmis] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 311 ms
+2025-02-06T11:00:47.396+01:00  INFO 6708 --- [LesObjetsSontNosAmis] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name utilisateurServiceImpl
+2025-02-06T11:00:47.403+01:00  INFO 6708 --- [LesObjetsSontNosAmis] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-02-06T11:00:47.463+01:00  INFO 6708 --- [LesObjetsSontNosAmis] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-02-06T11:00:47.563+01:00  INFO 6708 --- [LesObjetsSontNosAmis] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-02-06T11:00:47.579+01:00  INFO 6708 --- [LesObjetsSontNosAmis] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-02-06T11:00:47.589+01:00  INFO 6708 --- [LesObjetsSontNosAmis] [restartedMain] f.e.l.LesObjetsSontNosAmisApplication    : Started LesObjetsSontNosAmisApplication in 0.6 seconds (process running for 44.143)
+2025-02-06T11:00:47.591+01:00  INFO 6708 --- [LesObjetsSontNosAmis] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-02-06T11:00:47.730+01:00  INFO 6708 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-06T11:00:47.730+01:00  INFO 6708 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-02-06T11:00:47.731+01:00  INFO 6708 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-02-06T11:02:34.801+01:00  INFO 6708 --- [LesObjetsSontNosAmis] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-02-06T11:02:34.803+01:00  INFO 6708 --- [LesObjetsSontNosAmis] [Thread-7] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-06T11:02:34.856+01:00  INFO 6708 --- [LesObjetsSontNosAmis] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-02-06T11:02:34.921+01:00  INFO 6708 --- [LesObjetsSontNosAmis] [restartedMain] f.e.l.LesObjetsSontNosAmisApplication    : Starting LesObjetsSontNosAmisApplication using Java 17.0.13 with PID 6708 (D:\Projet-Encheres-ENI-non\build\classes\java\main started by jevariste2024 in D:\Projet-Encheres-ENI-non)
+2025-02-06T11:02:34.921+01:00  INFO 6708 --- [LesObjetsSontNosAmis] [restartedMain] f.e.l.LesObjetsSontNosAmisApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-02-06T11:02:35.201+01:00  INFO 6708 --- [LesObjetsSontNosAmis] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-02-06T11:02:35.202+01:00  INFO 6708 --- [LesObjetsSontNosAmis] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-06T11:02:35.202+01:00  INFO 6708 --- [LesObjetsSontNosAmis] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-06T11:02:35.214+01:00  INFO 6708 --- [LesObjetsSontNosAmis] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-06T11:02:35.214+01:00  INFO 6708 --- [LesObjetsSontNosAmis] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 292 ms
+2025-02-06T11:02:35.288+01:00  INFO 6708 --- [LesObjetsSontNosAmis] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name utilisateurServiceImpl
+2025-02-06T11:02:35.295+01:00  INFO 6708 --- [LesObjetsSontNosAmis] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-02-06T11:02:35.356+01:00  INFO 6708 --- [LesObjetsSontNosAmis] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-02-06T11:02:35.437+01:00  INFO 6708 --- [LesObjetsSontNosAmis] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-02-06T11:02:35.450+01:00  INFO 6708 --- [LesObjetsSontNosAmis] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-02-06T11:02:35.459+01:00  INFO 6708 --- [LesObjetsSontNosAmis] [restartedMain] f.e.l.LesObjetsSontNosAmisApplication    : Started LesObjetsSontNosAmisApplication in 0.556 seconds (process running for 152.011)
+2025-02-06T11:02:35.461+01:00  INFO 6708 --- [LesObjetsSontNosAmis] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-02-06T11:03:03.611+01:00  INFO 6708 --- [LesObjetsSontNosAmis] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-06T11:03:03.665+01:00  INFO 6708 --- [LesObjetsSontNosAmis] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-02-06T11:04:53.372+01:00  INFO 13072 --- [LesObjetsSontNosAmis] [restartedMain] f.e.l.LesObjetsSontNosAmisApplication    : Starting LesObjetsSontNosAmisApplication using Java 17.0.13 with PID 13072 (D:\Projet-Encheres-ENI-non\build\classes\java\main started by jevariste2024 in D:\Projet-Encheres-ENI-non)
+2025-02-06T11:04:53.373+01:00  INFO 13072 --- [LesObjetsSontNosAmis] [restartedMain] f.e.l.LesObjetsSontNosAmisApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-02-06T11:04:53.409+01:00  INFO 13072 --- [LesObjetsSontNosAmis] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-02-06T11:04:53.410+01:00  INFO 13072 --- [LesObjetsSontNosAmis] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-02-06T11:04:54.507+01:00  INFO 13072 --- [LesObjetsSontNosAmis] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-02-06T11:04:54.517+01:00  INFO 13072 --- [LesObjetsSontNosAmis] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-06T11:04:54.517+01:00  INFO 13072 --- [LesObjetsSontNosAmis] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-06T11:04:54.553+01:00  INFO 13072 --- [LesObjetsSontNosAmis] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-06T11:04:54.554+01:00  INFO 13072 --- [LesObjetsSontNosAmis] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1144 ms
+2025-02-06T11:04:54.814+01:00  INFO 13072 --- [LesObjetsSontNosAmis] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name utilisateurServiceImpl
+2025-02-06T11:04:54.862+01:00  INFO 13072 --- [LesObjetsSontNosAmis] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-02-06T11:04:55.056+01:00  INFO 13072 --- [LesObjetsSontNosAmis] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-02-06T11:04:55.315+01:00  INFO 13072 --- [LesObjetsSontNosAmis] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-02-06T11:04:55.365+01:00  INFO 13072 --- [LesObjetsSontNosAmis] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-02-06T11:04:55.379+01:00  INFO 13072 --- [LesObjetsSontNosAmis] [restartedMain] f.e.l.LesObjetsSontNosAmisApplication    : Started LesObjetsSontNosAmisApplication in 2.329 seconds (process running for 2.764)
+2025-02-06T11:04:55.822+01:00  INFO 13072 --- [LesObjetsSontNosAmis] [RMI TCP Connection(1)-10.44.101.2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-06T11:04:55.822+01:00  INFO 13072 --- [LesObjetsSontNosAmis] [RMI TCP Connection(1)-10.44.101.2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-02-06T11:04:55.824+01:00  INFO 13072 --- [LesObjetsSontNosAmis] [RMI TCP Connection(1)-10.44.101.2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-02-06T11:04:55.848+01:00  INFO 13072 --- [LesObjetsSontNosAmis] [RMI TCP Connection(4)-10.44.101.2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-02-06T11:04:56.030+01:00  INFO 13072 --- [LesObjetsSontNosAmis] [RMI TCP Connection(4)-10.44.101.2] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection ConnectionID:1 ClientConnectionId: ef1ba2ce-4083-4bd2-b5b3-5db845908462
+2025-02-06T11:04:56.033+01:00  INFO 13072 --- [LesObjetsSontNosAmis] [RMI TCP Connection(4)-10.44.101.2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-02-06T11:06:18.674+01:00  INFO 13072 --- [LesObjetsSontNosAmis] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-06T11:06:18.741+01:00  INFO 13072 --- [LesObjetsSontNosAmis] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-02-06T11:06:18.747+01:00  INFO 13072 --- [LesObjetsSontNosAmis] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-02-06T11:06:18.749+01:00  INFO 13072 --- [LesObjetsSontNosAmis] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-02-06T11:06:22.594+01:00  INFO 4984 --- [LesObjetsSontNosAmis] [restartedMain] f.e.l.LesObjetsSontNosAmisApplication    : Starting LesObjetsSontNosAmisApplication using Java 17.0.13 with PID 4984 (D:\Projet-Encheres-ENI-non\build\classes\java\main started by jevariste2024 in D:\Projet-Encheres-ENI-non)
+2025-02-06T11:06:22.596+01:00  INFO 4984 --- [LesObjetsSontNosAmis] [restartedMain] f.e.l.LesObjetsSontNosAmisApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-02-06T11:06:22.632+01:00  INFO 4984 --- [LesObjetsSontNosAmis] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-02-06T11:06:22.632+01:00  INFO 4984 --- [LesObjetsSontNosAmis] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-02-06T11:06:23.718+01:00  INFO 4984 --- [LesObjetsSontNosAmis] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-02-06T11:06:23.727+01:00  INFO 4984 --- [LesObjetsSontNosAmis] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-06T11:06:23.727+01:00  INFO 4984 --- [LesObjetsSontNosAmis] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-06T11:06:23.762+01:00  INFO 4984 --- [LesObjetsSontNosAmis] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-06T11:06:23.762+01:00  INFO 4984 --- [LesObjetsSontNosAmis] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1130 ms
+2025-02-06T11:06:24.020+01:00  INFO 4984 --- [LesObjetsSontNosAmis] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name utilisateurServiceImpl
+2025-02-06T11:06:24.068+01:00  INFO 4984 --- [LesObjetsSontNosAmis] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-02-06T11:06:24.258+01:00  INFO 4984 --- [LesObjetsSontNosAmis] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-02-06T11:06:24.523+01:00  INFO 4984 --- [LesObjetsSontNosAmis] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-02-06T11:06:24.566+01:00  INFO 4984 --- [LesObjetsSontNosAmis] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-02-06T11:06:24.580+01:00  INFO 4984 --- [LesObjetsSontNosAmis] [restartedMain] f.e.l.LesObjetsSontNosAmisApplication    : Started LesObjetsSontNosAmisApplication in 2.323 seconds (process running for 2.736)
+2025-02-06T11:06:25.052+01:00  INFO 4984 --- [LesObjetsSontNosAmis] [RMI TCP Connection(2)-10.44.101.2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-02-06T11:06:25.064+01:00  INFO 4984 --- [LesObjetsSontNosAmis] [RMI TCP Connection(4)-10.44.101.2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-06T11:06:25.065+01:00  INFO 4984 --- [LesObjetsSontNosAmis] [RMI TCP Connection(4)-10.44.101.2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-02-06T11:06:25.067+01:00  INFO 4984 --- [LesObjetsSontNosAmis] [RMI TCP Connection(4)-10.44.101.2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-02-06T11:06:25.235+01:00  INFO 4984 --- [LesObjetsSontNosAmis] [RMI TCP Connection(2)-10.44.101.2] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection ConnectionID:1 ClientConnectionId: 76fb0151-824b-4fac-8e6b-54b53c9fcb91
+2025-02-06T11:06:25.237+01:00  INFO 4984 --- [LesObjetsSontNosAmis] [RMI TCP Connection(2)-10.44.101.2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-02-06T11:10:27.114+01:00  INFO 4984 --- [LesObjetsSontNosAmis] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-06T11:10:27.158+01:00  INFO 4984 --- [LesObjetsSontNosAmis] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-02-06T11:10:27.174+01:00  INFO 4984 --- [LesObjetsSontNosAmis] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-02-06T11:10:27.176+01:00  INFO 4984 --- [LesObjetsSontNosAmis] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-02-06T11:10:29.324+01:00  INFO 7952 --- [LesObjetsSontNosAmis] [restartedMain] f.e.l.LesObjetsSontNosAmisApplication    : Starting LesObjetsSontNosAmisApplication using Java 17.0.13 with PID 7952 (D:\Projet-Encheres-ENI-non\build\classes\java\main started by jevariste2024 in D:\Projet-Encheres-ENI-non)
+2025-02-06T11:10:29.324+01:00  INFO 7952 --- [LesObjetsSontNosAmis] [restartedMain] f.e.l.LesObjetsSontNosAmisApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-02-06T11:10:29.356+01:00  INFO 7952 --- [LesObjetsSontNosAmis] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-02-06T11:10:29.356+01:00  INFO 7952 --- [LesObjetsSontNosAmis] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-02-06T11:10:30.504+01:00  INFO 7952 --- [LesObjetsSontNosAmis] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-02-06T11:10:30.508+01:00  INFO 7952 --- [LesObjetsSontNosAmis] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-06T11:10:30.508+01:00  INFO 7952 --- [LesObjetsSontNosAmis] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-06T11:10:30.541+01:00  INFO 7952 --- [LesObjetsSontNosAmis] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-06T11:10:30.541+01:00  INFO 7952 --- [LesObjetsSontNosAmis] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1185 ms
+2025-02-06T11:10:30.837+01:00  INFO 7952 --- [LesObjetsSontNosAmis] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name utilisateurServiceImpl
+2025-02-06T11:10:30.891+01:00  INFO 7952 --- [LesObjetsSontNosAmis] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-02-06T11:10:31.097+01:00  INFO 7952 --- [LesObjetsSontNosAmis] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-02-06T11:10:31.374+01:00  INFO 7952 --- [LesObjetsSontNosAmis] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-02-06T11:10:31.431+01:00  INFO 7952 --- [LesObjetsSontNosAmis] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-02-06T11:10:31.442+01:00  INFO 7952 --- [LesObjetsSontNosAmis] [restartedMain] f.e.l.LesObjetsSontNosAmisApplication    : Started LesObjetsSontNosAmisApplication in 2.444 seconds (process running for 2.866)
+2025-02-06T11:10:31.809+01:00  INFO 7952 --- [LesObjetsSontNosAmis] [RMI TCP Connection(3)-10.44.101.2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-02-06T11:10:31.819+01:00  INFO 7952 --- [LesObjetsSontNosAmis] [RMI TCP Connection(4)-10.44.101.2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-06T11:10:31.819+01:00  INFO 7952 --- [LesObjetsSontNosAmis] [RMI TCP Connection(4)-10.44.101.2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-02-06T11:10:31.820+01:00  INFO 7952 --- [LesObjetsSontNosAmis] [RMI TCP Connection(4)-10.44.101.2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-02-06T11:10:31.991+01:00  INFO 7952 --- [LesObjetsSontNosAmis] [RMI TCP Connection(3)-10.44.101.2] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection ConnectionID:1 ClientConnectionId: aafbfa3a-1b8f-4a69-87a3-e4682ad5139b
+2025-02-06T11:10:31.991+01:00  INFO 7952 --- [LesObjetsSontNosAmis] [RMI TCP Connection(3)-10.44.101.2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-02-06T11:10:53.142+01:00 DEBUG 7952 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-5] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2025-02-06T11:10:53.143+01:00 DEBUG 7952 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-5] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT no_utilisateur, pseudo, nom, prenom, email, telephone, rue, code_postal, ville, mot_de_passe FROM utilisateurs WHERE email = ?]
+2025-02-06T11:10:53.158+01:00 TRACE 7952 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-5] o.s.jdbc.core.StatementCreatorUtils      : Setting SQL statement parameter value: column index 1, parameter value [thierry@email.fr], value class [java.lang.String], SQL type unknown
+2025-02-06T11:10:53.158+01:00 DEBUG 7952 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-5] o.s.jdbc.core.BeanPropertyRowMapper      : Mapping column 'no_utilisateur' to property 'noUtilisateur' of type 'int'
+2025-02-06T11:10:53.158+01:00 DEBUG 7952 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-5] o.s.jdbc.core.BeanPropertyRowMapper      : Mapping column 'pseudo' to property 'pseudo' of type 'java.lang.String'
+2025-02-06T11:10:53.158+01:00 DEBUG 7952 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-5] o.s.jdbc.core.BeanPropertyRowMapper      : Mapping column 'nom' to property 'nom' of type 'java.lang.String'
+2025-02-06T11:10:53.158+01:00 DEBUG 7952 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-5] o.s.jdbc.core.BeanPropertyRowMapper      : Mapping column 'prenom' to property 'prenom' of type 'java.lang.String'
+2025-02-06T11:10:53.158+01:00 DEBUG 7952 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-5] o.s.jdbc.core.BeanPropertyRowMapper      : Mapping column 'email' to property 'email' of type 'java.lang.String'
+2025-02-06T11:10:53.158+01:00 DEBUG 7952 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-5] o.s.jdbc.core.BeanPropertyRowMapper      : Mapping column 'telephone' to property 'telephone' of type 'java.lang.String'
+2025-02-06T11:10:53.158+01:00 DEBUG 7952 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-5] o.s.jdbc.core.BeanPropertyRowMapper      : Mapping column 'rue' to property 'rue' of type 'java.lang.String'
+2025-02-06T11:10:53.158+01:00 DEBUG 7952 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-5] o.s.jdbc.core.BeanPropertyRowMapper      : Mapping column 'code_postal' to property 'codePostal' of type 'int'
+2025-02-06T11:10:53.158+01:00 DEBUG 7952 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-5] o.s.jdbc.core.BeanPropertyRowMapper      : Mapping column 'ville' to property 'ville' of type 'java.lang.String'
+2025-02-06T11:10:53.158+01:00 DEBUG 7952 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-5] o.s.jdbc.core.BeanPropertyRowMapper      : Mapping column 'mot_de_passe' to property 'motDePasse' of type 'java.lang.String'
+2025-02-06T11:10:58.240+01:00 DEBUG 7952 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-8] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2025-02-06T11:10:58.240+01:00 DEBUG 7952 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-8] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT no_article, nom_article, description, date_debut_encheres, date_fin_encheres, prix_initial, prix_vente, no_utilisateur, no_categorie FROM articles_vendus]
+2025-02-06T11:11:02.215+01:00 DEBUG 7952 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-3] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2025-02-06T11:11:02.215+01:00 DEBUG 7952 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-3] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [SELECT no_article, nom_article, description, date_debut_encheres, date_fin_encheres, prix_initial, prix_vente, no_utilisateur, no_categorie FROM articles_vendus]
+2025-02-06T11:17:55.049+01:00  INFO 7952 --- [LesObjetsSontNosAmis] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-06T11:17:55.109+01:00  INFO 7952 --- [LesObjetsSontNosAmis] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-02-06T11:17:55.115+01:00  INFO 7952 --- [LesObjetsSontNosAmis] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-02-06T11:17:55.116+01:00  INFO 7952 --- [LesObjetsSontNosAmis] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

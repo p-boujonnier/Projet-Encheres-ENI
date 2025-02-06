@@ -47,15 +47,15 @@ public class ConnexionController {
     }
 
 
-//    @PostMapping("/logout")
-//    public String performLogout(HttpServletRequest request) {
-//        if (SecurityContextHolder.getContext().getAuthentication() != null) {
-//            request.getSession().invalidate();
-//            SecurityContextHolder.clearContext();
-//        }
-//        return "redirect:/encheres";
-//
-//    }
+    @PostMapping("/logout")
+    public String performLogout(HttpServletRequest request) {
+        if (SecurityContextHolder.getContext().getAuthentication() != null) {
+            request.getSession().invalidate();
+            SecurityContextHolder.clearContext();
+        }
+        return "redirect:/encheres";
+
+    }
 
     @GetMapping("/creer")
     public String creerProfil(Model model, Principal principal) {

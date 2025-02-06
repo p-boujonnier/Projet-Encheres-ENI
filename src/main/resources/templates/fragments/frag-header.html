@@ -7,6 +7,7 @@
                 <span data-th-text="#{nom-application}"></span>
             </a>
         </h1>
+<!--         h2 = Permet d'afficher le pseudo quand l'utilisateur est connecté-->
         <h2 data-th-if="${#authorization.expression('isAuthenticated()')}" data-th-text="${#authentication.getPrincipal().getUsername()}"></h2>
     </section>
     <nav>
@@ -23,8 +24,10 @@
             <button><a href="/creer" data-th-text="#{frag-header.utilisateur.creer}">S'inscrire</a></button>
             <!--                        <li data-th-if="${#authorization.expression('isAuthenticated()')}"><a data-th-href="@{/logout}"><button class="auth-buttons">S'inscrire / Se connecter</button></a>-->
             <button><a href="/login">Se connecter</a></button>
-            <button ><a>Se deconnecter</a></button>
+            <button data-th-if="${#authorization.expression('isAuthenticated()')}"><a href="/encheres">Se deconnecter</a></button>
         </div>
     </nav>
 </header>
 <!--              <li <a data-th-href="@{/view-profil-detail.html()}"><button class="auth-buttons">Se déconnecter</button></a> -->
+<!--<form action="/logout" method="post">-->
+<!--    <button data-th-if="${#authorization.expression('isAuthenticated()')}" type="submit">Se déconnecter</button>-->
