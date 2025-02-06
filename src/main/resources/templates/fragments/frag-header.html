@@ -15,7 +15,7 @@
         <ul>
             <th:block>
                 <li><a href="/encheres" data-th-text="#{frag-header.articles}"></a></li>
-                <li><a href="/encheres/creer" data-th-text="#{frag-header.articles.creer}"></a></li>
+                <li><a data-th-if="${#authorization.expression('isAuthenticated()')}" href="/encheres/creer" data-th-text="#{frag-header.articles.creer}"></a></li>
                 <li><a data-th-if="${#authorization.expression('isAuthenticated()')}" href="/profil/detail" data-th-text="#{frag-header.utilisateur}"></a></li>
                 <li></li>
             </th:block>
