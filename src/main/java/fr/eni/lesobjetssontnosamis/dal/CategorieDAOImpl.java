@@ -28,7 +28,7 @@ public class CategorieDAOImpl implements CategorieDAO {
     }
 
     @Override
-    public Categorie readById(int id) {
+    public Categorie readById(long id) {
         MapSqlParameterSource namedParameters = new MapSqlParameterSource();
         namedParameters.addValue("id", id);
         return jdbcTemplate.queryForObject(FIND_BY_ID, namedParameters,

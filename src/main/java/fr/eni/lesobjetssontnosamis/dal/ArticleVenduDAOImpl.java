@@ -36,26 +36,25 @@ public class ArticleVenduDAOImpl implements ArticleVenduDAO {
         public ArticleVendu mapRow(ResultSet rs, int rowNum) throws SQLException {
             // Création nouvel objet
             ArticleVendu av = new ArticleVendu();
-            av.setNoArticle(rs.getInt("no_article"));
+            av.setNoArticle(rs.getLong("no_article"));
             av.setNomArticle(rs.getString("nom_article"));
             av.setDescription(rs.getString("description"));
-            av.setDateDebutEncheres(LocalDate.parse(rs.getString("date_debut_encheres")));
-            av.setDateFinEncheres(LocalDate.parse(rs.getString("date_fin_encheres")));
+            av.setDateDebutEncheres(rs.getDate("date_debut_encheres").toLocalDate());
+            av.setDateFinEncheres(rs.getDate("date_fin_encheres").toLocalDate());
             av.setMiseAPrix(rs.getInt("prix_initial"));
             av.setPrixVente(rs.getInt("prix_vente"));
 
             // Liste des enchères pour un article
-            var listEncheres = new ArrayList<Enchere>();
-            av.setEncheres(listEncheres);
+            av.setEncheres(new ArrayList<>());
 
             // Association a un vendeur
-            var vendeur = new Utilisateur();
-            vendeur.setNoUtilisateur(rs.getInt("no_utilisateur"));
+            Utilisateur vendeur = new Utilisateur();
+            vendeur.setNoUtilisateur(rs.getLong("no_utilisateur"));
             av.setVendeur(vendeur);
 
             // Association a une catégorie
-            var categorie = new Categorie();
-            categorie.setNoCategorie(rs.getInt("no_categorie"));
+            Categorie categorie = new Categorie();
+            categorie.setNoCategorie(rs.getLong("no_categorie"));
             av.setCategorie(categorie);
 
             return av;
@@ -69,17 +68,16 @@ public class ArticleVenduDAOImpl implements ArticleVenduDAO {
 
         namedParameters.addValue("nomArticle", articleVendu.getNomArticle());
         namedParameters.addValue("description", articleVendu.getDescription());
-        namedParameters.addValue("dateDebutEncheres", articleVendu.getDateDebutEncheres());
-        namedParameters.addValue("dateFinEncheres", articleVendu.getDateFinEncheres());
-        namedParameters.addValue("miseAPrix", articleVendu.getMiseAPrix());
+        namedParameters.addValue("dateDebutEncheres", java.sql.Date.valueOf(articleVendu.getDateDebutEncheres()));
+        namedParameters.addValue("dateFinEncheres", java.sql.Date.valueOf(articleVendu.getDateFinEncheres()));
+        namedParameters.addValue("prixInitial", articleVendu.getMiseAPrix()); // Correction du nom du paramètre
         namedParameters.addValue("prixVente", articleVendu.getPrixVente());
+        namedParameters.addValue("no_utilisateur", articleVendu.getVendeur().getNoUtilisateur());
+        namedParameters.addValue("no_categorie", articleVendu.getCategorie().getNoCategorie());
 
         jdbcTemplate.update(INSERT, namedParameters, keyHolder);
-
         if (keyHolder != null && keyHolder.getKey() != null) {
-            // Mise à jour de l'identifiant du film auto-généré par la base
             articleVendu.setNoArticle(keyHolder.getKey().intValue());
-
         }
     }
 }

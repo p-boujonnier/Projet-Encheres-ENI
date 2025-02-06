@@ -27,7 +27,7 @@ public class CategorieServiceImpl implements CategorieService {
     }
 
     @Override
-    public Categorie readCategorieById(int id) {
+    public Categorie readCategorieById(long id) {
         return categorieDAO.readById(id);
     }
 

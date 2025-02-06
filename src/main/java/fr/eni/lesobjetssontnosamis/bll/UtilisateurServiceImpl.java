@@ -29,12 +29,8 @@ public class UtilisateurServiceImpl implements UtilisateurService {
     }
 
     @Override
-    public void updateUtilisateur(Utilisateur utilisateur) {
-    }
-
-    @Override
-    public Utilisateur findUtilisateurById(Long id) {
-        return null;
+    public Utilisateur findUtilisateurById(long id) {
+        return utilisateurDAO.readByNo(id);
     }
 
     @Override
@@ -46,5 +42,15 @@ public class UtilisateurServiceImpl implements UtilisateurService {
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
         var result = utilisateurDAO.read(username);
         return result;
+    }
+
+    @Override
+    public void updateUtilisateur(Utilisateur utilisateur) {
+        utilisateurDAO.update(utilisateur);
+    }
+
+    @Override
+    public void deleteUtilisateur(String email) {
+        utilisateurDAO.delete(email);
     }
 }

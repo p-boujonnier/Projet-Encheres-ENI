@@ -9,11 +9,17 @@ public interface UtilisateurDAO {
 
     Utilisateur read(String email);
 
+    Utilisateur readByNo(long noUtilisateur);
+
     List<Utilisateur> readAll();
 
     void update(Utilisateur utilisateur);
 
-    void delete(Utilisateur utilisateur);
-
     Utilisateur compteUnique(String Email);
+
+//    void delete(Utilisateur utilisateur);
+
+    void delete(String email);
+
+
 }

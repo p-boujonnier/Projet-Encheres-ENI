@@ -10,11 +10,17 @@ public interface UtilisateurService extends UserDetailsService {
 
     void addUtilisateur(Utilisateur utilisateur);
 
-    void updateUtilisateur(Utilisateur utilisateur);
 
-    Utilisateur findUtilisateurById(Long id);
+    Utilisateur findUtilisateurById(long id);
 
     Utilisateur findUtilisateurByEmail(String email);
 
     List<Utilisateur> findAllUtilisateurs();
+
+    // ---------------------------------------
+
+    void updateUtilisateur(Utilisateur utilisateur);
+
+    void deleteUtilisateur(String email);
+
 }

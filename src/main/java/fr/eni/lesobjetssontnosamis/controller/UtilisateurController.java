@@ -29,8 +29,15 @@ public class UtilisateurController {
     }
 
     @GetMapping("/detail")
-    public String afficherProfil(@RequestParam("email") String email, Model model) {
+    public String afficherProfil(@RequestParam("email") String email, Model model, RedirectAttributes redirectAttributes) {
         Utilisateur utilisateur = utilisateurService.findUtilisateurByEmail(email);
+
+        if (utilisateur == null) {
+            // Ajout d'un message flash si l'email n'existe pas
+            redirectAttributes.addFlashAttribute("errorMessage", "Aucun profil trouvé pour l'email : " + email);
+            return "redirect:/profil/get-profil"; // Redirection vers la page de recherche
+        }
+
         model.addAttribute("utilisateur", utilisateur);
         return "view-profil-detail";
     }
@@ -41,6 +48,71 @@ public class UtilisateurController {
         model.addAttribute("utilisateur", utilisateurService.findUtilisateurByEmail(utilisateur));
         return "view-profil-modify";
 
+
+
+    @GetMapping("/creer")
+    public String creerProfil(Model model, Principal principal) {
+        model.addAttribute("utilisateur", new Utilisateur());
+        model.addAttribute("action", "/encheres");
+
+        return "view-profil-create";
     }
+
+    @PostMapping("/creer")
+    @Transactional
+    public String creerProfil(@Valid @ModelAttribute Utilisateur utilisateur, BindingResult bindingResult) {
+        utilisateurService.addUtilisateur(utilisateur);
+        //return "redirect:/login"; //à mettre une fois qu'on aura la page qui fonctionne
+        return "redirect:/encheres";
+    }
+    // creerProfil dans le Get & Post => ok le même nom (= c'est normal)
+
+    // --------------------------------------------
+    // ------------- Supprimer Profil -------------
+    @PostMapping("/supprimer")
+    public String supprimerProfil(@RequestParam("email") String email, Model model) {
+        utilisateurService.deleteUtilisateur(email);
+
+        // Ajouter un message flash pour la confirmation
+//        redirectAttributes.addFlashAttribute("message", "Le compte a été supprimé avec succès.");
+
+        return "redirect:/profil/get-profil";
+    }
+
+
+
+    // --------------------------------------------
+    // ----------- Modifier Profil ------------------
+
+    @GetMapping("/modifier")
+    public String modifierProfil(Model model, Principal principal) {
+        var utilisateur = principal.getName();
+        model.addAttribute("utilisateur", utilisateurService.findUtilisateurByEmail(utilisateur));
+        return "view-profil-modify";
+    }
+
+    @GetMapping("/modifier-admin")
+    public String modifierProfil(@RequestParam("email") String email, Model model) {
+        Utilisateur utilisateur = utilisateurService.findUtilisateurByEmail(email);
+
+        if (utilisateur == null) {
+            model.addAttribute("errorMessage", "Aucun profil trouvé avec cet email.");
+            return "view-profil-detail"; // Retourner à la page précédente si l'email n'existe pas
+        }
+
+        model.addAttribute("utilisateur", utilisateur);
+        return "view-profil-modify"; // Charge la page de modification
+    }
+
+    @PostMapping("/modifier")
+    public String enregistrerModifications(@ModelAttribute Utilisateur utilisateur, RedirectAttributes redirectAttributes) {
+        utilisateurService.updateUtilisateur(utilisateur);
+
+        redirectAttributes.addFlashAttribute("message", "Profil mis à jour avec succès.");
+        return "redirect:/profil/detail?email=" + utilisateur.getEmail(); // Retour au profil
+    }
+
+
+
 
 }

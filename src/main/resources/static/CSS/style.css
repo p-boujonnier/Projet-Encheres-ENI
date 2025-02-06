@@ -23,15 +23,15 @@ body {
 :root {
     /* Couleurs */
     --PrimaryColor: #0FA3B1;
-    --SecondaryColor: #B5E2FA;
+    --SecondaryColor: #8DD2EC;
     --AccentColor1: #FDFCFA;
     --AccentColor2: #EDDEA4;
     --AccentColor3: #F7A072;
-    --AccentColor4:#F1C7A6;
+    --AccentColor4: #F1C7A6;
     --WhiteMilk: #FDFFF5;
     --Black: #333333;
     --BackGround: var(--WhiteMilk);
-    --ColorResetButton : #D3D3D3;
+    --ColorResetButton: #D3D3D3;
 
     /* Conversion de px en em */
     --10px: 0.625em;
@@ -44,7 +44,29 @@ body {
     --font-size-default: 1em;
     --font-size-h1: 1.5em;
     --font-size-h2: 1.25em;
+    --font-size-h3: 1.15em;
 }
+
+/*---------------------------------------------*/
+/*                    GLOBAL                   */
+/*---------------------------------------------*/
+/*   CLASSES   */
+h1 {
+    padding: var(--10px);
+}
+
+h2 {
+    font-size: var(--font-size-h2);
+}
+
+ul {
+    list-style-type: none;
+}
+
+.bold {
+    font-weight: bold;
+}
+/*   ID   */
 
 /*---------------------------------------------*/
 /*                    HEADER                   */
@@ -58,13 +80,43 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin: 0;
 }
+
 /*   ID   */
 
 /*---------------------------------------------*/
-/*              NAVIGATION TITLE              */
+/*              NAVIGATION MENU                */
 /*---------------------------------------------*/
 /*   CLASSES   */
+/* Menu de navigation sous le titre */
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    display: flex;
+    gap: var(--20px);
+    padding: var(--20px);
+    font-size: var(--font-size-h2);
+    gap: 3em;
+}
+
+/* Style des liens dans le menu */
+nav ul li a {
+    text-decoration: none;
+    color: var(--AccentColor1);
+    font-weight: bold;
+}
+
+/* Changement de couleur au survol des liens */
+nav ul li a:hover {
+    border: 3px solid var(--AccentColor1);
+    border-radius: 12px;
+    padding: 8px;
+}
 
 /*   ID   */
 /* Zone du titre de navigation (logo et texte) */
@@ -90,51 +142,15 @@ header {
 }
 
 /*---------------------------------------------*/
-/*              NAVIGATION MENU               */
-/*---------------------------------------------*/
-/*   CLASSES   */
-/* Menu de navigation sous le titre */
-nav {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-/* Style du menu de navigation */
-nav ul{
-    list-style-type: none;
-    display: flex;
-    gap: var(--20px);
-    padding: var(--20px);
-    font-size: var(--font-size-h2);
-}
-
-/* Style des liens dans le menu */
-nav ul li a {
-    text-decoration: none;
-    color: var(--AccentColor1);
-    font-weight: bold;
-}
-
-/* Changement de couleur au survol des liens */
-nav ul li a:hover {
-    color: var(--AccentColor2);
-}
-
-/*   ID   */
-
-
-/*---------------------------------------------*/
 /*                  BUTTONS                    */
 /*---------------------------------------------*/
 /*   CLASSES   */
 button {
-    background-color: var(--AccentColor2);
-    border: none;
-    color: var(--WhiteMilk);
+    background-color: var(--AccentColor1);
+    border: 3px solid var(--PrimaryColor);
+    border-radius: 50px;
     cursor: pointer;
     padding: 0.75em 1.25em;
-    border-radius: var(--12px);
     font-size: var(--font-size-default);
     font-weight: bold;
     transition: background-color 0.3s ease;
@@ -146,31 +162,46 @@ button {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    position : absolute;
+    position: absolute;
     top: var(--20px);
     right: var(--20px);
     gap: var(--14px);
 }
 
 /*   ID   */
-#signin-button{
-
+#signin-button, #login-button{
+    background-color: var(--PrimaryColor);
+    border : 3px solid var(--AccentColor1);
+    border-radius: 35px;
+    color: var(--WhiteMilk);
+}
+#signin-button:hover, #login-button:hover {
+    background-color: var(--AccentColor3);
 }
 
-#reset-button{ /* NE FONCTIONNE PAS */
-    background-color:var(--ColorResetButton) ;
+#save-button:hover {
+    background-color: var(--AccentColor3);
+    border-color: var(--AccentColor3);
+}
+#reset-button {
+    background-color: var(--ColorResetButton);
+    color: var(--WhiteMilk);
+    border-color: var(--ColorResetButton);
 }
 
 /* Changement de couleur au survol des boutons */
 button:hover {
     background-color: var(--PrimaryColor);
+    color: var(--WhiteMilk);
 }
 
 .auth-buttons > button:hover {
     border-color: var(--AccentColor1);
 }
-#reset-button:hover{
+
+#reset-button:hover {
     background-color: var(--AccentColor3);
+    border-color: var(--AccentColor3);
 }
 
 
@@ -184,37 +215,21 @@ form {
     padding: var(--20px);
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 50%;
+    width: 40%;
     margin: var(--40px) auto;
 }
 
-form ul {
-    list-style: none;
-}
-
-/*   ID   */
-
-
-/*---------------------------------------------*/
-/*               FORM LABELS                   */
-/*---------------------------------------------*/
-/*   CLASSES   */
 /* Style des étiquettes du formulaire */
 label {
     display: block;
+    font-size: var(--font-size-h3);
     font-weight: bold;
     margin-bottom: var(--10px);
     color: var(--PrimaryColor);
 }
-/*   ID   */
 
-
-/*---------------------------------------------*/
-/*                  INPUTS                    */
-/*---------------------------------------------*/
-/*   CLASSES   */
 /* Style des champs de saisie, sélection et textarea */
-input, select, textarea {
+input, select, textarea, option {
     width: 100%;
     height: 1em;
     padding: var(--20px);
@@ -226,9 +241,122 @@ input, select, textarea {
     color: var(--Black);
 }
 
+test{
+    color : deeppink;
+}
+
+select {
+    color: var(--Black);
+}
+
+input::placeholder {
+    color: var(--SecondaryColor);
+    font-style: italic;
+}
+
+/*Hover du select input changer le bleu foncé?*/
+/*select option:hover, select option:checked {*/
+/*    background-color: var(--SecondaryColor);*/
+/*}*/
+
 /*   ID   */
 
 
+/*---------------------------------------------*/
+/*                PAGE ENCHERES                */
+/*---------------------------------------------*/
+/*   CLASSES   */
+/* Section filtres */
+.view-articles-filtres {
+    margin: 1em;
+}
+
+/* Section affichage de chaque article */
+.liste-articles-container {
+    width: 100%;
+    padding: 0.75em;
+}
+
+/* Div contenant tout ce qui concerne l'article */
+.article-container {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: var(--AccentColor1);
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    gap: 1em;
+    padding: var(--20px);
+    min-height: 40vh;
+    width: 40%;
+    margin: var(--20px) auto;
+}
+
+.img-article {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    border-radius: 12px;
+    min-width: 10vw;
+}
+
+/* Affichage de l'article */
+.article-template {
+    flex: 1;
+    min-width: 10vw;
+    margin-top: 2em;
+}
+
+.show-article {
+    display: inline-block;
+}
+
+.search-button {
+    display: flex;
+    justify-content: center;
+}
+
+.h3-link-article {
+    font-size: var(--font-size-h3);
+    font-weight: bold;
+}
+
+.h3-link-article a {
+    color: var(--PrimaryColor);
+    /*text-decoration: none;*/
+}
+
+.h3-link-article a:hover {
+    color: var(--AccentColor3);
+    text-decoration: underline;
+}
+
+/*   ID   */
+/* Section affichage des filtres */
+#filtres {
+    width: 40%;
+}
+
+#categorie {
+    width: 35%;
+}
+
+#categorie option {
+    padding: 0;
+}
+/*---------------------------------------------*/
+/*                   TEMPLATE                    */
+/*---------------------------------------------*/
+/*   CLASSES   */
+/*.profil-create-form {
+mettre sur 2 colonnes?
+*/
+/*}*/
+/*   ID   */
+
+
+/*==================================================================================*/
+/*==================================================================================*/
+/*à voir si on garde*/
 /*---------------------------------------------*/
 /*                   TABLE                     */
 /*---------------------------------------------*/
@@ -262,9 +390,16 @@ table tr:nth-child(even) {
 
 /* Style au survol des lignes du tableau */
 table tr:hover {
-    background-color: var(--SecondaryColor);
-    color: var(--AccentColor1);
+    /*background-color: var(--SecondaryColor);*/
+    color: var(--Black);
     font-weight: bold;
+    border: 3px solid var(--Black);
 }
 
+/*   ID   */
+/*==================================================================================*/
+/*---------------------------------------------*/
+/*                   TEMPLATE                    */
+/*---------------------------------------------*/
+/*   CLASSES   */
 /*   ID   */

@@ -11,11 +11,9 @@ import org.springframework.stereotype.Controller;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
 
+import java.sql.SQLOutput;
 import java.util.List;
 
 @Controller
@@ -36,6 +34,8 @@ public class ArticleVenduController {
     public String afficherArticles(Model model) {
         List<ArticleVendu> articleVendus = articleVenduService.getArticleVendus();
         model.addAttribute("articleVendus", articleVendus);
+        List<Categorie> categoriesList = categorieService.readAllCategories();
+        model.addAttribute("categoriesList", categoriesList);// Liste des catégories
         return "view-article";
     }
 
@@ -52,7 +52,9 @@ public class ArticleVenduController {
     // Création d'un nouvel article
     @PostMapping("/creer")
     @Transactional
-    public String creerArticleVendu(@Valid @ModelAttribute ArticleVendu articleVendu, BindingResult bindingResult) {
+    public String creerArticleVendu(
+            @ModelAttribute("article") ArticleVendu articleVendu,
+            BindingResult bindingResult) {
         articleVenduService.addArticleVendu(articleVendu);
         return "redirect:/view-article";
     }

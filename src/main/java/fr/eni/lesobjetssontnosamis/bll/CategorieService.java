@@ -10,7 +10,7 @@ public interface CategorieService {
 
     void createCategorie(Categorie categorie);
     List<Categorie> readAllCategories();
-    Categorie readCategorieById(int id);
+    Categorie readCategorieById(long id);
     void updateCategorie(Categorie categorie);
     void deleteCategorieById(Long id);
 }
