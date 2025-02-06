@@ -55,7 +55,6 @@ public AuthenticationManager authenticationManager(HttpSecurity http) throws Exc
             auth.requestMatchers(HttpMethod.GET, "/encheres").permitAll();
             auth.requestMatchers(HttpMethod.GET, "/login").permitAll();
             auth.requestMatchers(HttpMethod.GET, "/view-profil/").permitAll();
-            auth.requestMatchers(HttpMethod.GET, "/view-profil/get-profil").permitAll();
             auth.requestMatchers(HttpMethod.GET, "/articles").permitAll();
             auth.requestMatchers(HttpMethod.GET, "/view-articles/").permitAll();
             auth.requestMatchers(HttpMethod.POST, "/view-articles/").permitAll();
