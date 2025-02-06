@@ -6943,3 +6943,15 @@ java.lang.NullPointerException: Cannot invoke "java.security.Principal.getName()
 2025-02-06T16:48:45.584+01:00 DEBUG 1276 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-4] o.s.jdbc.core.BeanPropertyRowMapper      : Mapping column 'code_postal' to property 'codePostal' of type 'int'
 2025-02-06T16:48:45.585+01:00 DEBUG 1276 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-4] o.s.jdbc.core.BeanPropertyRowMapper      : Mapping column 'ville' to property 'ville' of type 'java.lang.String'
 2025-02-06T16:48:45.585+01:00 DEBUG 1276 --- [LesObjetsSontNosAmis] [http-nio-8080-exec-4] o.s.jdbc.core.BeanPropertyRowMapper      : Mapping column 'mot_de_passe' to property 'motDePasse' of type 'java.lang.String'
+2025-02-06T16:53:05.187+01:00  INFO 1276 --- [LesObjetsSontNosAmis] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 18 class path changes (3 additions, 0 deletions, 15 modifications)
+2025-02-06T16:53:05.191+01:00  INFO 1276 --- [LesObjetsSontNosAmis] [Thread-5] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-06T16:53:05.246+01:00  INFO 1276 --- [LesObjetsSontNosAmis] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-02-06T16:53:05.251+01:00  INFO 1276 --- [LesObjetsSontNosAmis] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-02-06T16:53:05.252+01:00  INFO 1276 --- [LesObjetsSontNosAmis] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-02-06T16:53:05.322+01:00  INFO 1276 --- [LesObjetsSontNosAmis] [restartedMain] f.e.l.LesObjetsSontNosAmisApplication    : Starting LesObjetsSontNosAmisApplication using Java 17.0.13 with PID 1276 (D:\Projet-Encheres-ENI-non\build\classes\java\main started by jevariste2024 in D:\Projet-Encheres-ENI-non)
+2025-02-06T16:53:05.322+01:00  INFO 1276 --- [LesObjetsSontNosAmis] [restartedMain] f.e.l.LesObjetsSontNosAmisApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-02-06T16:53:05.652+01:00  INFO 1276 --- [LesObjetsSontNosAmis] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-02-06T16:53:05.652+01:00  INFO 1276 --- [LesObjetsSontNosAmis] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-06T16:53:05.653+01:00  INFO 1276 --- [LesObjetsSontNosAmis] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-06T16:53:05.667+01:00  INFO 1276 --- [LesObjetsSontNosAmis] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-06T16:53:05.667+01:00  INFO 1276 --- [LesObjetsSontNosAmis] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 343 ms
