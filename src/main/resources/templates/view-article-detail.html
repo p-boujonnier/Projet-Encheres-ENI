@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      data-th-replace="~{layouts/layout :: layout-objets-amis(
+					titrePage=~{:: title},
+					contenuPage=~{:: main},
+					ressourcesSupp=~{:: #ressources-css})}">
+
+<head>
+    <!-- Titre de la page -->
+    <title data-th-text="#{view-articles.detail.title}"></title>
+    <!-- Pages de ressources supplémentaires -->
+    <th:block id="ressources-css">
+    </th:block>
+</head>
+<main>
+    <div class="img-article">
+        <!--                        img de l'article si pas d'image-->
+        <img data-th-src="@{/img/sell.svg}" data-th-alt="${article.nomArticle}">
+        <!--                        <img data-th-src="@{/img/{image}(image=${article.image})}" data-th-alt="${article.nomArticle}">-->
+    </div>
+
+    <div class="article-template" data-th-object="${articleSelected}">
+        <ul>
+            <li class="h3-link-article"><a href="#" data-th-text="${article.nomArticle}"></a></li>
+            <li>
+                <span class="bold">Prix : </span>
+                <span data-th-text="${article.prixVente}"></span>
+            </li>
+            <li>
+                <span class="bold">Fin de l'enchère : </span>
+                <span data-th-text="${article.dateFinEncheres}"></span>
+            </li>
+            <li>
+                <span class="bold">Vendeur : </span>
+                <span data-th-text="${article.vendeur.pseudo}"></span>
+            </li>
+        </ul>
+    </div>
+</main>
+</html>

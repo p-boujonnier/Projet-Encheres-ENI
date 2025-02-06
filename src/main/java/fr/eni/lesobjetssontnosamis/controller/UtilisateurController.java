@@ -32,6 +32,7 @@ public class UtilisateurController {
     public String afficherProfil(@RequestParam("email") String email, Model model, RedirectAttributes redirectAttributes) {
         Utilisateur utilisateur = utilisateurService.findUtilisateurByEmail(email);
 
+
         if (utilisateur == null) {
             // Ajout d'un message flash si l'email n'existe pas
             redirectAttributes.addFlashAttribute("errorMessage", "Aucun profil trouvé pour l'email : " + email);

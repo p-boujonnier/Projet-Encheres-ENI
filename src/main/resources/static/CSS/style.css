@@ -294,7 +294,7 @@ input::placeholder {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     gap: 1em;
     padding: var(--20px);
-    min-height: 40vh;
+    min-height: 30vh;
     width: 40%;
     margin: var(--20px) auto;
 }
