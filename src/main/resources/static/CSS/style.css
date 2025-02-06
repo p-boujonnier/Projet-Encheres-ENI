@@ -13,7 +13,6 @@
 body {
     background-color: var(--BackGround);
     color: var(--PrimaryColor);
-    padding: var(--20px);
     font-size: var(--font-size-default);
 }
 
@@ -231,8 +230,8 @@ label {
 /* Style des champs de saisie, sélection et textarea */
 input, select, textarea, option {
     width: 100%;
-    height: 1em;
-    padding: var(--20px);
+    height: 2.5em;
+    padding: 2px;
     margin-bottom: var(--20px);
     border: 1px solid var(--AccentColor3);
     border-radius: 4px;
@@ -253,6 +252,8 @@ input::placeholder {
     color: var(--SecondaryColor);
     font-style: italic;
 }
+
+
 
 /*Hover du select input changer le bleu foncé?*/
 /*select option:hover, select option:checked {*/
@@ -343,6 +344,9 @@ input::placeholder {
 #categorie option {
     padding: 0;
 }
+
+
+
 /*---------------------------------------------*/
 /*                   TEMPLATE                    */
 /*---------------------------------------------*/
@@ -353,6 +357,32 @@ mettre sur 2 colonnes?
 /*}*/
 /*   ID   */
 
+
+/*---------------------------------------------*/
+/*                   TEMPLATE                    */
+/*---------------------------------------------*/
+/*   CLASSES   */
+
+table {
+    border: 2px solid var(--PrimaryColor);
+}
+.hidden {
+    display: none;
+}
+
+.btns-delete-update-section {
+    display: flex;
+    justify-content: center;
+    padding: var(--20px);
+    margin: var(--10px) auto;
+    gap: 1em;
+}
+.btns-delete-update-section form {
+    background-color: var(--BackGround);
+    box-shadow: none;
+}
+
+/*   ID   */
 
 /*==================================================================================*/
 /*==================================================================================*/
