@@ -46,11 +46,8 @@ public class ConnexionController {
 
 
     @RequestMapping("/logout")
-    public String performLogout(HttpServletRequest request) {
-        if (SecurityContextHolder.getContext().getAuthentication() != null) {
-            request.getSession().invalidate();
-            SecurityContextHolder.clearContext();
-        }
+    public String performLogout(HttpServletRequest request) throws ServletException {
+    request.logout();
         return "redirect:/encheres";
 
     }
@@ -70,7 +67,7 @@ public class ConnexionController {
         utilisateur.setMotDePasse(passwordEncoder.encode(password)); //encode
         utilisateurService.addUtilisateur(utilisateur);
         request.login(utilisateur.getEmail(), password);
-        request.logout();
+        //request.logout();
         //return "redirect:/login"; //à mettre une fois qu'on aura la page qui fonctionne
         System.out.println(utilisateur.getPassword());
         return "redirect:/encheres";
