@@ -9,11 +9,17 @@ public interface UtilisateurService {
 
     void addUtilisateur(Utilisateur utilisateur);
 
-    void updateUtilisateur(Utilisateur utilisateur);
 
     Utilisateur findUtilisateurById(long id);
 
     Utilisateur findUtilisateurByEmail(String email);
 
     List<Utilisateur> findAllUtilisateurs();
+
+    // ---------------------------------------
+
+    void updateUtilisateur(Utilisateur utilisateur);
+
+    void deleteUtilisateur(String email);
+
 }

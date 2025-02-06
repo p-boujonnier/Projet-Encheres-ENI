@@ -38,7 +38,30 @@
             <td data-th-text="${utilisateur.rue}"></td>
             <td data-th-text="${utilisateur.codePostal}"></td>
             <td data-th-text="${utilisateur.ville}"></td>
+
         </tr>
+
+        <!--        Bouton suppression Profil                -->
+        <tr>
+            <form method="post" th:action="@{/profil/supprimer}" style="display:inline;">
+                <input type="hidden" name="email" th:value="${utilisateur.email}">
+                <button type="submit" class="link-button">Supprimer ce profil</button>
+            </form>
+
+        </tr>
+
+        <!--        Bouton modifier Profil                -->
+        <tr>
+            <td colspan="8" style="text-align: center; padding-top: 10px;">
+                <form method="get" th:action="@{/profil/modifier}">
+                    <input type="hidden" name="email" th:value="${utilisateur.email}">
+                    <button type="submit" class="btn btn-primary">Modifier ce profil</button>
+                </form>
+            </td>
+        </tr>
+
+
+
         </tbody>
     </table>
 </main>
