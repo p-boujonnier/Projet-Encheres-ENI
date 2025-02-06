@@ -3,12 +3,12 @@
     <section id="nav-title">
         <h1 id="div-h1">
             <a href="/">
-                <img th:src="@{/img/test_logo.png}" alt="logo Les Objets Sont Nos Amis" id="logo-LOSNA">
+                <img data-th-src="@{/img/logo-losna.png}" alt="logo Les Objets Sont Nos Amis" id="logo-LOSNA">
                 <span data-th-text="#{nom-application}"></span>
             </a>
         </h1>
         <!--         h2 = Permet d'afficher le pseudo quand l'utilisateur est connecté-->
-        <h2 data-th-if="${#authorization.expression('isAuthenticated()')}"
+        <h2 id="welcome-user" data-th-if="${#authorization.expression('isAuthenticated()')}"
             data-th-text="${#authentication.getPrincipal().getPseudo()}"></h2>
     </section>
     <nav>
@@ -22,11 +22,15 @@
         </ul>
 
         <div class="auth-buttons">
-            <button><a data-th-if="!${#authorization.expression('isAuthenticated()')}" href="/creer" data-th-text="#{frag-header.utilisateur.creer}">S'inscrire</a></button>
-            <button><a data-th-if="!${#authorization.expression('isAuthenticated()')}" href="/login">Se connecter</a></button>
-            <form th:action="@{/logout}" method="post">
-                <button data-th-if="${#authorization.expression('isAuthenticated()')}" type="submit"> Se deconnecter</button>
-            </form>
+            <button id="signin-button" th:class="${#authorization.expression('isAuthenticated()') ? 'hidden' : 'show'}">
+                <a href="/creer" >S'inscrire</a>
+            </button>
+            <button id="login-button" th:class="${#authorization.expression('isAuthenticated()') ? 'hidden' : 'show'}">
+                <a href="/login">Se connecter</a>
+            </button>
+            <button id="logout-button" th:class="${#authorization.expression('isAuthenticated()') ? 'show' : 'hidden'}">
+                <a href="/logout">Se déconnecter</a>
+            </button>
         </div>
     </nav>
 </header>
