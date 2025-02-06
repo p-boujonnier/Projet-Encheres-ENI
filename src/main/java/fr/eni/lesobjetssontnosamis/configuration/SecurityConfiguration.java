@@ -71,16 +71,15 @@ public AuthenticationManager authenticationManager(HttpSecurity http) throws Exc
                             .loginPage("/login")
                             .usernameParameter("email")
                             .loginProcessingUrl("/login")
-                            .permitAll());
-
-//                    .logout(logout -> logout
-//                            .logoutUrl("/logout")  // URL de déconnexion (quand l'utilisateur clique pour se déconnecter)
-//                            .logoutSuccessUrl("/")  // Page de redirection après la déconnexion
+                            .permitAll())
+                            .logout(logout -> logout
+.logoutUrl("/logout")  // URL de déconnexion (quand l'utilisateur clique pour se déconnecter)
+                            .logoutSuccessUrl("/")  // Page de redirection après la déconnexion
 //                            .invalidateHttpSession(true)
 //                            .deleteCookies("JSESSIONID")// Invalider la session HTTP après la déconnexion
 //                            .clearAuthentication(true)    // Effacer l'authentification
 //                            .permitAll()                  // Permet à tout le monde d'accéder à la déconnexion
-//                    );
+                   );
 //
            return http.build();
 
