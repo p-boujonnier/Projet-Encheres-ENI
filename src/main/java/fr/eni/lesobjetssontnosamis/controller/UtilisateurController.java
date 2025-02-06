@@ -33,19 +33,19 @@ public class UtilisateurController {
     public String afficherProfil(Principal principal, Model model, RedirectAttributes redirectAttributes) {
         Utilisateur utilisateur = utilisateurService.findUtilisateurByEmail(principal.getName());
         model.addAttribute("utilisateur", utilisateur);
-        return "view-profil-detail";
-
+            return "view-profil-detail";
+        }
 
 //        Utilisateur utilisateur = utilisateurService.findUtilisateurByEmail(email);
 
-//        if (utilisateur == null) {
+//
 //            // Ajout d'un message flash si l'email n'existe pas
 //            redirectAttributes.addFlashAttribute("errorMessage", "Aucun profil trouvé pour l'email : " + email);
 //            return "redirect:/profil/get-profil"; // Redirection vers la page de recherche
 //        }
 
 
-    }
+
     
     
     // ------------- Supprimer Profil -------------
