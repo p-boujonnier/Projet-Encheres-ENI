@@ -9,6 +9,7 @@ import fr.eni.lesobjetssontnosamis.exceptions.BusinessException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Primary;
 import org.springframework.dao.DataAccessException;
+import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -20,6 +21,8 @@ import java.util.List;
 public class ArticleVenduServiceImpl implements ArticleVenduService {
     @Autowired
     private ArticleVenduDAO articleVenduDAO;
+    @Autowired
+    private JdbcTemplate jdbcTemplate;
     // Injection des Repository
 
     public ArticleVenduServiceImpl(ArticleVenduDAO articleVenduDAO) {
@@ -33,7 +36,7 @@ public class ArticleVenduServiceImpl implements ArticleVenduService {
 
     @Override
     public ArticleVendu findArticleVendu(long noArticle) {
-        return null;
+        return articleVenduDAO.findArticleVendu(noArticle);
     }
 
     @Override

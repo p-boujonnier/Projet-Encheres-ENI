@@ -12,6 +12,7 @@ import org.springframework.transaction.annotation.Transactional;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import java.sql.SQLOutput;
 import java.util.List;
@@ -45,18 +46,25 @@ public class ArticleVenduController {
     }
 
     @PostMapping
-    @Transactional
-    public void actionEncheres() {
+    public String actionEncheres(@RequestParam(name = "noArticle") long noArticleVendu, RedirectAttributes redirectAttributes) {
+        redirectAttributes.addAttribute("noArticle", noArticleVendu);
+        return "redirect:/view-article-detail";
+    }
 
+    @GetMapping("/details")
+    public String afficherDetail(@RequestParam(name = "noArticle") long noArticleVendu, Model model) {
+        var article = articleVenduService.findArticleVendu(noArticleVendu);
+        model.addAttribute("article", article);
+        return "view-article-detail";
     }
 
     @GetMapping("/creer")
     public String creerArticleVendu(Model model) {
         model.addAttribute("article", new ArticleVendu());
         List<Categorie> categoriesList = categorieService.readAllCategories();
-        model.addAttribute("categoriesList", categoriesList);// Liste des catégories
+        model.addAttribute("categoriesList", categoriesList);
         List<Utilisateur> utilisateurList = utilisateurService.findAllUtilisateurs();
-        model.addAttribute("utilisateurList", utilisateurList);// Liste des utilisateurs (provisoirement nécessaire)
+        model.addAttribute("utilisateurList", utilisateurList);
         return "view-article-create";
     }
 
@@ -68,11 +76,5 @@ public class ArticleVenduController {
             BindingResult bindingResult) {
         articleVenduService.addArticleVendu(articleVendu);
         return "redirect:/view-article";
-    }
-
-    // Affichege détail
-    @GetMapping("/details")
-    public String detailsArticleVendu(Model model) {
-        return "view-article-detail";
     }
 }
