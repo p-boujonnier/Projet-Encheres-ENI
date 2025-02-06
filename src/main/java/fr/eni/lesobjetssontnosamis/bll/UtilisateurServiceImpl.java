@@ -26,10 +26,6 @@ public class UtilisateurServiceImpl implements UtilisateurService {
     }
 
     @Override
-    public void updateUtilisateur(Utilisateur utilisateur) {
-    }
-
-    @Override
     public Utilisateur findUtilisateurById(long id) {
         return utilisateurDAO.readByNo(id);
     }
@@ -38,4 +34,19 @@ public class UtilisateurServiceImpl implements UtilisateurService {
     public Utilisateur findUtilisateurByEmail(String email) {
         return utilisateurDAO.read(email);
     }
+
+
+    //--------------------------------------------
+
+    @Override
+    public void updateUtilisateur(Utilisateur utilisateur) {
+        utilisateurDAO.update(utilisateur);
+    }
+
+    @Override
+    public void deleteUtilisateur(String email) {
+        utilisateurDAO.delete(email);
+    }
+
+
 }

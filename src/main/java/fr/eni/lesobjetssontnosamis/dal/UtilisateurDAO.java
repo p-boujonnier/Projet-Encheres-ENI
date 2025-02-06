@@ -15,8 +15,11 @@ public interface UtilisateurDAO {
 
     void update(Utilisateur utilisateur);
 
-    void delete(Utilisateur utilisateur);
-
     Utilisateur compteUnique(String Email);
+
+//    void delete(Utilisateur utilisateur);
+
+    void delete(String email);
+
 
 }
